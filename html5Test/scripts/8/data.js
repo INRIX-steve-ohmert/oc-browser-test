@@ -262,7 +262,64 @@ var tests = [
 													[ 'w3c', 'http://www.w3.org/TR/html5/editing.html#the-hidden-attribute' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute' ]
 												]
-									}, {
+									},
+									{
+										id: 	'customEv',
+										name: 	'Custom Event',
+										value: 	2,
+										urls: 	[
+													['whatwg', 'https://dom.spec.whatwg.org/#interface-customevent']
+												]
+									},
+									{
+										id: 	'text',
+										name: 	'Node.textContent',
+										value: 	2,
+										urls: 	[
+													['whatwg', 'https://dom.spec.whatwg.org/#dom-node-textcontent']
+												]
+									},
+									{
+										id: 	'eventListener',
+										name: 	'addEventListener method',
+										value: 	2,
+										urls: 	[
+													['https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener']
+												]
+									},
+									{
+										id: 	'matches',
+										name: 	'matches method',
+										value: 	2,
+										urls: 	[
+													['https://dom.spec.whatwg.org/#dom-element-matches']
+												]
+									},
+									{
+										id: 	'classList',
+										name: 	'classList method',
+										value: 	2,
+										urls: 	[
+													['https://dom.spec.whatwg.org/#dom-element-classlist']
+												]
+									},
+									{
+										id: 	'className',
+										name: 	'getElementsByClassName method',
+										value: 	2,
+										urls: 	[
+													['https://dom.spec.whatwg.org/#dom-document-getelementsbyclassname']
+												]
+									},
+									{
+										id: 	'rect',
+										name: 	'getBoundingClientRect method',
+										value: 	2,
+										urls: 	[
+													['w3c', 'https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect']
+												]
+									},
+									{
 										id:		'dynamic',
 										name:	'Dynamic markup insertion',
 										items:	[
@@ -507,6 +564,70 @@ var tests = [
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/pointerevents/' ],
 														[ 'wp',  '/concepts/Pointer_Events' ]
+													]
+									},
+									{
+										id: 		'which',
+										name: 		'KeyboardEvent which',
+										value:		1,
+										urls: 		[
+														['w3c', 'https://w3c.github.io/uievents/#widl-KeyboardEvent-which']
+													]
+									},
+									{
+										id: 		'charCode',
+										name: 		'KeyboardEvent charCode',
+										value:		1,
+										urls: 		[
+														['w3c', 'https://w3c.github.io/uievents/#widl-KeyboardEvent-charCode']
+													]
+									},
+									{
+										id: 		'code',
+										name: 		'KeyboardEvent code',
+										value:		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-code']
+													]
+									},
+									{
+										id: 		'location',
+										name: 		'KeyboardEvent location',
+										value:		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-location']
+													]
+									},
+									{
+										id: 		'modifier',
+										name: 		'KeyboardEvent getModifierState',
+										value:		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-getModifierState']
+													]
+									},
+									{
+										id: 		'key',
+										name: 		'KeyboardEvent key',
+										value:		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-key']
+													]
+									},
+									{
+										id: 		'dispatch',
+										name: 		'DispatchEvent',
+										value:		1,
+										urls: 		[
+														['whatwg', 'https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent']
+													]
+									},
+									{
+										id: 		'touch',
+										name: 		'Touch event',
+										value: 		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/touch-events/']
 													]
 									}
 								]
@@ -1208,6 +1329,22 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/html5/browsers.html#the-history-interface' ],
 														[ 'wp',  '/dom/History' ],
 														[ 'mdn', '/Web/Guide/API/DOM/Manipulating_the_browser_history' ]
+													]
+									},
+									{
+										id: 		'hashchange',
+										name:		'Hashchange event',
+										value: 		4,
+										urls: 		[
+														['w3c', 'https://dev.w3.org/html5/spec-LC/history.html#event-hashchange']
+													]
+									},
+									{
+										id: 		'console',
+										name:		'Console logging',
+										value: 		4,
+										urls: 		[
+														['whatwg', 'https://console.spec.whatwg.org/']
 													]
 									}
 								]

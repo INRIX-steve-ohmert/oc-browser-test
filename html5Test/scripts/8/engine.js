@@ -197,6 +197,77 @@ Test8 = (function () {
             });
         },
 
+        /* CustomEvent */
+
+        function(results) {
+            results.addItem({
+                key: 'elements.customEv',
+                passed: typeof CustomEvent == 'function'
+            })
+        },
+
+        /* TextContent */
+
+        function(results) {
+            var el = document.createElement('div');
+            el.textContent = 'some text';
+
+            results.addItem({
+                key: 'elements.text',
+                passed: el.innerText == 'some text'
+            });
+        },
+
+        /* addEventListener */
+
+        function(results) {
+            results.addItem({
+                key: 'elements.eventListener',
+                passed: typeof addEventListener == 'function'
+            })
+        },
+
+        /* Matches */
+
+        function(results) {
+            results.addItem({
+                key: 'elements.matches',
+                passed: typeof Element.prototype.matches == 'function'
+            })
+        },
+
+        /* ClassList */
+
+        function(results) {
+            var el = document.createElement('div');
+            console.log(typeof el.classList);
+
+            results.addItem({
+                key: 'elements.classList',
+                passed: typeof el.classList == 'object'
+            })
+        },
+
+        /* getElementsByClassname */
+
+        function(results) {
+            results.addItem({
+                key: 'elements.className',
+                passed: typeof document.getElementsByClassName == 'function'
+            })
+        },
+
+        /* getBoundingClientRect method */
+
+        function(results) {
+            var element = document.createElement('div');
+
+            results.addItem({
+                key: 'elements.rect',
+                passed: typeof element.getBoundingClientRect == 'function'
+            })
+        },
+
 
         /* section, nav, article, header and footer */
 
@@ -677,6 +748,92 @@ Test8 = (function () {
             });
         },
 
+        /* KeyboardEvents which */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.which',
+                passed: typeof ev.which == 'number'
+            });
+        },
+
+        /* KeyboardEvent charCode */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.charCode',
+                passed: typeof ev.charCode == 'number'
+            });
+        },
+
+        /* KeyboardEvent code */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.code',
+                passed: typeof ev.code == 'string'
+            });
+        },
+
+        /* KeyboardEvent location */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.location',
+                passed: typeof ev.location == 'number'
+            });
+        },
+
+        /* KeyboardEvent getModifierState */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.modifier',
+                passed: typeof ev.getModifierState == 'function'
+            });
+        },
+
+        /* KeyboardEvent key */
+
+        function(results) {
+            var ev = new KeyboardEvent('keyup');
+
+            results.addItem({
+                key: 'input.key',
+                passed: typeof ev.key == 'string'
+            });
+        },
+
+        /* DispatchEvent */
+
+        function(results) {
+            var element = document.createElement('div');
+
+            results.addItem({
+                key: 'input.dispatch',
+                passed: typeof element.dispatchEvent == 'function'
+            })
+        },
+
+        /* TouchEvent */
+
+        function(results) {
+            results.addItem({
+                key: 'input.touch',
+                passed: typeof TouchEvent == 'function'
+            })
+        },
+
 
         /* fetch */
 
@@ -1130,6 +1287,24 @@ Test8 = (function () {
             results.addItem({
                 key: 'other.history',
                 passed: !!(window.history && history.pushState)
+            });
+        },
+
+        /* hashchange */
+
+        function(results) {
+            results.addItem({
+                key: 'other.hashchange',
+                passed: !!(window.location.hash)
+            });
+        },
+
+        /* console logging */
+
+        function(results) {
+            results.addItem({
+                key: 'other.console',
+                passed: !!(window.console)
             });
         },
 
