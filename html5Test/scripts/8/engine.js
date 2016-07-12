@@ -200,39 +200,74 @@ Test8 = (function () {
         /* CustomEvent */
 
         function(results) {
+            var passed, ev;
+
+            try {
+                ev = new CustomEvent('event');
+                if (ev instanceof CustomEvent) passed = true;
+            } catch (e) {
+                passed = false;
+            }
+
             results.addItem({
                 key: 'elements.customEv',
-                passed: typeof CustomEvent == 'function'
+                passed: passed
             })
         },
 
         /* TextContent */
 
         function(results) {
-            var el = document.createElement('div');
-            el.textContent = 'some text';
+            var el = document.createElement('div'),
+                passed;
+
+            try {
+                el.textContent = 'some text';
+                if (el.innerText == 'some text') passed = true;
+            } catch(e) {
+                passed = false;
+            }
 
             results.addItem({
                 key: 'elements.text',
-                passed: el.innerText == 'some text'
+                passed: passed
             });
         },
 
         /* addEventListener */
 
         function(results) {
+            var el = document.createElement('div'),
+                passed = true;
+
+            try {
+                el.addEventListener("click", function(){});
+            } catch(e) {
+                passed = false;
+            }
+
             results.addItem({
                 key: 'elements.eventListener',
-                passed: typeof addEventListener == 'function'
+                passed: passed
             })
         },
 
         /* Matches */
 
         function(results) {
+            var el = document.createElement('div'),
+                passed = true;
+            el.className = 'match-me';
+
+            try {
+                el.matches('.match-me');
+            } catch(e) {
+                passed = false;
+            }
+
             results.addItem({
                 key: 'elements.matches',
-                passed: typeof Element.prototype.matches == 'function'
+                passed: passed
             })
         },
 
@@ -250,20 +285,56 @@ Test8 = (function () {
         /* getElementsByClassname */
 
         function(results) {
+            var el = document.createElement('div'),
+                passed = true;
+            el.className = 'class-me';
+
+            try {
+                document.getElementsByClassName('class-me');
+            } catch(e) {
+                passed = false;
+            }
+
             results.addItem({
                 key: 'elements.className',
-                passed: typeof document.getElementsByClassName == 'function'
+                passed: passed
             })
+        },
+
+        /* relList */
+
+        function(results) {
+            var el = document.createElement('link'),
+                passed = true;
+
+            try {
+                el.relList;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'elements.relList',
+                passed: passed
+            });
         },
 
         /* getBoundingClientRect method */
 
         function(results) {
-            var element = document.createElement('div');
+            var element = document.createElement('div'),
+                passed;
+
+            try {
+                var obj = element.getBoundingClientRect();
+                if (typeof obj == 'object') passed = true;
+            } catch(e) {
+                passed = false;
+            }
 
             results.addItem({
                 key: 'elements.rect',
-                passed: typeof element.getBoundingClientRect == 'function'
+                passed: passed
             })
         },
 
@@ -1197,6 +1268,28 @@ Test8 = (function () {
             });
         },
 
+        /* crypto getRandomValues */
+
+        function (results) {
+            var array = new Uint32Array(10),
+                passed = true;
+
+            try {
+                window.crypto.getRandomValues(array);
+            } catch(e) {
+                passed = false;
+            }
+
+            array.forEach(function(n) {
+                if (n == 0) passed = false;
+            })
+
+            results.addItem({
+                key: 'security.crypto.rand',
+                passed: passed
+            })
+        },
+
 
         /* csp 1.0 */
 
@@ -1304,6 +1397,22 @@ Test8 = (function () {
             results.addItem({
                 key: 'other.console',
                 passed: !!(window.console)
+            });
+        },
+
+        /* focus events */
+
+        function(results) {
+            var foc;
+            try {
+                foc = new FocusEvent('focus');
+            } catch(e) {
+                foc = 'just a string'
+            }
+
+            results.addItem({
+                key: 'other.focus',
+                passed: typeof foc == 'object'
             });
         },
 
@@ -1465,6 +1574,24 @@ Test8 = (function () {
             results.addItem({
                 key: 'offline.pushMessages',
                 passed: 'PushManager' in window && 'PushSubscription' in window
+            });
+        },
+
+        /* BroadcastChannel */
+
+        function(results) {
+            var passed, bc;
+
+            try {
+                bc = new BroadcastChannel('testing');
+                passed = true;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'performance.broadcast',
+                passed: passed
             });
         },
 
@@ -1644,6 +1771,15 @@ Test8 = (function () {
             });
         },
 
+        /* setImmeadiate */
+
+        function(results) {
+            results.addItem({
+                key: 'scripting.setImmeadiate',
+                passed: typeof window.setImmeadiate == 'function'
+            });
+        },
+
 
         /* text encoding api */
 
@@ -1804,6 +1940,23 @@ Test8 = (function () {
             });
         },
 
+        /* Proxy Object */
+
+        function(results) {
+            var prox, passed, i = {i:0};
+
+            try {
+                prox = new Proxy(i, function(){})
+                passed = true;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'scripting.es6.proxy',
+                passed: passed
+            });
+        },
 
         /* const */
 
@@ -2168,6 +2321,60 @@ Test8 = (function () {
                 passed: passed ? YES : NO
             });
         },
+
+        /* High res time */
+
+        function(results) {
+            var t, passed;
+
+            try {
+                t = performance.now();
+                passed = true;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'scripting.perfTime',
+                passed: passed
+            });
+        },
+
+        /* User Timing */
+
+        function(results) {
+            var t, passed;
+
+            try {
+                t = performance.mark('marking');
+                passed = true;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'scripting.userTime',
+                passed: passed
+            })
+        },
+
+        /* Navigation Timing */
+
+        function(results) {
+            var t, passed;
+
+            try {
+                t = performance.timing.navigationStart;
+                passed = true;
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'scripting.navTime',
+                passed: passed
+            });
+        }
     ];
 
 

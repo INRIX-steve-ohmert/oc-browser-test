@@ -325,6 +325,14 @@ var tests = [
 												]
 									},
 									{
+										id: 	'relList',
+										name: 	'relList method',
+										value: 	1,
+										urls: 	[
+													['whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#dom-a-rellist']
+												]
+									},
+									{
 										id: 	'rect',
 										name: 	'getBoundingClientRect method',
 										required: true,
@@ -1028,6 +1036,14 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/workers/#shared-workers-and-the-sharedworker-interface' ],
 														[ 'mdn', '/Web/API/Web_Workers_API/Using_web_workers' ]
 													]
+									}, {
+										// KEEP
+										id:			'broadcast',
+										name: 		'Broadcast Channel',
+										value:		1,
+										urls:    	[
+														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/comms.html#broadcasting-to-other-browsing-contexts' ]
+													]
 									}
 								]
 					}, {
@@ -1044,6 +1060,16 @@ var tests = [
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/' ]
+													]
+									},
+									{
+										// KEEP
+										id:			'crypto.rand',
+										name: 		'Web Cryptography getRandomValues',
+										status:		'proposal',
+										value:		2,
+										urls:		[
+														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues' ]
 													]
 									}, {
 										// KEEP
@@ -1305,7 +1331,51 @@ var tests = [
 									},
 
 									'<strong>ECMAScript 6</strong>',
-
+									{
+										// KEEP
+										id: 		'es6.proxy',
+										name:   	'Proxy Object',
+										value:		1,
+										urls:		[
+														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-object-internal-methods-and-internal-slots' ],
+													]
+									},
+									{
+										// KEEP
+										id: 		'es6.number',
+										name:   	'Number',
+										value:		1,
+										urls:		[
+														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-number-objects' ],
+													]
+									},
+									{
+										// KEEP
+										id: 		'es6.const',
+										name:   	'Const',
+										value:		1,
+										urls:		[
+														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations' ],
+													]
+									},
+									{
+										// KEEP
+										id: 		'es6.spread',
+										name:   	'Spread',
+										value:		1,
+										urls:		[
+														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions' ],
+													]
+									},
+									{
+										// KEEP
+										id: 		'es6.let',
+										name:   	'Let',
+										value:		1,
+										urls:		[
+														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations' ],
+													]
+									},
 									{
 										// KEEP
 										id: 		'es6.class',
@@ -1376,6 +1446,14 @@ var tests = [
 													]
 									}, {
 										// KEEP
+										id: 		'setImmeadiate',
+										name:   	'setImmeadiate',
+										value:		1,
+										urls:		[
+														[ 'w3c', 'http://w3c.github.io/setImmediate/' ]
+													]
+									}, {
+										// KEEP
 										id: 		'url',
 										name:   	'URL API',
 										required: true,
@@ -1392,6 +1470,30 @@ var tests = [
 										urls:		[
 														[ 'whatwg', 'https://encoding.spec.whatwg.org' ],
 														[ 'mdn', '/Web/API/TextDecoder' ]
+													]
+									},  {
+										// KEEP
+										id: 		'perfTime',
+										name:   	'High Resolution Time',
+										value:		2,
+										urls:		[
+														[ 'w3c', 'http://www.w3.org/TR/hr-time/' ]
+													]
+									}, {
+										// KEEP
+										id: 		'userTime',
+										name:   	'User Timing',
+										value:		2,
+										urls:		[
+														[ 'w3c', 'http://www.w3.org/TR/user-timing/' ]
+													]
+									}, {
+										// KEEP
+										id: 		'navTime',
+										name:   	'Navigation Timing',
+										value:		2,
+										urls:		[
+														[ 'w3c', 'http://www.w3.org/TR/navigation-timing/' ]
 													]
 									}
 								]
@@ -1428,7 +1530,15 @@ var tests = [
 										urls: 		[
 														['whatwg', 'https://console.spec.whatwg.org/']
 													]
-									}
+									},
+									{
+										id: 		'focus',
+										name:		'Focus Events',
+										value: 		1,
+										urls: 		[
+														['w3c', 'https://www.w3.org/TR/DOM-Level-3-Events/#event-type-focusin']
+													]
+									},
 								]
 					}
 				]
