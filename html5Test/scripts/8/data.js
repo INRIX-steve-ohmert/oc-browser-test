@@ -16,6 +16,7 @@ var tests = [
 										// KEEP
 										id:		'doctype',
 										name: 	'<code>&lt;!DOCTYPE html&gt;</code> triggers standards mode',
+										required: true,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#the-doctype' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/syntax.html#the-doctype' ]
@@ -24,6 +25,7 @@ var tests = [
 										// KEEP
 										id:		'tokenizer',
 										name: 	'HTML5 tokenizer',
+										required: true,
 										value:	3,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#parsing' ],
@@ -34,6 +36,7 @@ var tests = [
 										// KEEP
 										id:		'tree',
 										name: 	'HTML5 tree building',
+										required: true,
 										value:	2,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#parsing' ],
@@ -45,6 +48,7 @@ var tests = [
 										// KEEP
 										id:		'svg',
 										name: 	'Parsing inline SVG',
+										required: true,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/embedded-content-0.html#svg' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/embedded-content.html#svg-0' ],
@@ -62,6 +66,7 @@ var tests = [
 										// KEEP
 										id:		'dataset',
 										name: 	'Embedding custom non-visible data',
+										required: true,
 										value:	2,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes' ],
@@ -217,6 +222,7 @@ var tests = [
 														// KEEP
 														id:		'data',
 														name: 	'<code>data</code> element',
+														required: true,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-data-element' ],
@@ -257,6 +263,7 @@ var tests = [
 										// KEEP
 										id:		'hidden',
 										name: 	'<code>hidden</code> attribute',
+										required: true,
 										value:	1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/editing.html#the-hidden-attribute' ],
@@ -266,6 +273,7 @@ var tests = [
 									{
 										id: 	'customEv',
 										name: 	'Custom Event',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['whatwg', 'https://dom.spec.whatwg.org/#interface-customevent']
@@ -274,6 +282,7 @@ var tests = [
 									{
 										id: 	'text',
 										name: 	'Node.textContent',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['whatwg', 'https://dom.spec.whatwg.org/#dom-node-textcontent']
@@ -282,6 +291,7 @@ var tests = [
 									{
 										id: 	'eventListener',
 										name: 	'addEventListener method',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener']
@@ -290,6 +300,7 @@ var tests = [
 									{
 										id: 	'matches',
 										name: 	'matches method',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-element-matches']
@@ -298,6 +309,7 @@ var tests = [
 									{
 										id: 	'classList',
 										name: 	'classList method',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-element-classlist']
@@ -306,6 +318,7 @@ var tests = [
 									{
 										id: 	'className',
 										name: 	'getElementsByClassName method',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-document-getelementsbyclassname']
@@ -314,6 +327,7 @@ var tests = [
 									{
 										id: 	'rect',
 										name: 	'getBoundingClientRect method',
+										required: true,
 										value: 	2,
 										urls: 	[
 													['w3c', 'https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect']
@@ -327,6 +341,7 @@ var tests = [
 														// KEEP
 														id:		'outerHTML',
 														name: 	'<code>outerHTML</code> property',
+														required: true,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html#widl-Element-outerHTML' ]
@@ -335,6 +350,7 @@ var tests = [
 														// KEEP
 														id:		'insertAdjacentHTML',
 														name: 	'<code>insertAdjacentHTML</code> function',
+														required: true,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html#widl-Element-insertAdjacentHTML-void-DOMString-position-DOMString-text' ]
@@ -356,10 +372,12 @@ var tests = [
 										items:	[
 													{
 														id:			'element',
-														name: 		'Minimal element support'
+														name: 		'Minimal element support',
+														required: true,
 													}, {
 														id:			'selection',
 														name: 		'Selection Direction',
+														required: true,
 														value:		2
 													}
 												]
@@ -371,43 +389,53 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
+														required: true,
 														value:		1,
 														url:		'http://www.w3.org/TR/html5/forms.html#number-state-(type=number)'
 													}, {
 														id:			'ui',
 														name: 		'Custom user-interface',
+														required: true,
 														value:		2
 													}, {
 														id:			'sanitization',
 														name: 		'Value sanitization',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#value-sanitization-algorithm'
 													}, {
 														id:			'validation',
 														name: 		'Field validation',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#the-constraint-validation-api'
 													}, {
 														id:			'min',
 														name: 		'<code>min</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-min'
 													}, {
 														id:			'max',
 														name: 		'<code>max</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-max'
 													}, {
 														id:			'step',
 														name: 		'<code>step</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-step'
 													}, {
 														id:			'stepDown',
 														name: 		'<code>stepDown()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepdown'
 													}, {
 														id:			'stepUp',
 														name: 		'<code>stepUp()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepup'
 													}, {
 														id:			'valueAsNumber',
 														name: 		'<code>valueAsNumber()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-valueasnumber'
 													}
 												]
@@ -418,39 +446,48 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
+														required: true,
 														value:		1,
 														url:		'http://www.w3.org/TR/html5/forms.html#range-state-(type=range)'
 													}, {
 														id:			'ui',
 														name: 		'Custom user-interface',
+														required: true,
 														value:		2
 													}, {
 														id:			'sanitization',
 														name: 		'Value sanitization',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#value-sanitization-algorithm'
 													}, {
 														id:			'min',
 														name: 		'<code>min</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-min'
 													}, {
 														id:			'max',
 														name: 		'<code>max</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-max'
 													}, {
 														id:			'step',
 														name: 		'<code>step</code> attribute',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-step'
 													}, {
 														id:			'stepDown',
 														name: 		'<code>stepDown()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepdown'
 													}, {
 														id:			'stepUp',
 														name: 		'<code>stepUp()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepup'
 													}, {
 														id:			'valueAsNumber',
 														name: 		'<code>valueAsNumber()</code> method',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-valueasnumber'
 													}
 												]
@@ -462,10 +499,12 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#file-upload-state-(type=file)'
 													}, {
 														id:			'files',
 														name: 		'<code>files</code> property',
+														required: true,
 														value:		1,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-files'
 													}
@@ -567,8 +606,29 @@ var tests = [
 													]
 									},
 									{
+										id: 		'dispatch',
+										name: 		'DispatchEvent',
+										required: true,
+										value:		1,
+										urls: 		[
+														['whatwg', 'https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent']
+													]
+									},
+									{
+										id: 		'touch',
+										name: 		'Touch event',
+										required: true,
+										value: 		1,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/touch-events/']
+													]
+									},
+
+									'<strong>Keyboard events</strong>',
+									{
 										id: 		'which',
 										name: 		'KeyboardEvent which',
+										required: true,
 										value:		1,
 										urls: 		[
 														['w3c', 'https://w3c.github.io/uievents/#widl-KeyboardEvent-which']
@@ -577,6 +637,7 @@ var tests = [
 									{
 										id: 		'charCode',
 										name: 		'KeyboardEvent charCode',
+										required: true,
 										value:		1,
 										urls: 		[
 														['w3c', 'https://w3c.github.io/uievents/#widl-KeyboardEvent-charCode']
@@ -614,22 +675,6 @@ var tests = [
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-key']
 													]
 									},
-									{
-										id: 		'dispatch',
-										name: 		'DispatchEvent',
-										value:		1,
-										urls: 		[
-														['whatwg', 'https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent']
-													]
-									},
-									{
-										id: 		'touch',
-										name: 		'Touch event',
-										value: 		1,
-										urls: 		[
-														['w3c', 'http://www.w3.org/TR/touch-events/']
-													]
-									}
 								]
 					}
 				]
@@ -688,6 +733,7 @@ var tests = [
 										// KEEP
 										id:		'context',
 										name: 	'Canvas 2D graphics',
+										required: true,
 										value:	10,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/2dcontext/' ],
@@ -729,6 +775,7 @@ var tests = [
 										// KEEP
 										id:			'webgl',
 										name: 		'WebGL',
+										required: true,
 										value:		{ maximum: 15, award: { PREFIX: 10 } },
 										urls:		[
 														[ 'khronos', 'https://www.khronos.org/registry/webgl/specs/latest/1.0/' ],
@@ -837,6 +884,7 @@ var tests = [
 										// KEEP
 										id:			'websocket.basic',
 										name: 		'Basic socket communication',
+										required: true,
 										value:		{ maximum: 10, award: { PREFIX: 7, OLD: 5 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/websockets/' ],
@@ -846,6 +894,7 @@ var tests = [
 										// KEEP
 										id:			'websocket.binary',
 										name: 		'<code>ArrayBuffer</code> and <code>Blob</code> support',
+										required: true,
 										value:		5,
 										urls:		[
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/comms.html#dom-websocket-binarytype' ],
@@ -935,10 +984,12 @@ var tests = [
 													{
 														id:			'read-write',
 														name: 		'<code>:read-write</code> selector',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/links.html#selector-read-write'
 													}, {
 														id:			'read-only',
 														name: 		'<code>:read-only</code> selector',
+														required: true,
 														url:		'http://www.w3.org/TR/html5/links.html#selector-read-only'
 													}
 												]
@@ -955,6 +1006,7 @@ var tests = [
 										// KEEP
 										id:			'worker',
 										name: 		'Web Workers',
+										required: true,
 										value:		10,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/workers/#dedicated-workers-and-the-worker-interface' ],
@@ -964,6 +1016,7 @@ var tests = [
 										// KEEP
 										id:			'sharedWorker',
 										name: 		'Shared Workers',
+										required: true,
 										value:		1,
 										urls:    	[
 														[ 'w3c', 'http://www.w3.org/TR/workers/#shared-workers-and-the-sharedworker-interface' ],
@@ -980,6 +1033,7 @@ var tests = [
 										// KEEP
 										id:			'crypto',
 										name: 		'Web Cryptography API',
+
 										status:		'proposal',
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
@@ -989,6 +1043,7 @@ var tests = [
 										// KEEP
 										id:			'csp10',
 										name: 		'Content Security Policy 1',
+										required: true,
 										value:		3,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/CSP1/' ],
@@ -1008,6 +1063,7 @@ var tests = [
 										// KEEP
 										id:			'cors',
 										name: 		'Cross-Origin Resource Sharing',
+										required: true,
 										value:		4,
 										urls:		[
 														[ 'mdn', '/Web/HTTP/Access_control_CORS' ]
@@ -1016,6 +1072,7 @@ var tests = [
 										// KEEP
 										id:			'postMessage',
 										name: 		'Cross-document messaging',
+										required: true,
 										value:		2,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/html5/postmsg/' ],
@@ -1030,6 +1087,7 @@ var tests = [
 										// KEEP
 										id:			'sandbox',
 										name: 		'Sandboxed <code>iframe</code>',
+										required: true,
 										value:		4,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/embedded-content-0.html#attr-iframe-sandbox' ],
@@ -1056,6 +1114,7 @@ var tests = [
 										// KEEP
 										id:			'serviceWorkers',
 										name: 		'Service Workers',
+										required: true,
 										status:		'proposal',
 										value:		10,
 										urls:		[
@@ -1085,6 +1144,7 @@ var tests = [
 										// KEEP
 										id:			'sessionStorage',
 										name: 		'Session Storage',
+										required: true,
 										value:		5,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/webstorage/#the-sessionstorage-attribute' ],
@@ -1095,6 +1155,7 @@ var tests = [
 										// KEEP
 										id:			'localStorage',
 										name: 		'Local Storage',
+										required: true,
 										value:		5,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/webstorage/#the-localstorage-attribute' ],
@@ -1126,6 +1187,7 @@ var tests = [
 										// KEEP
 										id:			'fileReader',
 										name: 		'Basic support for reading files',
+										required: true,
 										value:		7,
 										urls:		[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#filereader-interface' ],
@@ -1136,6 +1198,7 @@ var tests = [
 										// KEEP
 										id:			'fileReader.blob',
 										name: 		'Create a <code>Blob</code> from a file',
+										required: true,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob' ],
@@ -1144,6 +1207,7 @@ var tests = [
 										// KEEP
 										id:			'fileReader.dataURL',
 										name: 		'Create a Data URL from a <code>Blob</code>',
+										required: true,
 										value:		2,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-readAsDataURL' ],
@@ -1151,6 +1215,7 @@ var tests = [
 									}, {
 										id:			'fileReader.arraybuffer',
 										name: 		'Create an <code>ArrayBuffer</code> from a <code>Blob</code>',
+										required: true,
 										value:		2,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-readAsArrayBuffer' ],
@@ -1158,6 +1223,7 @@ var tests = [
 									}, {
 										id:			'fileReader.objectURL',
 										name: 		'Create a Blob URL from a <code>Blob</code>',
+										required: true,
 										value:		2,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-createObjectURL' ],
@@ -1184,6 +1250,7 @@ var tests = [
 										// KEEP
 										id:			'async',
 										name: 		'Asynchronous script execution',
+										required: true,
 										value:		3,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/scripting-1.html#attr-script-async' ],
@@ -1195,6 +1262,7 @@ var tests = [
 										// KEEP
 										id:			'defer',
 										name: 		'Defered script execution',
+										required: true,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/scripting-1.html#attr-script-defer' ],
@@ -1206,6 +1274,7 @@ var tests = [
 										// KEEP
 										id:			'onerror',
 										name: 		'Runtime script error reporting',
+										required: true,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/webappapis.html#runtime-script-errors' ],
@@ -1220,6 +1289,7 @@ var tests = [
 										// KEEP
 										id:			'es5.json',
 										name: 		'JSON encoding and decoding',
+										required: true,
 										value:		2,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-json-object' ],
@@ -1292,6 +1362,7 @@ var tests = [
 										// KEEP
 										id: 		'mutationObserver',
 										name:   	'Mutation Observer',
+										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/dom/#mutation-observers' ],
@@ -1301,6 +1372,7 @@ var tests = [
 										// KEEP
 										id: 		'url',
 										name:   	'URL API',
+										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/url/' ]
@@ -1309,6 +1381,7 @@ var tests = [
 										// KEEP
 										id: 		'encoding',
 										name:   	'Encoding API',
+										required: true,
 										value:		2,
 										urls:		[
 														[ 'whatwg', 'https://encoding.spec.whatwg.org' ],
@@ -1324,6 +1397,7 @@ var tests = [
 									{
 										id:			'history',
 										name: 		'Session history',
+										required: true,
 										value:		4,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/browsers.html#the-history-interface' ],
@@ -1334,6 +1408,7 @@ var tests = [
 									{
 										id: 		'hashchange',
 										name:		'Hashchange event',
+										required: true,
 										value: 		4,
 										urls: 		[
 														['w3c', 'https://dev.w3.org/html5/spec-LC/history.html#event-hashchange']
@@ -1342,6 +1417,7 @@ var tests = [
 									{
 										id: 		'console',
 										name:		'Console logging',
+										required: true,
 										value: 		4,
 										urls: 		[
 														['whatwg', 'https://console.spec.whatwg.org/']

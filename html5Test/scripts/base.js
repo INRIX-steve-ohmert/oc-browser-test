@@ -308,70 +308,70 @@
 
 
 
-	/* Base UI functions */
-
-	var Index = function() { this.initialize.apply(this, arguments) };
-	Index.prototype = {
-		initialize: function(options) {
-			var that = this;
-			this.options = options;
-
-			var menu = document.createElement('div');
-			menu.id = 'indexmenu';
-			options.index.appendChild(menu);
-
-			var categories = document.createElement('ul');
-			menu.appendChild(categories);
-
-			for (var i = 0; i < options.tests.length; i++) {
-				var category = document.createElement('li');
-				category.className = 'category ' + options.tests[i].id;
-				categories.appendChild(category);
-
-				var link = document.createElement('a');
-				link.href = '#category-' + options.tests[i].id;
-				link.onclick = function () { that.closeIndex(); };
-				link.innerHTML = options.tests[i].name;
-				category.appendChild(link);
-
-				if (options.tests[i].items.length) {
-					var items = document.createElement('ul');
-					category.appendChild(items);
-
-					for (var j = 0; j < options.tests[i].items.length; j++) {
-						var item = document.createElement('li');
-						items.appendChild(item);
-
-						var link = document.createElement('a');
-						link.href = '#table-' + options.tests[i].items[j].id;
-						link.onclick = function () { that.closeIndex(); };
-						link.innerHTML = options.tests[i].items[j].name;
-						item.appendChild(link);
-					}
-				}
-			}
-
-			var button = document.createElement('button');
-			button.innerHTML = '';
-			button.id = 'indexbutton';
-			button.onclick = this.toggleIndex;
-			options.index.appendChild(button);
-
-			options.wrapper.onclick = this.closeIndex;
-		},
-
-		toggleIndex: function() {
-			if (document.body.className.indexOf(' indexVisible') == -1) {
-				document.body.className = document.body.className.replace(' indexVisible', '') + ' indexVisible';
-			} else {
-				document.body.className = document.body.className.replace(' indexVisible', '');
-			}
-		},
-
-		closeIndex: function() {
-			document.body.className = document.body.className.replace(' indexVisible', '');
-		}
-	}
+	// /* Base UI functions */
+	//
+	// var Index = function() { this.initialize.apply(this, arguments) };
+	// Index.prototype = {
+	// 	initialize: function(options) {
+	// 		var that = this;
+	// 		this.options = options;
+	//
+	// 		var menu = document.createElement('div');
+	// 		menu.id = 'indexmenu';
+	// 		options.index.appendChild(menu);
+	//
+	// 		var categories = document.createElement('ul');
+	// 		menu.appendChild(categories);
+	//
+	// 		for (var i = 0; i < options.tests.length; i++) {
+	// 			var category = document.createElement('li');
+	// 			category.className = 'category ' + options.tests[i].id;
+	// 			categories.appendChild(category);
+	//
+	// 			var link = document.createElement('a');
+	// 			link.href = '#category-' + options.tests[i].id;
+	// 			link.onclick = function () { that.closeIndex(); };
+	// 			link.innerHTML = options.tests[i].name;
+	// 			category.appendChild(link);
+	//
+	// 			if (options.tests[i].items.length) {
+	// 				var items = document.createElement('ul');
+	// 				category.appendChild(items);
+	//
+	// 				for (var j = 0; j < options.tests[i].items.length; j++) {
+	// 					var item = document.createElement('li');
+	// 					items.appendChild(item);
+	//
+	// 					var link = document.createElement('a');
+	// 					link.href = '#table-' + options.tests[i].items[j].id;
+	// 					link.onclick = function () { that.closeIndex(); };
+	// 					link.innerHTML = options.tests[i].items[j].name;
+	// 					item.appendChild(link);
+	// 				}
+	// 			}
+	// 		}
+	//
+	// 		var button = document.createElement('button');
+	// 		button.innerHTML = '';
+	// 		button.id = 'indexbutton';
+	// 		button.onclick = this.toggleIndex;
+	// 		options.index.appendChild(button);
+	//
+	// 		options.wrapper.onclick = this.closeIndex;
+	// 	},
+	//
+	// 	toggleIndex: function() {
+	// 		if (document.body.className.indexOf(' indexVisible') == -1) {
+	// 			document.body.className = document.body.className.replace(' indexVisible', '') + ' indexVisible';
+	// 		} else {
+	// 			document.body.className = document.body.className.replace(' indexVisible', '');
+	// 		}
+	// 	},
+	//
+	// 	closeIndex: function() {
+	// 		document.body.className = document.body.className.replace(' indexVisible', '');
+	// 	}
+	// }
 
 
 	var Confirm = function() { this.initialize.apply(this, arguments) };
@@ -875,6 +875,12 @@
 				var tr = document.createElement('tr');
 				parent.appendChild(tr);
 
+				if (tests[i].required) {
+					tr.className += 'test-required ';
+				} else {
+					tr.className += 'test-preferred ';
+				}
+
 				if (typeof tests[i] == 'string') {
 					if (this.options.explainations || tests[i].substr(0, 4) != '<em>') {
 						var th = document.createElement('th');
@@ -886,6 +892,7 @@
 					}
 				} else {
 					var key = tests[i].key;
+					var requited = tests[i].required;
 
 					var th = document.createElement('th');
 					th.innerHTML = "<div><span>" + tests[i].name + "</span></div>";
@@ -900,10 +907,16 @@
 
 					if (level > 0) {
 						tr.className = 'isChild';
+						if (tests[i].required) {
+							tr.className += ' test-required';
+						} else {
+							tr.className += ' test-preferred';
+						}
 					}
 
 					if (typeof tests[i].items != 'undefined') {
 						var urls = null;
+						console.log(tests[i].id);
 
 						if (this.options.links) {
 							if (typeof tests[i].urls != 'undefined') {
@@ -946,6 +959,7 @@
 							urls = [ [ 'w3c', tests[i].url ] ];
 							showLinks = true;
 						}
+
 
 						th.className = 'hasLink';
 

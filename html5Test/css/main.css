@@ -489,6 +489,18 @@ body.indexVisible > div#index button#indexbutton {
  *   Global: Page grid
  */
 
+.test-required {
+	background-color: green;
+}
+
+.test-preferred {
+	background-color: purple;
+}
+
+.hasChild {
+	background-color: grey;
+}
+
 .page {
 	margin: 2.5em auto 0;
 	max-width: 900px;
@@ -1212,7 +1224,9 @@ body.indexVisible > div#index button#indexbutton {
 .pointsPanel {
 	background: #fff;
 	min-height: 145px;
-	padding: 0 155px 0 0;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .saved .pointsPanel {
 	padding: 0;
@@ -1649,7 +1663,6 @@ body.indexVisible > div#index button#indexbutton {
 	position: relative;
 	margin: 0 0 24px;
 
-	background: #fff;
 	color: #000;
 
 	border-collapse: separate;
@@ -1803,12 +1816,10 @@ body.indexVisible > div#index button#indexbutton {
 .resultsTable table tr.isChild.expanded td div {
 }
 .resultsTable table tr.isChild th {
-	background: #f6f6f6;
 	font-size: 0.7em;
 	padding: 5px 10px 3px 28px;
 }
 .resultsTable table tr.isChild td {
-	background: #f6f6f6;
 	font-size: 0.7em;
 	padding: 5px 10px;
 }
@@ -2157,8 +2168,3 @@ body.indexVisible > div#index button#indexbutton {
 		margin-bottom: 30px;
 	}
 }
-
-
-
-
-
