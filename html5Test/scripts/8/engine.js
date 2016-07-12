@@ -240,7 +240,6 @@ Test8 = (function () {
 
         function(results) {
             var el = document.createElement('div');
-            console.log(typeof el.classList);
 
             results.addItem({
                 key: 'elements.classList',

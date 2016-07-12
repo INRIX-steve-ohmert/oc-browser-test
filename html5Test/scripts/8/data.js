@@ -10,6 +10,7 @@ var tests = [
 					{
 						id:		'parsing',
 						name:	'Parsing rules',
+						required: true,
 						status:	'stable',
 						items:	[
 									{
@@ -222,7 +223,6 @@ var tests = [
 														// KEEP
 														id:		'data',
 														name: 	'<code>data</code> element',
-														required: true,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-data-element' ],
@@ -336,6 +336,7 @@ var tests = [
 									{
 										id:		'dynamic',
 										name:	'Dynamic markup insertion',
+										required: true,
 										items:	[
 													{
 														// KEEP
@@ -369,6 +370,7 @@ var tests = [
 									{
 										id:		'text',
 										name:	'<code>input type=text</code>',
+										required: true,
 										items:	[
 													{
 														id:			'element',
@@ -385,6 +387,7 @@ var tests = [
 										// KEEP
 										id:		'number',
 										name:	'<code>input type=number</code>',
+										required: true,
 										items:	[
 													{
 														id:			'element',
@@ -442,6 +445,7 @@ var tests = [
 									}, {
 										id:		'range',
 										name:	'<code>input type=range</code>',
+										required: true,
 										items:	[
 													{
 														id:			'element',
@@ -495,6 +499,7 @@ var tests = [
 										// KEEP
 										id:		'file',
 										name:	'<code>input type=file</code>',
+										required: true,
 										items:	[
 													{
 														id:			'element',
@@ -976,6 +981,7 @@ var tests = [
 										// KEEP
 										id:		'editing.selectors',
 										name:	'CSS selectors',
+										required: true,
 										value:	{ maximum: 2, award: { PREFIX: 1 } },
 										urls:	[
 													[ 'mdn', '/Web/Guide/HTML/Content_Editable' ]

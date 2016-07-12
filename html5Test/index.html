@@ -182,56 +182,15 @@
 
 					var c = new Calculate(r, m.data);
 
-					/* Submit results */
-					try {
-						var payload = '{' +
-									  '"release": "' + r.release + '",' +
-									  '"source": "' + source + '",' +
-									  '"identifier": "' + escapeSlashes(identifier) + '",' +
-									  '"task": "' + task + '",' +
-									  '"uniqueid": "' + r.uniqueid + '",' +
-									  '"score": ' + c.score + ',' +
-									  '"maximum": ' + c.maximum + ',' +
-									  '"camouflage": "' + (Browsers.camouflage ? '1' : '0') + '",' +
-									  '"features": "' + (Browsers.features.join(',')) + '",' +
-									  '"browserName": "' + (Browsers.browser.name ? Browsers.browser.name : '') + '",' +
-									  '"browserChannel": "' + (Browsers.browser.channel ? Browsers.browser.channel : '') + '",' +
-									  '"browserVersion": "' + (Browsers.browser.version ? Browsers.browser.version.toString() : '') + '",' +
-									  '"browserVersionType": "' + (Browsers.browser.version ? Browsers.browser.version.type : '') + '",' +
-									  '"browserVersionMajor": "' + (Browsers.browser.version ? Browsers.browser.version.major : '') + '",' +
-									  '"browserVersionMinor": "' + (Browsers.browser.version ? Browsers.browser.version.minor : '') + '",' +
-									  '"browserVersionOriginal": "' + (Browsers.browser.version ? Browsers.browser.version.original : '') + '",' +
-									  '"browserMode": "' + (Browsers.browser.mode ? Browsers.browser.mode : '') + '",' +
-									  '"engineName": "' + (Browsers.engine.name ? Browsers.engine.name : '') + '",' +
-									  '"engineVersion": "' + (Browsers.engine.version ? Browsers.engine.version.toString() : '') + '",' +
-									  '"osName": "' + (Browsers.os.name ? Browsers.os.name : '') + '",' +
-									  '"osFamily": "' + (Browsers.os.family ? Browsers.os.family : '') + '",' +
-									  '"osVersion": "' + (Browsers.os.version ? Browsers.os.version.toString() : '') + '",' +
-									  '"deviceManufacturer": "' + (Browsers.device.manufacturer ? Browsers.device.manufacturer : '') + '",' +
-									  '"deviceModel": "' + (Browsers.device.model ? Browsers.device.model : '') + '",' +
-									  '"deviceSeries": "' + (Browsers.device.series ? Browsers.device.series : '') + '",' +
-									  '"deviceType": "' + (Browsers.device.type ? Browsers.device.type : '') + '",' +
-									  '"deviceIdentified": "' + (Browsers.device.identified ? '1' : '0' ) + '",' +
-									  '"deviceWidth": "' + (screen.width) + '",' +
-									  '"deviceHeight": "' + (screen.height) + '",' +
-									  '"useragent": "' + navigator.userAgent + '",' +
-									  '"humanReadable": "' + Browsers.toString() + '",' +
-									  '"points": "' + c.points + '",' +
-									  '"results": "' + r.results + '"' +
-									  '}';
-
-						submit('submit', payload);
-					} catch(e) {
-						alert('Could not submit results: ' + e.message);
-					}
-
-
 					/* Update total score */
 					var container = document.getElementById('score');
 
 					container.innerHTML = tim(
 						"<div class='pointsPanel'>" +
-						"<h2><span>Your browser scores</span> <strong>{{score}}</strong> <span>out of {{maximum}} points</span></h2>" +
+						"<h2><span>This browser scores</span> <strong>{{requiredScore}}/{{requiredMax}}</strong> <span>required</span></h2>" +
+						"</div>" +
+						"<div class='pointsPanel'>" +
+						"<h2><span>and</span> <strong>{{preferredScore}}/{{preferredMax}}</strong> <span>preferred</span></h2>" +
 						"</div>",
 					c);
 
@@ -261,20 +220,6 @@
 					// 	wrapper:		document.getElementById('contentwrapper')
 					// });
 
-
-					function submit(method, payload) {
-						var httpRequest;
-						if (window.XMLHttpRequest) {
-							httpRequest = new XMLHttpRequest();
-						} else if (window.ActiveXObject) {
-							httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-						}
-
-					   	httpRequest.open('POST','/api/' + method, true);
-					   	httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-	   					httpRequest.send('payload=' + encodeURIComponent(payload));
-					}
-
 					window.setTimeout(function() {
 						var contents = document.getElementById('contents');
 						contents.style.visibility = 'visible';
@@ -295,30 +240,6 @@
 					var loading = document.getElementById('loading');
 					loading.style.display = 'none';
 				});
-
-				this.load();
-			}
-
-			function load() {
-				(function(){
-				  	var bsa = document.createElement('script');
-					 bsa.type = 'text/javascript';
-					 bsa.async = true;
-					 bsa.src = '//s3.buysellads.com/ac/bsa.js';
-					 (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-				})();
-
-
-				var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-68192-4']);
-				_gaq.push(['_trackPageview']);
-
-				(function() {
-					var ga = document.createElement('script');
-					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-					ga.setAttribute('async', 'true');
-					document.documentElement.firstChild.appendChild(ga);
-				})();
 			}
 
 		//-->

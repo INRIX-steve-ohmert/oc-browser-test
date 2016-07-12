@@ -99,12 +99,6 @@ table {
 	border-collapse: collapse;
 	width: 100%;
 }
-tbody tr:hover > td, tbody tr:hover > th {
-	background-color: #f6f6f6;
-}
-tbody tr:hover th.details {
-	/* background-color: inherit; */
-}
 
 
 /********************************************
@@ -490,15 +484,21 @@ body.indexVisible > div#index button#indexbutton {
  */
 
 .test-required {
-	background-color: green;
+	background-color: rgb(107, 195, 93);
+}
+.child-required {
+	background-color: rgb(122, 227, 106);
 }
 
 .test-preferred {
-	background-color: purple;
+	background-color: rgb(118, 163, 223);
+}
+.child-preferred {
+	background-color: rgb(166, 191, 226)
 }
 
-.hasChild {
-	background-color: grey;
+.details {
+	background-color: rgb(196, 193, 196)
 }
 
 .page {
@@ -1223,10 +1223,9 @@ body.indexVisible > div#index button#indexbutton {
 
 .pointsPanel {
 	background: #fff;
-	min-height: 145px;
+	/*min-height: 145px;*/
 	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 10px 50px 20px 50px;
 }
 .saved .pointsPanel {
 	padding: 0;
@@ -1253,9 +1252,8 @@ body.indexVisible > div#index button#indexbutton {
 .pointsPanel h2 > strong {
     font-family: 'League Gothic', Impact;
     font-weight: normal;
-	font-size: 3.8em;
+	font-size: 1.8em;
 	color: #0092bf;
-	line-height: 145px;
 	margin: 0 10px;
 }
 .pointsPanel hr {

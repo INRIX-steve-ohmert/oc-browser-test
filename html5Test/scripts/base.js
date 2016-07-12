@@ -209,6 +209,11 @@
 			this.score = 0;
 			this.points = [];
 
+			this.requiredMax = 0;
+			this.preferredMax = 0;
+			this.requiredScore = 0;
+			this.preferredScore = 0;
+
 			for (var i = 0; i < this.parameters.data.length; i++) {
 				this.iterate(this.parameters.data[i].items, '');
 			}
@@ -247,6 +252,12 @@
 				this.maximum += value.maximum;
 			}
 
+			if (typeof data.value.conditional == 'undefined' && data.required) {
+				this.requiredMax += value.maximum;
+			} else if (typeof data.value.conditional == 'undefined' && !data.required) {
+				this.preferredMax += value.maximum;
+			}
+
 			if (typeof data.items == 'object') {
 				result = 0;
 				passed = true;
@@ -277,6 +288,34 @@
 						if (conditional & YES) {
 							valid = false;
 						}
+					}
+				}
+
+				if (valid && data.required) {
+					if (result & PREFIX && typeof value.award == 'object' && typeof value.award.PREFIX != 'undefined') {
+						this.requiredScore += value.award.PREFIX;
+					}
+					else if (result & BUGGY && typeof value.award == 'object' && typeof value.award.BUGGY != 'undefined') {
+						this.requiredScore += value.award.BUGGY;
+					}
+					else if (result & OLD && typeof value.award == 'object' && typeof value.award.OLD != 'undefined') {
+						this.requiredScore += value.award.OLD;
+					}
+					else {
+						this.requiredScore += value.maximum;
+					}
+				} else if (valid && !data.required) {
+					if (result & PREFIX && typeof value.award == 'object' && typeof value.award.PREFIX != 'undefined') {
+						this.preferredScore += value.award.PREFIX;
+					}
+					else if (result & BUGGY && typeof value.award == 'object' && typeof value.award.BUGGY != 'undefined') {
+						this.preferredScore += value.award.BUGGY;
+					}
+					else if (result & OLD && typeof value.award == 'object' && typeof value.award.OLD != 'undefined') {
+						this.preferredScore += value.award.OLD;
+					}
+					else {
+						this.preferredScore += value.maximum;
 					}
 				}
 
@@ -875,12 +914,6 @@
 				var tr = document.createElement('tr');
 				parent.appendChild(tr);
 
-				if (tests[i].required) {
-					tr.className += 'test-required ';
-				} else {
-					tr.className += 'test-preferred ';
-				}
-
 				if (typeof tests[i] == 'string') {
 					if (this.options.explainations || tests[i].substr(0, 4) != '<em>') {
 						var th = document.createElement('th');
@@ -892,7 +925,12 @@
 					}
 				} else {
 					var key = tests[i].key;
-					var requited = tests[i].required;
+
+					if (tests[i].required) {
+						tr.className += 'test-required ';
+					} else {
+						tr.className += 'test-preferred ';
+					}
 
 					var th = document.createElement('th');
 					th.innerHTML = "<div><span>" + tests[i].name + "</span></div>";
@@ -908,15 +946,14 @@
 					if (level > 0) {
 						tr.className = 'isChild';
 						if (tests[i].required) {
-							tr.className += ' test-required';
+							tr.className += ' child-required';
 						} else {
-							tr.className += ' test-preferred';
+							tr.className += ' child-preferred';
 						}
 					}
 
 					if (typeof tests[i].items != 'undefined') {
 						var urls = null;
-						console.log(tests[i].id);
 
 						if (this.options.links) {
 							if (typeof tests[i].urls != 'undefined') {
