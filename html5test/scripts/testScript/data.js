@@ -14,7 +14,6 @@ var tests = [
 						status:	'stable',
 						items:	[
 									{
-										// KEEP
 										id:		'doctype',
 										name: 	'<code>&lt;!DOCTYPE html&gt;</code> triggers standards mode',
 										required: true,
@@ -23,7 +22,6 @@ var tests = [
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/syntax.html#the-doctype' ]
 												]
 									}, {
-										// KEEP
 										id:		'tokenizer',
 										name: 	'HTML5 tokenizer',
 										required: true,
@@ -34,7 +32,6 @@ var tests = [
 													[ 'mdn', '/Web/Guide/HTML/HTML5/HTML5_Parser' ]
 												]
 									}, {
-										// KEEP
 										id:		'tree',
 										name: 	'HTML5 tree building',
 										required: true,
@@ -46,7 +43,6 @@ var tests = [
 												]
 									},
 									{
-										// KEEP
 										id:		'svg',
 										name: 	'Parsing inline SVG',
 										required: true,
@@ -64,7 +60,6 @@ var tests = [
 						status:	'stable',
 						items:	[
 									{
-										// KEEP
 										id:		'dataset',
 										name: 	'Embedding custom non-visible data',
 										required: true,
@@ -79,7 +74,6 @@ var tests = [
 									'<strong>New or modified elements</strong>',
 
 									{
-										// KEEP
 										id:		'section',
 										name:	'Section elements',
 										urls:	[
@@ -87,7 +81,6 @@ var tests = [
 												],
 										items:	[
 													{
-														// KEEP
 														id:		'section',
 														name: 	'<code>section</code> element',
 														value:	1,
@@ -96,7 +89,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-section-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'nav',
 														name: 	'<code>nav</code> element',
 														value:	1,
@@ -105,7 +97,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-nav-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'article',
 														name: 	'<code>article</code> element',
 														value:	1,
@@ -114,7 +105,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-article-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'aside',
 														name: 	'<code>aside</code> element',
 														value:	1,
@@ -123,7 +113,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-aside-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'header',
 														name: 	'<code>header</code> element',
 														value:	1,
@@ -132,7 +121,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-header-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'footer',
 														name: 	'<code>footer</code> element',
 														value:	1,
@@ -151,7 +139,6 @@ var tests = [
 												],
 										items:	[
 													{
-														// KEEP
 														id:		'main',
 														name: 	'<code>main</code> element',
 														value:	1,
@@ -160,7 +147,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-main-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'figure',
 														name: 	'<code>figure</code> element',
 														value:	1,
@@ -169,7 +155,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-figure-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'figcaption',
 														name: 	'<code>figcaption</code> element',
 														value:	1,
@@ -178,7 +163,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-figcaption-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'ol',
 														name: 	'<code>reversed</code> attribute on the <code>ol</code> element',
 														value:	1,
@@ -193,7 +177,6 @@ var tests = [
 										name:	'Text-level semantic elements',
 										items:	[
 													{
-														// KEEP
 														id:		'download',
 														name: 	'<code>download</code> attribute on the <code>a</code> element',
 														value:	1,
@@ -202,7 +185,6 @@ var tests = [
 																	[ 'whatwg', 'http://developers.whatwg.org/links.html#attr-hyperlink-download' ]
 																]
 													}, {
-														// KEEP
 														id:		'mark',
 														name: 	'<code>mark</code> element',
 														value:	1,
@@ -211,7 +193,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-mark-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'time',
 														name: 	'<code>time</code> element',
 														value:	1,
@@ -220,7 +201,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-time-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'data',
 														name: 	'<code>data</code> element',
 														value:	1,
@@ -229,7 +209,6 @@ var tests = [
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-data-element' ]
 																]
 													}, {
-														// KEEP
 														id:		'wbr',
 														name: 	'<code>wbr</code> element',
 														value:	1,
@@ -244,7 +223,6 @@ var tests = [
 										name:	'Interactive elements',
 										items:	[
 													{
-														// KEEP
 														id:		'dialog',
 														name: 	'<code>dialog</code> element',
 														status:	'proposal',
@@ -260,7 +238,6 @@ var tests = [
 									'<strong>Global attributes or methods</strong>',
 
 									{
-										// KEEP
 										id:		'hidden',
 										name: 	'<code>hidden</code> attribute',
 										required: true,
@@ -347,7 +324,6 @@ var tests = [
 										required: true,
 										items:	[
 													{
-														// KEEP
 														id:		'outerHTML',
 														name: 	'<code>outerHTML</code> property',
 														required: true,
@@ -356,7 +332,6 @@ var tests = [
 																	[ 'w3c', 'https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html#widl-Element-outerHTML' ]
 																]
 													}, {
-														// KEEP
 														id:		'insertAdjacentHTML',
 														name: 	'<code>insertAdjacentHTML</code> function',
 														required: true,
@@ -392,7 +367,6 @@ var tests = [
 													}
 												]
 									}, {
-										// KEEP
 										id:		'number',
 										name:	'<code>input type=number</code>',
 										required: true,
@@ -504,7 +478,6 @@ var tests = [
 													}
 												]
 									}, {
-										// KEEP
 										id:		'file',
 										name:	'<code>input type=file</code>',
 										required: true,
@@ -532,7 +505,6 @@ var tests = [
 										value:	2,
 										items:	[
 													{
-														// KEEP
 														id:			'autofocus',
 														name: 		'<code>autofocus</code> attribute',
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-fe-autofocus'
@@ -565,7 +537,6 @@ var tests = [
 						name: 	'Web Components',
 						items:	[
 									{
-										// KEEP
 										id:			'shadowdom',
 										name: 		'Shadow DOM',
 										status: 	'experimental',
@@ -574,7 +545,6 @@ var tests = [
 														[ 'w3c', 'http://w3c.github.io/webcomponents/spec/shadow/' ]
 													]
 									}, {
-										// KEEP
 										id:			'template',
 										name: 		'HTML templates',
 										value:		2,
@@ -584,7 +554,6 @@ var tests = [
 														[ 'wp', '/tutorials/webcomponents/htmlimports' ]
 													]
 									}, {
-										// KEEP
 										id:			'imports',
 										name: 		'HTML imports',
 										status: 	'rejected',
@@ -609,7 +578,6 @@ var tests = [
 						status:	'proposal',
 						items:	[
 									{
-										// KEEP
 										id:			'pointerevents',
 										name: 		'Pointer Events',
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
@@ -704,7 +672,6 @@ var tests = [
 						status:	'stable',
 						items:	[
 									{
-										// KEEP
 										id:		'preload',
 										name: 	'Preload in the background',
 										value:	1,
@@ -726,7 +693,6 @@ var tests = [
 						name: 	'Responsive images',
 						items:	[
 									{
-										// KEEP
 										id:			'srcset',
 										name: 		'<code>srcset</code> attribute',
 										value:		5,
@@ -743,7 +709,6 @@ var tests = [
 						status:	'stable',
 						items:	[
 									{
-										// KEEP
 										id:		'context',
 										name: 	'Canvas 2D graphics',
 										required: true,
@@ -754,11 +719,35 @@ var tests = [
 													[ 'mdn', '/Web/API/Canvas_API' ]
 												]
 									},
-
+									{
+										id:		'smil',
+										name: 	'SVG Animation Support',
+										required: true,
+										value:	3,
+										urls:   [
+													[ 'w3c', 'http://www.w3.org/TR/SVG/animate.html' ],
+												]
+									},
+									{
+										id:		'filter',
+										name: 	'SVG Filter Support',
+										required: true,
+										value:	3,
+										urls:   [
+													[ 'w3c', 'http://www.w3.org/TR/SVG/filters.html' ],
+												]
+									},
+									{
+										id:		'fragment',
+										name: 	'SVG Fragment Identifier Support',
+										value:	3,
+										urls:   [
+													[ 'w3c', 'http://www.w3.org/TR/SVG/linking.html#SVGFragmentIdentifiers' ],
+												]
+									},
 									'<strong>Drawing primitives</strong>',
 
 									{
-										// KEEP
 										id:		'text',
 										name: 	'Text support',
 										value:	2,
@@ -767,7 +756,6 @@ var tests = [
 													[ 'wp',  '/apis/canvas/CanvasRenderingContext2D/fillText' ]
 												]
 									}, {
-										// KEEP
 										id:		'blending',
 										name: 	'Blending modes',
 										status:	'proposal',
@@ -785,7 +773,6 @@ var tests = [
 									'<strong>3D Graphics</strong>',
 
 									{
-										// KEEP
 										id:			'webgl',
 										name: 		'WebGL',
 										required: true,
@@ -804,7 +791,6 @@ var tests = [
 						name: 	'Animation',
 						items:	[
 									{
-										// KEEP
 										id:			'webanimation',
 										name: 		'Web Animations API',
 										status:		'experimental',
@@ -813,7 +799,6 @@ var tests = [
 														[ 'w3c', 'https://w3c.github.io/web-animations/' ]
 													]
 									}, {
-										// KEEP
 										id:			'requestAnimationFrame',
 										name: 		'<code>window.requestAnimationFrame</code>',
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
@@ -839,7 +824,6 @@ var tests = [
 						name: 	'Communication',
 						items:	[
 									{
-										// KEEP
 										id:			'fetch',
 										name: 		'Fetch',
 										status:		'proposal',
@@ -854,13 +838,11 @@ var tests = [
 									'<strong>XMLHttpRequest Level 2</strong>',
 
 									{
-										// KEEP
 										id:			'xmlhttprequest2.upload',
 										name: 		'Upload files',
 										value:		5,
 										url:    	'http://www.w3.org/TR/XMLHttpRequest2/#the-upload-attribute'
 									}, {
-										// KEEP
 										id:			'xmlhttprequest2.response',
 										name:		'Response type support',
 										urls:		[
@@ -894,7 +876,6 @@ var tests = [
 									'<strong>WebSocket</strong>',
 
 									{
-										// KEEP
 										id:			'websocket.basic',
 										name: 		'Basic socket communication',
 										required: true,
@@ -904,7 +885,6 @@ var tests = [
 														[ 'mdn', '/Web/API/WebSockets_API' ]
 													]
 									}, {
-										// KEEP
 										id:			'websocket.binary',
 										name: 		'<code>ArrayBuffer</code> and <code>Blob</code> support',
 										required: true,
@@ -923,7 +903,6 @@ var tests = [
 									'<strong>Connectivity</strong>',
 
 									{
-										// KEEP
 										id:		'webrtc',
 										name: 	'WebRTC 1.0',
 										value:	{ maximum: 15, award: { PREFIX: 10 } },
@@ -951,7 +930,6 @@ var tests = [
 									'<strong>HTML editing</strong>',
 
 									{
-										// KEEP
 										id:		'editing.elements',
 										name:	'Editing elements',
 										urls:	[
@@ -971,7 +949,6 @@ var tests = [
 													}
 												]
 									}, {
-										// KEEP
 										id:		'editing.documents',
 										name:	'Editing documents',
 										urls:	[
@@ -986,7 +963,6 @@ var tests = [
 													}
 												]
 									}, {
-										// KEEP
 										id:		'editing.selectors',
 										name:	'CSS selectors',
 										required: true,
@@ -1017,7 +993,6 @@ var tests = [
 									'<strong>Workers</strong>',
 
 									{
-										// KEEP
 										id:			'worker',
 										name: 		'Web Workers',
 										required: true,
@@ -1027,7 +1002,6 @@ var tests = [
 														[ 'mdn', '/Web/API/Web_Workers_API/Using_web_workers' ]
 													]
 									}, {
-										// KEEP
 										id:			'sharedWorker',
 										name: 		'Shared Workers',
 										required: true,
@@ -1037,7 +1011,6 @@ var tests = [
 														[ 'mdn', '/Web/API/Web_Workers_API/Using_web_workers' ]
 													]
 									}, {
-										// KEEP
 										id:			'broadcast',
 										name: 		'Broadcast Channel',
 										value:		1,
@@ -1052,7 +1025,6 @@ var tests = [
 						name:	'Security',
 						items:	[
 									{
-										// KEEP
 										id:			'crypto',
 										name: 		'Web Cryptography API',
 
@@ -1063,7 +1035,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id:			'crypto.rand',
 										name: 		'Web Cryptography getRandomValues',
 										status:		'proposal',
@@ -1072,7 +1043,6 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues' ]
 													]
 									}, {
-										// KEEP
 										id:			'csp10',
 										name: 		'Content Security Policy 1',
 										required: true,
@@ -1082,7 +1052,6 @@ var tests = [
 														[ 'mdn', '/Web/Security/CSP' ]
 													]
 									}, {
-										// KEEP
 										id:			'csp11',
 										name: 		'Content Security Policy 2',
 										status:		'proposal',
@@ -1092,7 +1061,6 @@ var tests = [
 														[ 'mdn', '/Web/Security/CSP' ]
 													]
 									}, {
-										// KEEP
 										id:			'cors',
 										name: 		'Cross-Origin Resource Sharing',
 										required: true,
@@ -1101,7 +1069,6 @@ var tests = [
 														[ 'mdn', '/Web/HTTP/Access_control_CORS' ]
 													]
 									}, {
-										// KEEP
 										id:			'postMessage',
 										name: 		'Cross-document messaging',
 										required: true,
@@ -1116,7 +1083,6 @@ var tests = [
 									'<strong>Iframes</strong>',
 
 									{
-										// KEEP
 										id:			'sandbox',
 										name: 		'Sandboxed <code>iframe</code>',
 										required: true,
@@ -1143,7 +1109,6 @@ var tests = [
 						items:	[
 									'<strong>Offline resources</strong>',
 									{
-										// KEEP
 										id:			'serviceWorkers',
 										name: 		'Service Workers',
 										required: true,
@@ -1154,7 +1119,6 @@ var tests = [
 														[ 'mdn', '/Web/API/Service_Worker_API' ]
 													]
 									}, {
-										// KEEP
 										id:			'pushMessages',
 										name: 		'Push Messages',
 										status:		'proposal',
@@ -1173,7 +1137,6 @@ var tests = [
 									'<strong>Key-value storage</strong>',
 
 									{
-										// KEEP
 										id:			'sessionStorage',
 										name: 		'Session Storage',
 										required: true,
@@ -1184,7 +1147,6 @@ var tests = [
 														[ 'mdn', '/Web/API/Web_Storage_API' ]
 													]
 									}, {
-										// KEEP
 										id:			'localStorage',
 										name: 		'Local Storage',
 										required: true,
@@ -1199,7 +1161,6 @@ var tests = [
 									'<strong>Database storage</strong>',
 
 									{
-										// KEEP
 										id:			'sqlDatabase',
 										name: 		'Web SQL Database',
 										status:		'rejected',
@@ -1216,7 +1177,6 @@ var tests = [
 									'<strong>Reading files</strong>',
 
 									{
-										// KEEP
 										id:			'fileReader',
 										name: 		'Basic support for reading files',
 										required: true,
@@ -1227,7 +1187,6 @@ var tests = [
 														[ 'mdn', '/Using_files_from_web_applications' ]
 													]
 									}, {
-										// KEEP
 										id:			'fileReader.blob',
 										name: 		'Create a <code>Blob</code> from a file',
 										required: true,
@@ -1236,7 +1195,6 @@ var tests = [
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob' ],
 													]
 									}, {
-										// KEEP
 										id:			'fileReader.dataURL',
 										name: 		'Create a Data URL from a <code>Blob</code>',
 										required: true,
@@ -1279,7 +1237,6 @@ var tests = [
 									'<strong>Script execution</strong>',
 
 									{
-										// KEEP
 										id:			'async',
 										name: 		'Asynchronous script execution',
 										required: true,
@@ -1291,7 +1248,6 @@ var tests = [
 														[ 'wp',  '/html/elements/script' ]
 													]
 									}, {
-										// KEEP
 										id:			'defer',
 										name: 		'Defered script execution',
 										required: true,
@@ -1303,7 +1259,6 @@ var tests = [
 														[ 'wp',  '/html/elements/script' ]
 													]
 									}, {
-										// KEEP
 										id:			'onerror',
 										name: 		'Runtime script error reporting',
 										required: true,
@@ -1318,7 +1273,6 @@ var tests = [
 									'<strong>ECMAScript 5</strong>',
 
 									{
-										// KEEP
 										id:			'es5.json',
 										name: 		'JSON encoding and decoding',
 										required: true,
@@ -1332,7 +1286,6 @@ var tests = [
 
 									'<strong>ECMAScript 6</strong>',
 									{
-										// KEEP
 										id: 		'es6.proxy',
 										name:   	'Proxy Object',
 										value:		1,
@@ -1341,7 +1294,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id: 		'es6.number',
 										name:   	'Number',
 										value:		1,
@@ -1350,7 +1302,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id: 		'es6.const',
 										name:   	'Const',
 										value:		1,
@@ -1359,7 +1310,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id: 		'es6.spread',
 										name:   	'Spread',
 										value:		1,
@@ -1368,7 +1318,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id: 		'es6.let',
 										name:   	'Let',
 										value:		1,
@@ -1377,7 +1326,6 @@ var tests = [
 													]
 									},
 									{
-										// KEEP
 										id: 		'es6.class',
 										name:   	'Classes',
 										value:		1,
@@ -1385,7 +1333,6 @@ var tests = [
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions' ],
 													]
 									}, {
-										// KEEP
 										id: 		'es6.arrow',
 										name:   	'Arrow functions',
 										value:		1,
@@ -1393,7 +1340,6 @@ var tests = [
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions' ],
 													]
 									}, {
-										// KEEP
 										id: 		'es6.promises',
 										name:   	'Promises',
 										value:		3,
@@ -1402,7 +1348,6 @@ var tests = [
 														[ 'mdn', '/Web/JavaScript/Reference/Global_Objects/Promise' ]
 													]
 									}, {
-										// KEEP
 										id:			'es6.datatypes',
 										name:		'Typed arrays',
 										value:		2,
@@ -1412,7 +1357,6 @@ var tests = [
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-structured-data' ]
 													]
 									}, {
-										// KEEP
 										id: 		'es6.i18n',
 										name:   	'Internationalization',
 										value:		2,
@@ -1425,7 +1369,6 @@ var tests = [
 									'<strong>Other API\'s</strong>',
 
 									{
-										// KEEP
 										id:			'base64',
 										name: 		'Base64 encoding and decoding',
 										value:		1,
@@ -1435,7 +1378,6 @@ var tests = [
 														[ 'mdn', '/Web/API/WindowBase64/atob' ]
 													]
 									}, {
-										// KEEP
 										id: 		'mutationObserver',
 										name:   	'Mutation Observer',
 										required: true,
@@ -1445,7 +1387,6 @@ var tests = [
 														[ 'mdn', '/Web/API/MutationObserver' ]
 													]
 									}, {
-										// KEEP
 										id: 		'setImmeadiate',
 										name:   	'setImmeadiate',
 										value:		1,
@@ -1453,7 +1394,6 @@ var tests = [
 														[ 'w3c', 'http://w3c.github.io/setImmediate/' ]
 													]
 									}, {
-										// KEEP
 										id: 		'url',
 										name:   	'URL API',
 										required: true,
@@ -1462,7 +1402,6 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/url/' ]
 													]
 									}, {
-										// KEEP
 										id: 		'encoding',
 										name:   	'Encoding API',
 										required: true,
@@ -1472,7 +1411,6 @@ var tests = [
 														[ 'mdn', '/Web/API/TextDecoder' ]
 													]
 									},  {
-										// KEEP
 										id: 		'perfTime',
 										name:   	'High Resolution Time',
 										value:		2,
@@ -1480,7 +1418,6 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/hr-time/' ]
 													]
 									}, {
-										// KEEP
 										id: 		'userTime',
 										name:   	'User Timing',
 										value:		2,
@@ -1488,7 +1425,6 @@ var tests = [
 														[ 'w3c', 'http://www.w3.org/TR/user-timing/' ]
 													]
 									}, {
-										// KEEP
 										id: 		'navTime',
 										name:   	'Navigation Timing',
 										value:		2,
@@ -1497,7 +1433,41 @@ var tests = [
 													]
 									}
 								]
-					}, {
+					},
+					{
+							id: "font",
+							name: "Font Types",
+							status: 'stable',
+							items: [
+								{
+									id: 		'ttf',
+									name: 		'TTF Fonts',
+									required: true,
+									value: 3,
+									urls: 		[
+										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
+									]
+								},
+								{
+									id: 		'otf',
+									name: 		'OTF Fonts',
+									required: true,
+									value: 3,
+									urls: 		[
+										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
+									]
+								},
+								{
+									id: 		'woff',
+									name: 		'WOFF Fonts',
+									value: 3,
+									urls: 		[
+										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
+									]
+								},
+							]
+					},
+					{
 						id:		'other',
 						name: 	'Other',
 						status:	'stable',
@@ -1529,6 +1499,15 @@ var tests = [
 										value: 		4,
 										urls: 		[
 														['whatwg', 'https://console.spec.whatwg.org/']
+													]
+									},
+									{
+										id: 		'counters',
+										name:		'CSS Counters',
+										required: true,
+										value: 		3,
+										urls: 		[
+														['w3c', 'http://www.w3.org/TR/CSS21/generate.html#counters']
 													]
 									},
 									{

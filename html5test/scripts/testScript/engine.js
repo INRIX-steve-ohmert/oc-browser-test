@@ -1371,6 +1371,86 @@ Test8 = (function () {
             });
         },
 
+        /* TTF Fonts */
+
+        function(results) {
+            var css = `@font-face { font-family: 'League';
+                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.ttf')}`
+                head = document.head,
+                style = document.createElement('style'),
+                passed = true;
+
+            try {
+                style.type = 'text/css';
+                if (style.styleSheet){
+                  style.styleSheet.cssText = css;
+                } else {
+                  style.appendChild(document.createTextNode(css));
+                }
+                head.appendChild(style);
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'font.ttf',
+                passed: passed
+            });
+        },
+
+        /* OTF Fonts */
+
+        function(results) {
+            var css = `@font-face { font-family: 'League';
+                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.otf')}`
+                head = document.head,
+                style = document.createElement('style'),
+                passed = true;
+
+            try {
+                style.type = 'text/css';
+                if (style.styleSheet){
+                  style.styleSheet.cssText = css;
+                } else {
+                  style.appendChild(document.createTextNode(css));
+                }
+                head.appendChild(style);
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'font.otf',
+                passed: passed
+            });
+        },
+
+        /* WOFF Fonts */
+
+        function(results) {
+            var css = `@font-face { font-family: 'League';
+                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.woff')}`
+                head = document.head,
+                style = document.createElement('style'),
+                passed = true;
+
+            try {
+                style.type = 'text/css';
+                if (style.styleSheet){
+                  style.styleSheet.cssText = css;
+                } else {
+                  style.appendChild(document.createTextNode(css));
+                }
+                head.appendChild(style);
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'font.woff',
+                passed: passed
+            });
+        },
 
         /* history */
 
@@ -1386,7 +1466,7 @@ Test8 = (function () {
         function(results) {
             results.addItem({
                 key: 'other.hashchange',
-                passed: !!(window.location.hash)
+                passed: typeof window.location.hash == 'string'
             });
         },
 
@@ -1397,6 +1477,33 @@ Test8 = (function () {
                 key: 'other.console',
                 passed: !!(window.console)
             });
+        },
+
+        /* CSS Counters */
+
+        function(results) {
+            var css = `body { counter-reset: section;
+                              content: "Section " counter(section) ": ";}`
+                head = document.head,
+                style = document.createElement('style'),
+                passed = true;
+
+            try {
+                style.type = 'text/css';
+                if (style.styleSheet){
+                  style.styleSheet.cssText = css;
+                } else {
+                  style.appendChild(document.createTextNode(css));
+                }
+                head.appendChild(style);
+            } catch(e) {
+                passed = false;
+            }
+
+            results.addItem({
+                key: 'other.counters',
+                passed: passed
+            })
         },
 
         /* focus events */
@@ -1448,6 +1555,41 @@ Test8 = (function () {
             results.addItem({
                 key: 'canvas.context',
                 passed: !!(canvas.getContext && typeof CanvasRenderingContext2D != 'undefined' && canvas.getContext('2d') instanceof CanvasRenderingContext2D)
+            });
+        },
+
+        /* svg smil */
+
+        function(results) {
+            var svgs = ["SVGAnimateColorElement", "SVGAnimateElement", "SVGAnimateMotionElement", "SVGAnimateTransformElement"],
+                passed = true;
+
+            svgs.forEach(function(s) {
+                if (window.s == "undefined") passed = false;
+            })
+
+
+            results.addItem({
+                key: 'canvas.smil',
+                passed: passed
+            });
+        },
+
+        /* svg filters */
+
+        function(results) {
+            results.addItem({
+                key: 'canvas.filter',
+                passed: typeof window.SVGFilterElement != 'undefined'
+            });
+        },
+
+        /* svg fragment */
+
+        function(results) {
+            results.addItem({
+                key: 'canvas.fragment',
+                passed: typeof window.SVGViewSpec && typeof window.SVGViewElement != 'undefined'
             });
         },
 
