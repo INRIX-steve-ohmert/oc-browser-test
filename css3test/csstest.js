@@ -76,7 +76,7 @@ var Test = function (tests, spec, title) {
 
 	// Perform tests
 	for(var id in Test.groups) {
-		this.group(id, Test.groups[id]);
+		this.group(id, Test.groups[id], spec);
 	}
 
 	// Add overall spec score to BrowserScope
@@ -115,10 +115,11 @@ var Test = function (tests, spec, title) {
 }
 
 Test.prototype = {
-	group: function(what, testCallback) {
+	group: function(what, testCallback, specId) {
 		var thisSection, theseTests = this.tests[what];
 
 		for(var feature in theseTests) {
+			console.log(`${specId}.${feature}`);
 			if(feature === 'properties') {
 				continue;
 			}
@@ -171,6 +172,7 @@ Test.prototype = {
 				});
 			}
 
+			console.log(passed);
 			this.score.update({passed: passed, total: tests.length });
 
 			dt.className = passclass({ passed: passed, total: tests.length });
@@ -319,7 +321,6 @@ onload = function() {
 	var specs = [];
 
 	for(var spec in Specs) {
-		console.log(spec);
 		specs.push(spec);
 	}
 
