@@ -1520,6 +1520,13 @@ var tests = [
 									},
 								]
 					},
+				]
+	},
+	{
+		id:			'css',
+		name: 		'CSS',
+		colunm: 	'left',
+		items: 	[
 					{
 						id: 	'css-display',
 						name:	 "CSS Display",
@@ -1528,14 +1535,1602 @@ var tests = [
 									{
 										id: 		'display',
 										name:		'Display Properties',
-										value: 400,
+										required: 	true,
+										value: 5,
 										urls: 		[
-														['w3c', 'https://www.w3.org/TR/DOM-Level-3-Events/#event-type-focusin']
+														['w3c', 'https://www.w3.org/TR/css-display-3/']
+													]
+
+									},
+									{
+										id: 		'position',
+										name:		'Position',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['w3c', 'https://www.w3.org/TR/css-position-3/']
+													]
+
+									},
+									{
+										id: 		'min-width',
+										name:		'Min Width',
+										required: 	true,
+										value: 3,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-width']
+													]
+
+									},
+									{
+										id: 		'min-height',
+										name:		'Min Height',
+										required: 	true,
+										value: 3,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-height']
+													]
+
+									},
+									{
+										id: 		'max-width',
+										name:		'Max Width',
+										required: 	true,
+										value: 3,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport/max-width']
+													]
+
+									},
+									{
+										id: 		'max-height',
+										name:		'Max Height',
+										required: 	true,
+										value: 3,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/max-height']
 													]
 
 									}
-							   	]
-					}
-				]
+								]
+					},
+					{
+						id: 	'css3-background',
+						name:	 "CSS Background and Borders",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'background-repeat',
+										name:		'Background Repeat',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat']
+													]
+
+									},
+									{
+										id: 		'background-attachment',
+										name:		'Background Attachment',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment']
+													]
+
+									},
+									{
+										id: 		'background-position',
+										name:		'Background Position',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position']
+													]
+
+									},
+									{
+										id: 		'background-clip',
+										name:		'Background Clip',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip']
+													]
+
+									},
+									{
+										id: 		'background-origin',
+										name:		'Background Origin',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin']
+													]
+
+									},
+									{
+										id: 		'background-size',
+										name:		'Background Size',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-size']
+													]
+
+									},
+									{
+										id: 		'background',
+										name:		'Background',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background']
+													]
+
+									},
+									{
+										id: 		'border-radius',
+										name:		'Border Radius',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius']
+													]
+
+									},
+									{
+										id: 		'border-image-source',
+										name:		'Border Image Source',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['w3c', 'https://www.w3.org/TR/css-display-3/']
+													]
+
+									},
+									{
+										id: 		'border-image-slice',
+										name:		'Border Image Slice',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source']
+													]
+
+									},
+									{
+										id: 		'border-image-width',
+										name:		'Border Image Width',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-width']
+													]
+
+									},
+									{
+										id: 		'border-image-outset',
+										name:		'Border Image Outset',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset']
+													]
+
+									},
+									{
+										id: 		'border-image-repeat',
+										name:		'Border Image Repeat',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat']
+													]
+
+									},
+									{
+										id: 		'border-image',
+										name:		'Border Image',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/search?q=border-image']
+													]
+
+									},
+									{
+										id: 		'box-shadow',
+										name:		'Box Shadow',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow']
+													]
+
+									},
+									{
+										id: 		'outline',
+										name:		'Outline',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/outline']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css-backgrounds-4',
+						name:	 "Background and Borders Level 4",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'background-position-x',
+										name:		'Background Position X',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x']
+													]
+
+									},
+									{
+										id: 		'background-position-y',
+										name:		'Background Position Y',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y']
+													]
+
+									}
+								]
+					},
+					{
+						id: 	'css3-images',
+						name:	 "Images",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'linear-gradient',
+										name:		'Linear Gradient',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient']
+													]
+
+									},
+									{
+										id: 		'radial-gradient',
+										name:		'Radial Gradient',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient']
+													]
+
+									},
+									{
+										id: 		'repeating-linear-gradient',
+										name:		'Repeating Linear Gradient',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient']
+													]
+
+									},
+									{
+										id: 		'repeating-radial-gradient',
+										name:		'Repeating Radial Gradient',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient']
+													]
+
+									},
+									{
+										id: 		'object-fit',
+										name:		'Object Fit',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit']
+													]
+
+									},
+									{
+										id: 		'object-position',
+										name:		'Object Position',
+										required: 	true,
+										value: 5,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-position']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-selectors',
+						name:	 "Selectors",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'::before',
+										name:		'::before',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::before']
+													]
+
+									},
+									{
+										id: 		'::after',
+										name:		'::after',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::after']
+													]
+
+									},
+									{
+										id: 		'::first-letter',
+										name:		'::first-letter',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter']
+													]
+
+									},
+									{
+										id: 		'::first-line',
+										name:		'::first-line',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line']
+													]
+
+									},
+									{
+										id: 		'Namespaces',
+										name:		'Namespaces',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Namespaces']
+													]
+
+									},
+									{
+										id: 		':target',
+										name:		':target',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:target']
+													]
+
+									},
+									{
+										id: 		':enabled',
+										name:		':enabled',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled']
+													]
+
+									},
+									{
+										id: 		':disabled',
+										name:		':disabled',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled']
+													]
+
+									},
+									{
+										id: 		':checked',
+										name:		':checked',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:checked']
+													]
+
+									},
+									{
+										id: 		':indeterminate',
+										name:		':indeterminate',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate']
+													]
+
+									},
+									{
+										id: 		':root',
+										name:		':root',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:root']
+													]
+
+									},
+									{
+										id: 		':nth-child',
+										name:		':nth-child',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child']
+													]
+
+									},
+									{
+										id: 		':nth-last-child',
+										name:		':nth-last-child',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child']
+													]
+
+									},
+									{
+										id: 		':nth-of-type',
+										name:		':nth-of-type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type']
+													]
+
+									},
+									{
+										id: 		':nth-last-of-type',
+										name:		':nth-last-of-type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-of-type']
+													]
+
+									},
+									{
+										id: 		':last-child',
+										name:		':last-child',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child']
+													]
+
+									},
+									{
+										id: 		':only-child',
+										name:		':only-child',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child']
+													]
+
+									},
+									{
+										id: 		':first-of-type',
+										name:		':first-of-type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type']
+													]
+
+									},
+									{
+										id: 		':last-of-type',
+										name:		':last-of-type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type']
+													]
+
+									},
+									{
+										id: 		':only-of-type',
+										name:		':only-of-type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type']
+													]
+
+									},
+									{
+										id: 		':empty',
+										name:		':empty',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:empty']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-ui',
+						name:	 "User Interface",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'box-sizing',
+										name:		'Box Sizing',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing']
+													]
+
+									},
+									{
+										id: 		'text-overflow',
+										name:		'Text Overflow',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow']
+													]
+
+									},
+									{
+										id: 		':indeterminate',
+										name:		':indeterminate',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate']
+													]
+
+									},
+									{
+										id: 		':default',
+										name:		':default',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:default']
+													]
+
+									},
+									{
+										id: 		':valid',
+										name:		':valid',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:valid']
+													]
+
+									},
+									{
+										id: 		':invalid',
+										name:		':invalid',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid']
+													]
+
+									},
+									{
+										id: 		':in-range',
+										name:		':in-range',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range']
+													]
+
+									},
+									{
+										id: 		':out-of-range',
+										name:		':out-of-range',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range']
+													]
+
+									},
+									{
+										id: 		':required',
+										name:		':required',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:required']
+													]
+
+									},
+									{
+										id: 		':optional',
+										name:		':optional',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:optional']
+													]
+
+									},
+									{
+										id: 		':read-only',
+										name:		':read-only',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only']
+													]
+
+									},
+									{
+										id: 		':read-write',
+										name:		':read-write',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:read-write']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-transitions',
+						name:	 "CSS Transitions",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'transition-property',
+										name:		'Property',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property']
+													]
+
+									},
+									{
+										id: 		'transition-duration',
+										name:		'Duration',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration']
+													]
+
+									},
+									{
+										id: 		'transition-timing-function',
+										name:		'Timing Function',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function']
+													]
+
+									},
+									{
+										id: 		'transition-delay',
+										name:		'Delay',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay']
+													]
+
+									},
+									{
+										id: 		'transition',
+										name:		'Transition',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-animations',
+						name:	 "CSS Animations",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'animation-name',
+										name:		'Name',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name']
+													]
+
+									},
+									{
+										id: 		'animation-duration',
+										name:		'Duration',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration']
+													]
+
+									},
+									{
+										id: 		'animation-timing-function',
+										name:		'Timing Function',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function']
+													]
+
+									},
+									{
+										id: 		'animation-iteration-count',
+										name:		'Iteration Count',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count']
+													]
+
+									},
+									{
+										id: 		'animation-direction',
+										name:		'Direction',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction']
+													]
+
+									},
+									{
+										id: 		'animation-play-state',
+										name:		'Play State',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state']
+													]
+
+									},
+									{
+										id: 		'animation-delay',
+										name:		'Delay',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay']
+													]
+
+									},
+									{
+										id: 		'animation-fill-mode',
+										name:		'Fill Mode',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode']
+													]
+
+									},
+									{
+										id: 		'animation',
+										name:		'Play State',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation']
+													]
+
+									},
+									{
+										id: 		'@keyframes',
+										name:		'@keyframes',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-transforms',
+						name:	 "CSS Transforms",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'transform',
+										name:		'Transform',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform']
+													]
+
+									},
+									{
+										id: 		'transform-origin',
+										name:		'Origin',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin']
+													]
+
+									},
+									{
+										id: 		'transform-style',
+										name:		'Style',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style']
+													]
+
+									},
+									{
+										id: 		'perspective',
+										name:		'Perspective',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/perspective']
+													]
+
+									},
+									{
+										id: 		'perspective-origin',
+										name:		'Perspective Origin',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin']
+													]
+
+									},
+									{
+										id: 		'backface-visibility',
+										name:		'Backface Visibility',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css-text-3',
+						name:	 "CSS Text",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'tab-size',
+										name:		'Tab Size',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size']
+													]
+
+									},
+									{
+										id: 		'word-break',
+										name:		'Word Break',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/word-break']
+													]
+
+									},
+									{
+										id: 		'word-wrap',
+										name:		'Word Wrap',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css-text-decor-3',
+						name:	 "CSS Text Decoration",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'text-shadow',
+										name:		'Text Shadow',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow']
+													]
+
+									},
+									{
+										id: 		'letter-spacing',
+										name:		'Letter Spacing',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing']
+													]
+
+									}
+								]
+					},
+					{
+						id: 	'css3-fonts',
+						name:	 "CSS Text Decoration",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'font-kerning',
+										name:		'Font Kerning',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning']
+													]
+
+									},
+									{
+										id: 		'font-feature-settings',
+										name:		'Font Feature Settings',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings']
+													]
+
+									},
+									{
+										id: 		'unicode-range',
+										name:		'Unicode Range',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range']
+													]
+
+									}
+								]
+					},
+					{
+						id: 	'css-color-3',
+						name:	 "CSS Text Decoration",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'rgba',
+										name:		'RGBA',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+									{
+										id: 		'hsl',
+										name:		'HSL',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+									{
+										id: 		'hsla',
+										name:		'HSLA',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+									{
+										id: 		'transparent',
+										name:		'Transparent',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+									{
+										id: 		'currentColor',
+										name:		'Current Color',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+									{
+										id: 		'opacity',
+										name:		'Opacity',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-multicol',
+						name:	 "CSS Multicolumn",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'column-width',
+										name:		'Width',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-width']
+													]
+
+									},
+									{
+										id: 		'column-count',
+										name:		'Count',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-count']
+													]
+
+									},
+									{
+										id: 		'columns',
+										name:		'Columns',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/columns']
+													]
+
+									},
+									{
+										id: 		'column-gap',
+										name:		'Gap',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap']
+													]
+
+									},
+									{
+										id: 		'column-rule-color',
+										name:		'Rule Color',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-color']
+													]
+
+									},
+									{
+										id: 		'column-rule-style',
+										name:		'Rule Style',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-style']
+													]
+
+									},
+									{
+										id: 		'column-rule-width',
+										name:		'Rule Width',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-width']
+													]
+
+									},
+									{
+										id: 		'column-rule',
+										name:		'Rule',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule']
+													]
+
+									},
+									{
+										id: 		'column-span',
+										name:		'Span',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-span']
+													]
+
+									},
+									{
+										id: 		'column-fill',
+										name:		'Fill',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css3-values',
+						name:	 "CSS Values",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'rem',
+										name:		'rem',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/Learn/CSS/Styling_text/Fundamentals']
+													]
+
+									},
+									{
+										id: 		'attr()',
+										name:		'attr()',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/attr']
+													]
+
+									},
+									{
+										id: 		'calc()',
+										name:		'calc()',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/calc']
+													]
+
+									},
+									{
+										id: 		'counter-reset',
+										name:		'Counter Reset',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset']
+													]
+
+									}
+								]
+					},
+					{
+						id: 	'css3-flexbox',
+						name:	 "CSS Flexbox",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'align-content',
+										name:		'Align Content',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-content']
+													]
+
+									},
+									{
+										id: 		'align-items',
+										name:		'Align Items',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-items']
+													]
+
+									},
+									{
+										id: 		'align-self',
+										name:		'Align Self',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-self']
+													]
+
+									},
+									{
+										id: 		'display',
+										name:		'Diaplay',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/Learn/CSS/CSS_layout/Flexbox']
+													]
+
+									},
+									{
+										id: 		'flex',
+										name:		'Flex',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex']
+													]
+
+									},
+									{
+										id: 		'flex-basis',
+										name:		'Flex Basis',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis']
+													]
+
+									},
+									{
+										id: 		'flex-direction',
+										name:		'Flex Direction',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction']
+													]
+
+									},
+									{
+										id: 		'flex-flow',
+										name:		'Flex Flow',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow']
+													]
+
+									},
+									{
+										id: 		'flex-grow',
+										name:		'Flex Grow',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow']
+													]
+
+									},
+									{
+										id: 		'flex-shrink',
+										name:		'Flex Shrink',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink']
+													]
+
+									},
+									{
+										id: 		'flex-wrap',
+										name:		'Flex Wrap',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap']
+													]
+
+									},
+									{
+										id: 		'justify-content',
+										name:		'Justify Content',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content']
+													]
+
+									},
+									{
+										id: 		'min-height',
+										name:		'min-height',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-height']
+													]
+
+									},
+									{
+										id: 		'min-width',
+										name:		'min-width',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-width']
+													]
+
+									},
+									{
+										id: 		'order',
+										name:		'Order',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/order']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css-masking',
+						name:	 "CSS Masking",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'clip-path',
+										name:		'clip-path',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
+													]
+
+									},
+									{
+										id: 		'clip-rule',
+										name:		'clip-rule',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
+													]
+
+									},
+									{
+										id: 		'mask-image',
+										name:		'Mask Image',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image']
+													]
+
+									},
+									{
+										id: 		'mask-mode',
+										name:		'Mask Mode',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode']
+													]
+
+									},
+									{
+										id: 		'mask-repeat',
+										name:		'Mask Repeat',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
+													]
+
+									},
+									{
+										id: 		'mask-position',
+										name:		'Mask Position',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position']
+													]
+
+									},
+									{
+										id: 		'mask-clip',
+										name:		'Mask Clip',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-clip']
+													]
+
+									},
+									{
+										id: 		'mask-origin',
+										name:		'Mask Origin',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin']
+													]
+
+									},
+									{
+										id: 		'mask-size',
+										name:		'Mask Size',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-size']
+													]
+
+									},
+									{
+										id: 		'mask-composite',
+										name:		'Mask Composite',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite']
+													]
+
+									},
+									{
+										id: 		'mask',
+										name:		'Mask',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-border-source',
+										name:		'Mask Border Source',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-border-slice',
+										name:		'Mask Border Slice',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-border-width',
+										name:		'Mask Border Width',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-border-outset',
+										name:		'Mask Outset',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-border-repeat',
+										name:		'Mask Repeat',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
+													]
+
+									},
+									{
+										id: 		'mask-border',
+										name:		'Mask Border',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+													]
+
+									},
+									{
+										id: 		'mask-type',
+										name:		'Mask Type',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-type']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'pointerevents',
+						name:	 "Pointer Events",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'touch-action',
+										name:		'Touch Action',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action']
+													]
+
+									},
+								]
+					},
+					{
+						id: 	'css-will-change',
+						name:	 "Will Change",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'will-change',
+										name:		'Will Change',
+										required: 	true,
+										value: 1,
+										urls: 		[
+														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/will-change']
+													]
+
+									},
+								]
+					},
+
+			]
 	}
 ]

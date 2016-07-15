@@ -2644,8 +2644,7 @@ Test8 = (function () {
             var key, passed = true;
 
     		for(var feature in theseTests) {
-                key = `${specId}.${feature}`
-    			// console.log(`${specId}.${feature}`);
+                key = specId + '.' + feature;
     			if(feature === 'properties') {
     				continue;
     			}
@@ -2668,10 +2667,12 @@ Test8 = (function () {
     				passed += +success;
     			}
 
-                console.log(`key: ${key} passed: ${true}`)
+                passed = ((tests.length % passed) != 0) ? false : true;
+
+                console.log(key)
     			testList.addItem({
                     key: key,
-                    passed: true
+                    passed: passed
                 });
     		}
     	}
@@ -3016,7 +3017,7 @@ Test8 = (function () {
 
             window.setTimeout(function () {
                 that.checkForBackground.call(that);
-            }, 300);
+            }, 1500);
         },
 
         checkForBackground: function () {

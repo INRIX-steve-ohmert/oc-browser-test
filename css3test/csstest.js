@@ -38,41 +38,41 @@ var Test = function (tests, spec, title) {
 
 	this.score = new Score(mainScore);
 
-	// var
-	// h1 = $u.element.create({
-	// 	tag: 'h1',
-	// 	contents: [
-	// 		this.title,
-	// 		$u.element.create({
-	// 			tag: 'a',
-	// 			properties: {
-	// 				href: 'http://w3.org/TR/' + this.id,
-	// 				target: '_blank',
-	// 				textContent: 'TR',
-	// 				className: 'spec-link'
-	// 			}
-	// 		}),
-	// 		$u.element.create({
-	// 			tag: 'a',
-	// 			properties: {
-	// 				href: 'http://dev.w3.org/csswg/' + this.id,
-	// 				target: '_blank',
-	// 				textContent: 'DEV',
-	// 				className: 'spec-link'
-	// 			}
-	// 		})
-	// 	]
-	// }), valuesSection;
-	//
-	// // Wrapper section
-	// this.section = $u.element.create({
-	// 	tag: 'section',
-	// 	properties: {
-	// 		id: this.id,
-	// 		className: 'tests'
-	// 	},
-	// 	contents: [h1]
-	// });
+	var
+	h1 = $u.element.create({
+		tag: 'h1',
+		contents: [
+			this.title,
+			$u.element.create({
+				tag: 'a',
+				properties: {
+					href: 'http://w3.org/TR/' + this.id,
+					target: '_blank',
+					textContent: 'TR',
+					className: 'spec-link'
+				}
+			}),
+			$u.element.create({
+				tag: 'a',
+				properties: {
+					href: 'http://dev.w3.org/csswg/' + this.id,
+					target: '_blank',
+					textContent: 'DEV',
+					className: 'spec-link'
+				}
+			})
+		]
+	}), valuesSection;
+
+	// Wrapper section
+	this.section = $u.element.create({
+		tag: 'section',
+		properties: {
+			id: this.id,
+			className: 'tests'
+		},
+		contents: [h1]
+	});
 
 	// Perform tests
 	for(var id in Test.groups) {
@@ -83,35 +83,35 @@ var Test = function (tests, spec, title) {
 	_bTestResults[this.id] = mainScore.percent();
 
 	// Display score for this spec
-	// $u.element.create({
-	// 	tag: 'span',
-	// 	contents: this.score + '',
-	// 	properties: {
-	// 		className: 'score'
-	// 	},
-	// 	inside: h1
-	// });
+	$u.element.create({
+		tag: 'span',
+		contents: this.score + '',
+		properties: {
+			className: 'score'
+		},
+		inside: h1
+	});
 
-	// all.appendChild(this.section);
+	all.appendChild(this.section);
 
 	// Add to list of tested specs
-	// $u.element.create({
-	// 	tag: 'li',
-	// 	properties: {
-	// 		className: passclass({ passed: this.score.passed, total: this.score.total }),
-	// 		title: this.score + ' passed'
-	// 	},
-	// 	contents: [
-	// 		$u.element.create({
-	// 			tag: 'a',
-	// 			prop: {
-	// 				href: '#' + spec
-	// 			},
-	// 			contents: title
-	// 		})
-	// 	],
-	// 	inside: specsTested
-	// });
+	$u.element.create({
+		tag: 'li',
+		properties: {
+			className: passclass({ passed: this.score.passed, total: this.score.total }),
+			title: this.score + ' passed'
+		},
+		contents: [
+			$u.element.create({
+				tag: 'a',
+				prop: {
+					href: '#' + spec
+				},
+				contents: title
+			})
+		],
+		inside: specsTested
+	});
 }
 
 Test.prototype = {
@@ -124,27 +124,27 @@ Test.prototype = {
 				continue;
 			}
 
-			// thisSection = thisSection || $u.element.create({
-			// 	tag: 'section',
-			// 	properties: {
-			// 		className: 'tests ' + what
-			// 	},
-			// 	contents: $u.element.create({
-			// 			tag: 'h1',
-			// 			contents: what
-			// 		}),
-			// 	inside: this.section
-			// });
+			thisSection = thisSection || $u.element.create({
+				tag: 'section',
+				properties: {
+					className: 'tests ' + what
+				},
+				contents: $u.element.create({
+						tag: 'h1',
+						contents: what
+					}),
+				inside: this.section
+			});
 
-			// var dl = document.createElement('dl'),
-			//     dt = $u.element.create({
-			// 	tag: 'dt',
-			// 	prop: {
-			// 		textContent: feature,
-			// 		tabIndex: '0'
-			// 	},
-			// 	inside: dl
-			// });
+			var dl = document.createElement('dl'),
+			    dt = $u.element.create({
+				tag: 'dt',
+				prop: {
+					textContent: feature,
+					tabIndex: '0'
+				},
+				inside: dl
+			});
 
 			var passed = 0, tests = theseTests[feature];
 
@@ -162,22 +162,22 @@ Test.prototype = {
 
 				passed += +success;
 
-				// $u.element.create({
-				// 	tag: 'dd',
-				// 	prop: {
-				// 		innerHTML: test + (note? '<small>' + note + '</small>' : ''),
-				// 		className: passclass({passed: Math.round(success * 10000), total: 10000 })
-				// 	},
-				// 	inside: dl
-				// });
+				$u.element.create({
+					tag: 'dd',
+					prop: {
+						innerHTML: test + (note? '<small>' + note + '</small>' : ''),
+						className: passclass({passed: Math.round(success * 10000), total: 10000 })
+					},
+					inside: dl
+				});
 			}
 
 			console.log(passed);
 			this.score.update({passed: passed, total: tests.length });
 
-			// dt.className = passclass({ passed: passed, total: tests.length });
+			dt.className = passclass({ passed: passed, total: tests.length });
 
-			// thisSection.appendChild(dl);
+			thisSection.appendChild(dl);
 
 			// Add to browserscope
 			_bTestResults[this.id + ' / ' + feature.replace(/[,=]/g, '')] = Math.round(100 * passed / tests.length);
@@ -257,17 +257,17 @@ function passclass(info) {
 	return classes[index];
 }
 
-// document.onclick = function(evt) {
-// 	var target = evt.target;
-//
-// 	if(/^dt$/i.test(target.nodeName)) {
-// 		evt.stopPropagation();
-//
-// 		var dl = target.parentNode;
-//
-// 		dl.className = dl.className === 'open'? '' : 'open';
-// 	}
-// }
+document.onclick = function(evt) {
+	var target = evt.target;
+
+	if(/^dt$/i.test(target.nodeName)) {
+		evt.stopPropagation();
+
+		var dl = target.parentNode;
+
+		dl.className = dl.className === 'open'? '' : 'open';
+	}
+}
 
 Array.prototype.and = function(arr2, separator) {
 	separator = separator || ' ';

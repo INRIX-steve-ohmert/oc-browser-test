@@ -5,10 +5,10 @@ window.Specs = {
 			"display": ["table", "inline-table", "table-cell", "table-column", "table-column-group", "table-footer-group", "table-header-group",
 						"table-row", "table-row-group", "table-caption"],
 			"position": ["static", "relative", "absolute", "fixed"],
-			"min-width": ["3.5em", "10%", "max-content", "min-content", "fit-content", "fill-available", "inherit", "initial", "unset"],
+			"min-width": ["3.5em", "10%", "max-content", "min-content", "fit-content", "inherit", "initial"],
 			"min-height": ["120px", "20em", "25%"],
 			"max-width": ["600px", "80em", "75%"],
-			"max-height": ["3.5em", "10%", "max-content", "min-content", "fit-content", "fill-available", "inherit", "initial", "unset"],
+			"max-height": ["3.5em", "10%", "max-content", "min-content", "fit-content", "inherit", "initial"],
 		}
 	},
 
@@ -44,7 +44,7 @@ window.Specs = {
 				"1px 1px", "0 0 black", "1px 2px 3px black", "1px 2px 3px 4px black",
 				"inset 1px 1px", "1px 2px 3px 4px black inset"
 			],
-			"outline": ["1px solid white", "inherit", "initial", "unset"]
+			"outline": ["1px solid white", "inherit", "initial"]
 		}
 	},
 
@@ -101,14 +101,10 @@ window.Specs = {
 	"css3-selectors": {
 		"title": "Selectors Level 3",
 		"selectors": {
-			"Sibling combinator": "foo ~ bar",
 			"::before": "::before",
 			"::after": "::after",
 			"::first-letter": "::first-letter",
 			"::first-line": "::first-line",
-			"[att^=val]": ["[att^=val]", "[att^=\"val\"]"],
-			"[att*=val]": ["[att*=val]", "[att*=\"val\"]"],
-			"[att$=val]": ["[att$=val]", "[att$=\"val\"]"],
 			"Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"],
 			":target": ":target",
 			":enabled": ":enabled",
@@ -150,7 +146,6 @@ window.Specs = {
 			":last-of-type": ":last-of-type",
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
-			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
 		}
 	},
 
@@ -337,18 +332,6 @@ window.Specs = {
 			"min-height": ["auto"],
 			"min-width": ["auto"],
 			"order": ["0", "1"]
-		}
-	},
-
-	"css3-align": {
-		"title": "Box Alignment",
-		"properties": {
-			"align-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right"],
-			"align-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right"],
-			"align-content": ["baseline", "center", "start", "end", "left", "right"],
-			"justify-self": ["auto", "stretch", "baseline", "center", "start", "end", "left", "right"],
-			"justify-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right"],
-			"justify-content": ["baseline", "center", "start", "end", "left", "right"]
 		}
 	},
 
