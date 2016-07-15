@@ -160,9 +160,6 @@ Array.prototype.times = function(min, max, separator) {
 };
 
 onload = function() {
-	var timeBefore = +new Date,
-		duration = 0;
-
 	var specs = [];
 
 	for(var spec in Specs) {

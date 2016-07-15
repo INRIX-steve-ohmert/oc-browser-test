@@ -1519,6 +1519,22 @@ var tests = [
 													]
 									},
 								]
+					},
+					{
+						id: 	'css-display',
+						name:	 "CSS Display",
+						status: 'stable',
+						items: 	[
+									{
+										id: 		'display',
+										name:		'Display Properties',
+										value: 400,
+										urls: 		[
+														['w3c', 'https://www.w3.org/TR/DOM-Level-3-Events/#event-type-focusin']
+													]
+
+									}
+							   	]
 					}
 				]
 	}
