@@ -2634,7 +2634,7 @@ Test8 = (function () {
         },
 
         addItem: function (data) {
-            var i = new Item(this, data);
+            var i = new Item(this, data)
             this.items.push(i);
             return i;
         },
@@ -2813,6 +2813,13 @@ Test8 = (function () {
                     testsuite[s](this.list);
                 }
 
+                //Wait, one more!
+
+                this.list.addItem({
+                    key: 'not.a.test',
+                    passed: true
+                });
+
                 this.waitForBackground();
             }
             catch (e) {
@@ -2831,7 +2838,6 @@ Test8 = (function () {
         checkForBackground: function () {
             var running = 0;
             for (var task = 0; task < this.backgroundTasks.length; task++) { running += this.backgroundTasks[task] }
-
             if (running) {
                 this.waitForBackground();
             } else {
