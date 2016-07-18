@@ -2669,7 +2669,6 @@ Test8 = (function () {
 
                 passed = ((tests.length % passed) != 0) ? false : true;
 
-                console.log(key)
     			testList.addItem({
                     key: key,
                     passed: passed

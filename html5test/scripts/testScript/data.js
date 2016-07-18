@@ -5,7 +5,6 @@ var tests = [
 	{
 		id:		'semantics',
 		name:	'Semantics',
-		column:	'left',
 		items:	[
 					{
 						id:		'parsing',
@@ -570,7 +569,6 @@ var tests = [
 	{
 		id:		'deviceaccess',
 		name:	'Device Access',
-		column:	'left',
 		items:	[
 					{
 						id:		'input',
@@ -664,7 +662,6 @@ var tests = [
 	{
 		id:		'multimedia',
 		name:	'Multimedia',
-		column:	'right',
 		items:	[
 					{
 						id:		'audio',
@@ -685,7 +682,6 @@ var tests = [
 	{
 		id:		'graphicseffects',
 		name:	'3D, Graphics & Effects',
-		column:	'right',
 		items:	[
 					{
 						id:		'responsive',
@@ -816,7 +812,6 @@ var tests = [
 	{
 		id:		'connectivity',
 		name:	'Connectivity',
-		column:	'left',
 		items:	[
 					{
 						id:		'communication',
@@ -920,7 +915,6 @@ var tests = [
 	{
 		id:		'performanceintegration',
 		name:	'Performance & Integration',
-		column:	'left',
 		items:	[
 					{
 						id:		'interaction',
@@ -1100,7 +1094,6 @@ var tests = [
 	{
 		id:		'offlinestorage',
 		name:	'Offline & Storage',
-		column:	'right',
 		items:	[
 					{
 						id:		'offline',
@@ -1227,7 +1220,6 @@ var tests = [
 	{
 		id:		'other',
 		name:	'Other',
-		column:	'right',
 		items:	[
 					{
 						id:		'scripting',
@@ -1836,7 +1828,6 @@ var tests = [
 									{
 										id: 		'object-fit',
 										name:		'Object Fit',
-										required: 	true,
 										value: 5,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit']
@@ -1846,7 +1837,6 @@ var tests = [
 									{
 										id: 		'object-position',
 										name:		'Object Position',
-										required: 	true,
 										value: 5,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-position']
@@ -2438,7 +2428,6 @@ var tests = [
 									{
 										id: 		'tab-size',
 										name:		'Tab Size',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size']
@@ -2448,7 +2437,6 @@ var tests = [
 									{
 										id: 		'word-break',
 										name:		'Word Break',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/word-break']
@@ -2512,20 +2500,9 @@ var tests = [
 									{
 										id: 		'font-feature-settings',
 										name:		'Font Feature Settings',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings']
-													]
-
-									},
-									{
-										id: 		'unicode-range',
-										name:		'Unicode Range',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range']
 													]
 
 									}
@@ -2723,7 +2700,6 @@ var tests = [
 									{
 										id: 		'attr()',
 										name:		'attr()',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/attr']
@@ -2733,7 +2709,6 @@ var tests = [
 									{
 										id: 		'calc()',
 										name:		'calc()',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/calc']
@@ -2917,7 +2892,6 @@ var tests = [
 									{
 										id: 		'clip-path',
 										name:		'clip-path',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
@@ -2927,7 +2901,6 @@ var tests = [
 									{
 										id: 		'clip-rule',
 										name:		'clip-rule',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
@@ -2937,7 +2910,6 @@ var tests = [
 									{
 										id: 		'mask-image',
 										name:		'Mask Image',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image']
@@ -2947,7 +2919,6 @@ var tests = [
 									{
 										id: 		'mask-mode',
 										name:		'Mask Mode',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode']
@@ -2957,7 +2928,6 @@ var tests = [
 									{
 										id: 		'mask-repeat',
 										name:		'Mask Repeat',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
@@ -2967,7 +2937,6 @@ var tests = [
 									{
 										id: 		'mask-position',
 										name:		'Mask Position',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position']
@@ -2977,7 +2946,6 @@ var tests = [
 									{
 										id: 		'mask-clip',
 										name:		'Mask Clip',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-clip']
@@ -2987,7 +2955,6 @@ var tests = [
 									{
 										id: 		'mask-origin',
 										name:		'Mask Origin',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin']
@@ -2997,7 +2964,6 @@ var tests = [
 									{
 										id: 		'mask-size',
 										name:		'Mask Size',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-size']
@@ -3007,7 +2973,6 @@ var tests = [
 									{
 										id: 		'mask-composite',
 										name:		'Mask Composite',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite']
@@ -3017,7 +2982,6 @@ var tests = [
 									{
 										id: 		'mask',
 										name:		'Mask',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3027,7 +2991,6 @@ var tests = [
 									{
 										id: 		'mask-border-source',
 										name:		'Mask Border Source',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3037,7 +3000,6 @@ var tests = [
 									{
 										id: 		'mask-border-slice',
 										name:		'Mask Border Slice',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3047,7 +3009,6 @@ var tests = [
 									{
 										id: 		'mask-border-width',
 										name:		'Mask Border Width',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3057,7 +3018,6 @@ var tests = [
 									{
 										id: 		'mask-border-outset',
 										name:		'Mask Outset',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3067,7 +3027,6 @@ var tests = [
 									{
 										id: 		'mask-border-repeat',
 										name:		'Mask Repeat',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
@@ -3077,7 +3036,6 @@ var tests = [
 									{
 										id: 		'mask-border',
 										name:		'Mask Border',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3087,7 +3045,6 @@ var tests = [
 									{
 										id: 		'mask-type',
 										name:		'Mask Type',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-type']
@@ -3121,7 +3078,6 @@ var tests = [
 									{
 										id: 		'will-change',
 										name:		'Will Change',
-										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/will-change']

@@ -257,9 +257,6 @@ window.Specs = {
 			"font-kerning": ["auto", "normal", "none"],
 			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
 		},
-		"descriptors": {
-			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
-		},
 	},
 
 	"css-color-3": {
