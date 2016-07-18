@@ -15,6 +15,7 @@ var tests = [
 									{
 										id:		'doctype',
 										name: 	'<code>&lt;!DOCTYPE html&gt;</code> triggers standards mode',
+										li: 	3,
 										required: true,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#the-doctype' ],
@@ -23,6 +24,7 @@ var tests = [
 									}, {
 										id:		'tokenizer',
 										name: 	'HTML5 tokenizer',
+										li: 	3,
 										required: true,
 										value:	3,
 										urls:	[
@@ -33,6 +35,7 @@ var tests = [
 									}, {
 										id:		'tree',
 										name: 	'HTML5 tree building',
+										li:		3,
 										required: true,
 										value:	2,
 										urls:	[
@@ -44,6 +47,7 @@ var tests = [
 									{
 										id:		'svg',
 										name: 	'Parsing inline SVG',
+										li: 	48,
 										required: true,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/embedded-content-0.html#svg' ],
@@ -61,6 +65,7 @@ var tests = [
 									{
 										id:		'dataset',
 										name: 	'Embedding custom non-visible data',
+										li: 	41,
 										required: true,
 										value:	2,
 										urls:	[
@@ -82,6 +87,7 @@ var tests = [
 													{
 														id:		'section',
 														name: 	'<code>section</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-section-element' ],
@@ -90,6 +96,7 @@ var tests = [
 													}, {
 														id:		'nav',
 														name: 	'<code>nav</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-nav-element' ],
@@ -98,6 +105,7 @@ var tests = [
 													}, {
 														id:		'article',
 														name: 	'<code>article</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-article-element' ],
@@ -106,6 +114,7 @@ var tests = [
 													}, {
 														id:		'aside',
 														name: 	'<code>aside</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-aside-element' ],
@@ -114,6 +123,7 @@ var tests = [
 													}, {
 														id:		'header',
 														name: 	'<code>header</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-header-element' ],
@@ -122,6 +132,7 @@ var tests = [
 													}, {
 														id:		'footer',
 														name: 	'<code>footer</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-footer-element' ],
@@ -140,6 +151,7 @@ var tests = [
 													{
 														id:		'main',
 														name: 	'<code>main</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-main-element' ],
@@ -148,6 +160,7 @@ var tests = [
 													}, {
 														id:		'figure',
 														name: 	'<code>figure</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figure-element' ],
@@ -156,6 +169,7 @@ var tests = [
 													}, {
 														id:		'figcaption',
 														name: 	'<code>figcaption</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element' ],
@@ -164,6 +178,7 @@ var tests = [
 													}, {
 														id:		'ol',
 														name: 	'<code>reversed</code> attribute on the <code>ol</code> element',
+														li:		16,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element' ],
@@ -178,6 +193,7 @@ var tests = [
 													{
 														id:		'download',
 														name: 	'<code>download</code> attribute on the <code>a</code> element',
+														li: 	33,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-a-element' ],
@@ -186,6 +202,7 @@ var tests = [
 													}, {
 														id:		'mark',
 														name: 	'<code>mark</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-mark-element' ],
@@ -194,6 +211,7 @@ var tests = [
 													}, {
 														id:		'time',
 														name: 	'<code>time</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element' ],
@@ -202,6 +220,7 @@ var tests = [
 													}, {
 														id:		'data',
 														name: 	'<code>data</code> element',
+														li:		56,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-data-element' ],
@@ -210,6 +229,7 @@ var tests = [
 													}, {
 														id:		'wbr',
 														name: 	'<code>wbr</code> element',
+														li: 	15,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-wbr-element' ],
@@ -224,6 +244,7 @@ var tests = [
 													{
 														id:		'dialog',
 														name: 	'<code>dialog</code> element',
+														li: 	338,
 														status:	'proposal',
 														value:	1,
 														urls:	[
@@ -235,20 +256,10 @@ var tests = [
 									},
 
 									'<strong>Global attributes or methods</strong>',
-
-									{
-										id:		'hidden',
-										name: 	'<code>hidden</code> attribute',
-										required: true,
-										value:	1,
-										urls:	[
-													[ 'w3c', 'http://www.w3.org/TR/html5/editing.html#the-hidden-attribute' ],
-													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute' ]
-												]
-									},
 									{
 										id: 	'customEv',
 										name: 	'Custom Event',
+										li: 289,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -258,6 +269,7 @@ var tests = [
 									{
 										id: 	'text',
 										name: 	'Node.textContent',
+										li: 	290,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -267,6 +279,7 @@ var tests = [
 									{
 										id: 	'eventListener',
 										name: 	'addEventListener method',
+										li: 	294,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -276,6 +289,7 @@ var tests = [
 									{
 										id: 	'matches',
 										name: 	'matches method',
+										li: 	346,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -285,6 +299,7 @@ var tests = [
 									{
 										id: 	'classList',
 										name: 	'classList method',
+										li: 	348,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -294,6 +309,7 @@ var tests = [
 									{
 										id: 	'className',
 										name: 	'getElementsByClassName method',
+										li: 	350,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -303,6 +319,7 @@ var tests = [
 									{
 										id: 	'relList',
 										name: 	'relList method',
+										li: 	339,
 										value: 	1,
 										urls: 	[
 													['whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#dom-a-rellist']
@@ -311,6 +328,7 @@ var tests = [
 									{
 										id: 	'rect',
 										name: 	'getBoundingClientRect method',
+										li: 	224,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -325,6 +343,7 @@ var tests = [
 													{
 														id:		'outerHTML',
 														name: 	'<code>outerHTML</code> property',
+														li: 	324,
 														required: true,
 														value:	1,
 														urls:	[
@@ -333,6 +352,7 @@ var tests = [
 													}, {
 														id:		'insertAdjacentHTML',
 														name: 	'<code>insertAdjacentHTML</code> function',
+														li:		324,
 														required: true,
 														value:	1,
 														urls:	[
@@ -357,10 +377,12 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
+														li:			3,
 														required: true,
 													}, {
 														id:			'selection',
 														name: 		'Selection Direction',
+														li: 		3,
 														required: true,
 														value:		2
 													}
@@ -373,125 +395,64 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
+														li:			34,
 														required: true,
 														value:		1,
 														url:		'http://www.w3.org/TR/html5/forms.html#number-state-(type=number)'
 													}, {
 														id:			'ui',
 														name: 		'Custom user-interface',
+														li:			34,
 														required: true,
 														value:		2
 													}, {
 														id:			'sanitization',
 														name: 		'Value sanitization',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#value-sanitization-algorithm'
 													}, {
 														id:			'validation',
 														name: 		'Field validation',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#the-constraint-validation-api'
 													}, {
 														id:			'min',
 														name: 		'<code>min</code> attribute',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-min'
 													}, {
 														id:			'max',
 														name: 		'<code>max</code> attribute',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-max'
 													}, {
 														id:			'step',
 														name: 		'<code>step</code> attribute',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-step'
 													}, {
 														id:			'stepDown',
 														name: 		'<code>stepDown()</code> method',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepdown'
 													}, {
 														id:			'stepUp',
 														name: 		'<code>stepUp()</code> method',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepup'
 													}, {
 														id:			'valueAsNumber',
 														name: 		'<code>valueAsNumber()</code> method',
+														li:			34,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-valueasnumber'
-													}
-												]
-									}, {
-										id:		'range',
-										name:	'<code>input type=range</code>',
-										required: true,
-										items:	[
-													{
-														id:			'element',
-														name: 		'Minimal element support',
-														required: true,
-														value:		1,
-														url:		'http://www.w3.org/TR/html5/forms.html#range-state-(type=range)'
-													}, {
-														id:			'ui',
-														name: 		'Custom user-interface',
-														required: true,
-														value:		2
-													}, {
-														id:			'sanitization',
-														name: 		'Value sanitization',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#value-sanitization-algorithm'
-													}, {
-														id:			'min',
-														name: 		'<code>min</code> attribute',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-min'
-													}, {
-														id:			'max',
-														name: 		'<code>max</code> attribute',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-max'
-													}, {
-														id:			'step',
-														name: 		'<code>step</code> attribute',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-step'
-													}, {
-														id:			'stepDown',
-														name: 		'<code>stepDown()</code> method',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepdown'
-													}, {
-														id:			'stepUp',
-														name: 		'<code>stepUp()</code> method',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepup'
-													}, {
-														id:			'valueAsNumber',
-														name: 		'<code>valueAsNumber()</code> method',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-valueasnumber'
-													}
-												]
-									}, {
-										id:		'file',
-										name:	'<code>input type=file</code>',
-										required: true,
-										items:	[
-													{
-														id:			'element',
-														name: 		'Minimal element support',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/forms.html#file-upload-state-(type=file)'
-													}, {
-														id:			'files',
-														name: 		'<code>files</code> property',
-														required: true,
-														value:		1,
-														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-files'
 													}
 												]
 									},
@@ -506,26 +467,8 @@ var tests = [
 													{
 														id:			'autofocus',
 														name: 		'<code>autofocus</code> attribute',
+														li:			27,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-fe-autofocus'
-													}
-												]
-									}, {
-										id:		'events',
-										name:	'Events',
-										value:	2,
-										items:	[
-													{
-														id:			'oninput',
-														name: 		'<code>oninput</code> event',
-														url:		'http://www.w3.org/TR/html5/forms.html#event-input-input'
-													}, {
-														id:			'onchange',
-														name: 		'<code>onchange</code> event',
-														url:		'http://www.w3.org/TR/html5/forms.html#event-input-change'
-													}, {
-														id:			'oninvalid',
-														name: 		'<code>oninvalid</code> event',
-														url:		'http://www.w3.org/TR/html5/webappapis.html#events'
 													}
 												]
 									}
@@ -538,6 +481,7 @@ var tests = [
 									{
 										id:			'shadowdom',
 										name: 		'Shadow DOM',
+										li: 		331,
 										status: 	'experimental',
 										value:		{ maximum: 4, award: { OLD: 2 } },
 										urls:		[
@@ -546,6 +490,7 @@ var tests = [
 									}, {
 										id:			'template',
 										name: 		'HTML templates',
+										li:			343,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html-templates/' ],
@@ -555,6 +500,7 @@ var tests = [
 									}, {
 										id:			'imports',
 										name: 		'HTML imports',
+										li:			328,
 										status: 	'rejected',
 										urls:		[
 														[ 'w3c', 'http://w3c.github.io/webcomponents/spec/imports/' ]
@@ -578,6 +524,7 @@ var tests = [
 									{
 										id:			'pointerevents',
 										name: 		'Pointer Events',
+										li:			312,
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/pointerevents/' ],
@@ -587,6 +534,7 @@ var tests = [
 									{
 										id: 		'dispatch',
 										name: 		'DispatchEvent',
+										li:			282,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -596,6 +544,7 @@ var tests = [
 									{
 										id: 		'touch',
 										name: 		'Touch event',
+										li:			314,
 										required: true,
 										value: 		1,
 										urls: 		[
@@ -607,6 +556,7 @@ var tests = [
 									{
 										id: 		'which',
 										name: 		'KeyboardEvent which',
+										li:			276,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -616,6 +566,7 @@ var tests = [
 									{
 										id: 		'charCode',
 										name: 		'KeyboardEvent charCode',
+										li:			277,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -625,6 +576,7 @@ var tests = [
 									{
 										id: 		'code',
 										name: 		'KeyboardEvent code',
+										li:			278,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-code']
@@ -633,6 +585,7 @@ var tests = [
 									{
 										id: 		'location',
 										name: 		'KeyboardEvent location',
+										li:			279,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-location']
@@ -641,6 +594,7 @@ var tests = [
 									{
 										id: 		'modifier',
 										name: 		'KeyboardEvent getModifierState',
+										li:			280,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-getModifierState']
@@ -649,6 +603,7 @@ var tests = [
 									{
 										id: 		'key',
 										name: 		'KeyboardEvent key',
+										li:			281,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-key']
@@ -665,12 +620,13 @@ var tests = [
 		items:	[
 					{
 						id:		'audio',
-						name:	'Audio',
+						name:	'Resource Hints',
 						status:	'stable',
 						items:	[
 									{
 										id:		'preload',
 										name: 	'Preload in the background',
+										li:		268,
 										value:	1,
 										url:	'http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload'
 									}
@@ -691,6 +647,7 @@ var tests = [
 									{
 										id:			'srcset',
 										name: 		'<code>srcset</code> attribute',
+										li:			32,
 										value:		5,
 										urls:		[
 														[ 'ricg', 'http://responsiveimages.org/' ],
@@ -707,6 +664,7 @@ var tests = [
 									{
 										id:		'context',
 										name: 	'Canvas 2D graphics',
+										li:		57,
 										required: true,
 										value:	10,
 										urls:   [
@@ -718,6 +676,7 @@ var tests = [
 									{
 										id:		'smil',
 										name: 	'SVG Animation Support',
+										li:		300,
 										required: true,
 										value:	3,
 										urls:   [
@@ -727,6 +686,7 @@ var tests = [
 									{
 										id:		'filter',
 										name: 	'SVG Filter Support',
+										li:		301,
 										required: true,
 										value:	3,
 										urls:   [
@@ -736,6 +696,7 @@ var tests = [
 									{
 										id:		'fragment',
 										name: 	'SVG Fragment Identifier Support',
+										li:		301,
 										value:	3,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/SVG/linking.html#SVGFragmentIdentifiers' ],
@@ -746,6 +707,7 @@ var tests = [
 									{
 										id:		'text',
 										name: 	'Text support',
+										li:		58,
 										value:	2,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/2dcontext/#drawing-text-to-the-canvas' ],
@@ -754,6 +716,7 @@ var tests = [
 									}, {
 										id:		'blending',
 										name: 	'Blending modes',
+										li:	 	10,
 										status:	'proposal',
 										value:	5,
 										urls:	[
@@ -771,6 +734,7 @@ var tests = [
 									{
 										id:			'webgl',
 										name: 		'WebGL',
+										li:			61,
 										required: true,
 										value:		{ maximum: 15, award: { PREFIX: 10 } },
 										urls:		[
@@ -789,6 +753,7 @@ var tests = [
 									{
 										id:			'webanimation',
 										name: 		'Web Animations API',
+										li:			329,
 										status:		'experimental',
 										value:		3,
 										urls:		[
@@ -797,6 +762,7 @@ var tests = [
 									}, {
 										id:			'requestAnimationFrame',
 										name: 		'<code>window.requestAnimationFrame</code>',
+										li:			237,
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/animation-timing/#requestAnimationFrame' ],
@@ -821,6 +787,7 @@ var tests = [
 									{
 										id:			'fetch',
 										name: 		'Fetch',
+										li:			232,
 										status:		'proposal',
 										value:		6,
 										urls:		[
@@ -835,6 +802,7 @@ var tests = [
 									{
 										id:			'xmlhttprequest2.upload',
 										name: 		'Upload files',
+										li:			347,
 										value:		5,
 										url:    	'http://www.w3.org/TR/XMLHttpRequest2/#the-upload-attribute'
 									}, {
@@ -847,21 +815,25 @@ var tests = [
 														{
 															id:			'text',
 															name: 		'Text response type',
+															li:			347,
 															value:		1,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'document',
 															name: 		'Document response type',
+															li:			347,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'array',
 															name: 		'<code>ArrayBuffer</code> response type',
+															li:			347,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'blob',
 															name: 		'<code>Blob</code> response type',
+															li:			347,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}
@@ -873,6 +845,7 @@ var tests = [
 									{
 										id:			'websocket.basic',
 										name: 		'Basic socket communication',
+										li:			241,
 										required: true,
 										value:		{ maximum: 10, award: { PREFIX: 7, OLD: 5 } },
 										urls:		[
@@ -882,6 +855,7 @@ var tests = [
 									}, {
 										id:			'websocket.binary',
 										name: 		'<code>ArrayBuffer</code> and <code>Blob</code> support',
+										li:			241,
 										required: true,
 										value:		5,
 										urls:		[
@@ -900,6 +874,7 @@ var tests = [
 									{
 										id:		'webrtc',
 										name: 	'WebRTC 1.0',
+										li:		216,
 										value:	{ maximum: 15, award: { PREFIX: 10 } },
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/webrtc/' ],
@@ -917,69 +892,6 @@ var tests = [
 		name:	'Performance & Integration',
 		items:	[
 					{
-						id:		'interaction',
-						status:	'stable',
-						name: 	'User interaction',
-						items:	[
-									'<strong>HTML editing</strong>',
-
-									{
-										id:		'editing.elements',
-										name:	'Editing elements',
-										urls:	[
-													[ 'mdn', '/Web/Guide/HTML/Content_Editable' ]
-												],
-										items:	[
-													{
-														id:			'contentEditable',
-														name: 		'<code>contentEditable</code> attribute',
-														value:		5,
-														url:		'http://www.w3.org/TR/html5/editing.html#contenteditable'
-													}, {
-														id:			'isContentEditable',
-														name: 		'<code>isContentEditable</code> property',
-														value:		1,
-														url:		'http://www.w3.org/TR/html5/editing.html#contenteditable'
-													}
-												]
-									}, {
-										id:		'editing.documents',
-										name:	'Editing documents',
-										urls:	[
-													[ 'mdn', '/Web/Guide/HTML/Content_Editable' ]
-												],
-										items:	[
-													{
-														id:			'designMode',
-														name: 		'<code>designMode</code> attribute',
-														value:		1,
-														url:		'http://www.w3.org/TR/html5/editing.html#designMode'
-													}
-												]
-									}, {
-										id:		'editing.selectors',
-										name:	'CSS selectors',
-										required: true,
-										value:	{ maximum: 2, award: { PREFIX: 1 } },
-										urls:	[
-													[ 'mdn', '/Web/Guide/HTML/Content_Editable' ]
-												],
-										items:	[
-													{
-														id:			'read-write',
-														name: 		'<code>:read-write</code> selector',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/links.html#selector-read-write'
-													}, {
-														id:			'read-only',
-														name: 		'<code>:read-only</code> selector',
-														required: true,
-														url:		'http://www.w3.org/TR/html5/links.html#selector-read-only'
-													}
-												]
-									},
-								]
-					}, {
 						id:		'performance',
 						status:	'stable',
 						name:	'Performance',
@@ -989,6 +901,7 @@ var tests = [
 									{
 										id:			'worker',
 										name: 		'Web Workers',
+										li: 		245,
 										required: true,
 										value:		10,
 										urls:		[
@@ -998,6 +911,7 @@ var tests = [
 									}, {
 										id:			'sharedWorker',
 										name: 		'Shared Workers',
+										li:			246,
 										required: true,
 										value:		1,
 										urls:    	[
@@ -1007,6 +921,7 @@ var tests = [
 									}, {
 										id:			'broadcast',
 										name: 		'Broadcast Channel',
+										li:			233,
 										value:		1,
 										urls:    	[
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/comms.html#broadcasting-to-other-browsing-contexts' ]
@@ -1021,7 +936,7 @@ var tests = [
 									{
 										id:			'crypto',
 										name: 		'Web Cryptography API',
-
+										li:			202,
 										status:		'proposal',
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
@@ -1031,6 +946,7 @@ var tests = [
 									{
 										id:			'crypto.rand',
 										name: 		'Web Cryptography getRandomValues',
+										li:			203,
 										status:		'proposal',
 										value:		2,
 										urls:		[
@@ -1039,6 +955,7 @@ var tests = [
 									}, {
 										id:			'csp10',
 										name: 		'Content Security Policy 1',
+										li:			321,
 										required: true,
 										value:		3,
 										urls:		[
@@ -1048,6 +965,7 @@ var tests = [
 									}, {
 										id:			'csp11',
 										name: 		'Content Security Policy 2',
+										li:			322,
 										status:		'proposal',
 										value:		2,
 										urls:		[
@@ -1057,6 +975,7 @@ var tests = [
 									}, {
 										id:			'cors',
 										name: 		'Cross-Origin Resource Sharing',
+										li:			240,
 										required: true,
 										value:		4,
 										urls:		[
@@ -1065,6 +984,7 @@ var tests = [
 									}, {
 										id:			'postMessage',
 										name: 		'Cross-document messaging',
+										li:			242,
 										required: true,
 										value:		2,
 										urls:    	[
@@ -1079,6 +999,7 @@ var tests = [
 									{
 										id:			'sandbox',
 										name: 		'Sandboxed <code>iframe</code>',
+										li:			35,
 										required: true,
 										value:		4,
 										urls:		[
@@ -1096,33 +1017,6 @@ var tests = [
 		name:	'Offline & Storage',
 		items:	[
 					{
-						id:		'offline',
-						name: 	'Web applications',
-						status:	'stable',
-						items:	[
-									'<strong>Offline resources</strong>',
-									{
-										id:			'serviceWorkers',
-										name: 		'Service Workers',
-										required: true,
-										status:		'proposal',
-										value:		10,
-										urls:		[
-														[ 'w3c', 'https://www.w3.org/TR/service-workers/' ],
-														[ 'mdn', '/Web/API/Service_Worker_API' ]
-													]
-									}, {
-										id:			'pushMessages',
-										name: 		'Push Messages',
-										status:		'proposal',
-										value:		2,
-										urls:		[
-														[ 'w3c', 'https://w3c.github.io/push-api/' ],
-														[ 'mdn', '/Web/API/Push_API' ]
-													]
-									}
-								]
-					}, {
 						id:		'storage',
 						name: 	'Storage',
 						status:	'stable',
@@ -1132,6 +1026,7 @@ var tests = [
 									{
 										id:			'sessionStorage',
 										name: 		'Session Storage',
+										li:			244,
 										required: true,
 										value:		5,
 										urls:		[
@@ -1142,6 +1037,7 @@ var tests = [
 									}, {
 										id:			'localStorage',
 										name: 		'Local Storage',
+										li:			244,
 										required: true,
 										value:		5,
 										urls:		[
@@ -1156,6 +1052,7 @@ var tests = [
 									{
 										id:			'sqlDatabase',
 										name: 		'Web SQL Database',
+										li: 		265,
 										status:		'rejected',
 										value:		{ maximum: 5, conditional: '!storage.indexedDB.basic' },
 
@@ -1172,6 +1069,7 @@ var tests = [
 									{
 										id:			'fileReader',
 										name: 		'Basic support for reading files',
+										li:			210,
 										required: true,
 										value:		7,
 										urls:		[
@@ -1182,6 +1080,7 @@ var tests = [
 									}, {
 										id:			'fileReader.blob',
 										name: 		'Create a <code>Blob</code> from a file',
+										li:			211,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1190,22 +1089,16 @@ var tests = [
 									}, {
 										id:			'fileReader.dataURL',
 										name: 		'Create a Data URL from a <code>Blob</code>',
+										li: 		212,
 										required: true,
 										value:		2,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-readAsDataURL' ],
 													]
 									}, {
-										id:			'fileReader.arraybuffer',
-										name: 		'Create an <code>ArrayBuffer</code> from a <code>Blob</code>',
-										required: true,
-										value:		2,
-										urls:    	[
-														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-readAsArrayBuffer' ],
-													]
-									}, {
 										id:			'fileReader.objectURL',
 										name: 		'Create a Blob URL from a <code>Blob</code>',
+										li: 		212,
 										required: true,
 										value:		2,
 										urls:    	[
@@ -1231,6 +1124,7 @@ var tests = [
 									{
 										id:			'async',
 										name: 		'Asynchronous script execution',
+										li: 		344,
 										required: true,
 										value:		3,
 										urls:		[
@@ -1242,6 +1136,7 @@ var tests = [
 									}, {
 										id:			'defer',
 										name: 		'Defered script execution',
+										li:			345,
 										required: true,
 										value:		1,
 										urls:		[
@@ -1250,16 +1145,6 @@ var tests = [
 														[ 'mdn', '/Web/HTML/Element/script' ],
 														[ 'wp',  '/html/elements/script' ]
 													]
-									}, {
-										id:			'onerror',
-										name: 		'Runtime script error reporting',
-										required: true,
-										value:		1,
-										urls:		[
-														[ 'w3c', 'http://www.w3.org/TR/html5/webappapis.html#runtime-script-errors' ],
-														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/webappapis.html#runtime-script-errors' ],
-														[ 'mdn', '/Web/API/GlobalEventHandlers/onerror' ]
-													]
 									},
 
 									'<strong>ECMAScript 5</strong>',
@@ -1267,6 +1152,7 @@ var tests = [
 									{
 										id:			'es5.json',
 										name: 		'JSON encoding and decoding',
+										li: 		252,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1280,6 +1166,7 @@ var tests = [
 									{
 										id: 		'es6.proxy',
 										name:   	'Proxy Object',
+										li:			178,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-proxy-object-internal-methods-and-internal-slots' ],
@@ -1288,6 +1175,7 @@ var tests = [
 									{
 										id: 		'es6.number',
 										name:   	'Number',
+										li:			179,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-number-objects' ],
@@ -1296,6 +1184,7 @@ var tests = [
 									{
 										id: 		'es6.const',
 										name:   	'Const',
+										li:			180,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations' ],
@@ -1304,6 +1193,7 @@ var tests = [
 									{
 										id: 		'es6.spread',
 										name:   	'Spread',
+										li:			181,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions' ],
@@ -1312,21 +1202,15 @@ var tests = [
 									{
 										id: 		'es6.let',
 										name:   	'Let',
+										li:			183,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations' ],
 													]
-									},
-									{
-										id: 		'es6.class',
-										name:   	'Classes',
-										value:		1,
-										urls:		[
-														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions' ],
-													]
 									}, {
 										id: 		'es6.arrow',
 										name:   	'Arrow functions',
+										li:			182,
 										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions' ],
@@ -1334,23 +1218,16 @@ var tests = [
 									}, {
 										id: 		'es6.promises',
 										name:   	'Promises',
+										li:			184,
 										value:		3,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects' ],
 														[ 'mdn', '/Web/JavaScript/Reference/Global_Objects/Promise' ]
 													]
 									}, {
-										id:			'es6.datatypes',
-										name:		'Typed arrays',
-										value:		2,
-										status:		'stable',
-										urls:		[
-														[ 'khronos', 'http://www.khronos.org/registry/typedarray/specs/latest/' ],
-														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-structured-data' ]
-													]
-									}, {
 										id: 		'es6.i18n',
 										name:   	'Internationalization',
+										li:			250,
 										value:		2,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-402/1.0/' ],
@@ -1363,6 +1240,7 @@ var tests = [
 									{
 										id:			'base64',
 										name: 		'Base64 encoding and decoding',
+										li: 		235,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/webappapis.html#atob' ],
@@ -1372,6 +1250,7 @@ var tests = [
 									}, {
 										id: 		'mutationObserver',
 										name:   	'Mutation Observer',
+										li:			342,
 										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
@@ -1381,6 +1260,7 @@ var tests = [
 									}, {
 										id: 		'setImmeadiate',
 										name:   	'setImmeadiate',
+										li:			259,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://w3c.github.io/setImmediate/' ]
@@ -1388,6 +1268,7 @@ var tests = [
 									}, {
 										id: 		'url',
 										name:   	'URL API',
+										li:			212,
 										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
@@ -1396,6 +1277,7 @@ var tests = [
 									}, {
 										id: 		'encoding',
 										name:   	'Encoding API',
+										li:			235,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1405,6 +1287,7 @@ var tests = [
 									},  {
 										id: 		'perfTime',
 										name:   	'High Resolution Time',
+										li:			194,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/hr-time/' ]
@@ -1412,6 +1295,7 @@ var tests = [
 									}, {
 										id: 		'userTime',
 										name:   	'User Timing',
+										li:			195,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/user-timing/' ]
@@ -1419,6 +1303,7 @@ var tests = [
 									}, {
 										id: 		'navTime',
 										name:   	'Navigation Timing',
+										li:			313,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/navigation-timing/' ]
@@ -1434,6 +1319,7 @@ var tests = [
 								{
 									id: 		'ttf',
 									name: 		'TTF Fonts',
+									li:			172,
 									required: true,
 									value: 3,
 									urls: 		[
@@ -1443,6 +1329,7 @@ var tests = [
 								{
 									id: 		'otf',
 									name: 		'OTF Fonts',
+									li:			172,
 									required: true,
 									value: 3,
 									urls: 		[
@@ -1452,6 +1339,7 @@ var tests = [
 								{
 									id: 		'woff',
 									name: 		'WOFF Fonts',
+									li:			315,
 									value: 3,
 									urls: 		[
 										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
@@ -1465,19 +1353,9 @@ var tests = [
 						status:	'stable',
 						items:	[
 									{
-										id:			'history',
-										name: 		'Session history',
-										required: true,
-										value:		4,
-										urls:		[
-														[ 'w3c', 'http://www.w3.org/TR/html5/browsers.html#the-history-interface' ],
-														[ 'wp',  '/dom/History' ],
-														[ 'mdn', '/Web/Guide/API/DOM/Manipulating_the_browser_history' ]
-													]
-									},
-									{
 										id: 		'hashchange',
 										name:		'Hashchange event',
+										li:			247,
 										required: true,
 										value: 		4,
 										urls: 		[
@@ -1487,6 +1365,7 @@ var tests = [
 									{
 										id: 		'console',
 										name:		'Console logging',
+										li:			231,
 										required: true,
 										value: 		4,
 										urls: 		[
@@ -1496,6 +1375,7 @@ var tests = [
 									{
 										id: 		'counters',
 										name:		'CSS Counters',
+										li: 		78,
 										required: true,
 										value: 		3,
 										urls: 		[
@@ -1505,6 +1385,7 @@ var tests = [
 									{
 										id: 		'focus',
 										name:		'Focus Events',
+										li:			270,
 										value: 		1,
 										urls: 		[
 														['w3c', 'https://www.w3.org/TR/DOM-Level-3-Events/#event-type-focusin']
@@ -1527,6 +1408,7 @@ var tests = [
 									{
 										id: 		'display',
 										name:		'Display Properties',
+										li:			75,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1537,6 +1419,7 @@ var tests = [
 									{
 										id: 		'position',
 										name:		'Position',
+										li:			74,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1547,6 +1430,7 @@ var tests = [
 									{
 										id: 		'min-width',
 										name:		'Min Width',
+										li:			76,
 										required: 	true,
 										value: 3,
 										urls: 		[
@@ -1557,6 +1441,7 @@ var tests = [
 									{
 										id: 		'min-height',
 										name:		'Min Height',
+										li:			76,
 										required: 	true,
 										value: 3,
 										urls: 		[
@@ -1567,6 +1452,7 @@ var tests = [
 									{
 										id: 		'max-width',
 										name:		'Max Width',
+										li:			76,
 										required: 	true,
 										value: 3,
 										urls: 		[
@@ -1577,6 +1463,7 @@ var tests = [
 									{
 										id: 		'max-height',
 										name:		'Max Height',
+										li:			76,
 										required: 	true,
 										value: 3,
 										urls: 		[
@@ -1594,6 +1481,7 @@ var tests = [
 									{
 										id: 		'background-repeat',
 										name:		'Background Repeat',
+										li:			127,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1604,6 +1492,7 @@ var tests = [
 									{
 										id: 		'background-attachment',
 										name:		'Background Attachment',
+										li:			97,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1614,6 +1503,7 @@ var tests = [
 									{
 										id: 		'background-position',
 										name:		'Background Position',
+										li:			105,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1624,6 +1514,7 @@ var tests = [
 									{
 										id: 		'background-clip',
 										name:		'Background Clip',
+										li:			118,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1632,18 +1523,9 @@ var tests = [
 
 									},
 									{
-										id: 		'background-origin',
-										name:		'Background Origin',
-										required: 	true,
-										value: 5,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin']
-													]
-
-									},
-									{
 										id: 		'background-size',
 										name:		'Background Size',
+										li:			118,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1654,6 +1536,7 @@ var tests = [
 									{
 										id: 		'background',
 										name:		'Background',
+										li:			118,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1664,6 +1547,7 @@ var tests = [
 									{
 										id: 		'border-radius',
 										name:		'Border Radius',
+										li:			124,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1674,6 +1558,7 @@ var tests = [
 									{
 										id: 		'border-image-source',
 										name:		'Border Image Source',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1684,6 +1569,7 @@ var tests = [
 									{
 										id: 		'border-image-slice',
 										name:		'Border Image Slice',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1694,6 +1580,7 @@ var tests = [
 									{
 										id: 		'border-image-width',
 										name:		'Border Image Width',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1704,6 +1591,7 @@ var tests = [
 									{
 										id: 		'border-image-outset',
 										name:		'Border Image Outset',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1714,6 +1602,7 @@ var tests = [
 									{
 										id: 		'border-image-repeat',
 										name:		'Border Image Repeat',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1724,6 +1613,7 @@ var tests = [
 									{
 										id: 		'border-image',
 										name:		'Border Image',
+										li:			128,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1734,6 +1624,7 @@ var tests = [
 									{
 										id: 		'box-shadow',
 										name:		'Box Shadow',
+										li:			130,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1744,6 +1635,7 @@ var tests = [
 									{
 										id: 		'outline',
 										name:		'Outline',
+										li:			79,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1761,6 +1653,7 @@ var tests = [
 									{
 										id: 		'background-position-x',
 										name:		'Background Position X',
+										li:			105,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1771,6 +1664,7 @@ var tests = [
 									{
 										id: 		'background-position-y',
 										name:		'Background Position Y',
+										li:			105,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1788,6 +1682,7 @@ var tests = [
 									{
 										id: 		'linear-gradient',
 										name:		'Linear Gradient',
+										li:			120,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1798,6 +1693,7 @@ var tests = [
 									{
 										id: 		'radial-gradient',
 										name:		'Radial Gradient',
+										li:			120,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1808,6 +1704,7 @@ var tests = [
 									{
 										id: 		'repeating-linear-gradient',
 										name:		'Repeating Linear Gradient',
+										li:			113,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1818,6 +1715,7 @@ var tests = [
 									{
 										id: 		'repeating-radial-gradient',
 										name:		'Repeating Radial Gradient',
+										li:			113,
 										required: 	true,
 										value: 5,
 										urls: 		[
@@ -1828,6 +1726,7 @@ var tests = [
 									{
 										id: 		'object-fit',
 										name:		'Object Fit',
+										li:			116,
 										value: 5,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit']
@@ -1837,6 +1736,7 @@ var tests = [
 									{
 										id: 		'object-position',
 										name:		'Object Position',
+										li:			116,
 										value: 5,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-position']
@@ -1853,6 +1753,7 @@ var tests = [
 									{
 										id: 		'::before',
 										name:		'::before',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1863,6 +1764,7 @@ var tests = [
 									{
 										id: 		'::after',
 										name:		'::after',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1873,6 +1775,7 @@ var tests = [
 									{
 										id: 		'::first-letter',
 										name:		'::first-letter',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1883,6 +1786,7 @@ var tests = [
 									{
 										id: 		'::first-line',
 										name:		'::first-line',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1893,6 +1797,7 @@ var tests = [
 									{
 										id: 		'Namespaces',
 										name:		'Namespaces',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1903,6 +1808,7 @@ var tests = [
 									{
 										id: 		':target',
 										name:		':target',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1913,6 +1819,7 @@ var tests = [
 									{
 										id: 		':enabled',
 										name:		':enabled',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1923,6 +1830,7 @@ var tests = [
 									{
 										id: 		':disabled',
 										name:		':disabled',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1933,6 +1841,7 @@ var tests = [
 									{
 										id: 		':checked',
 										name:		':checked',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1941,18 +1850,9 @@ var tests = [
 
 									},
 									{
-										id: 		':indeterminate',
-										name:		':indeterminate',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate']
-													]
-
-									},
-									{
 										id: 		':root',
 										name:		':root',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1963,6 +1863,7 @@ var tests = [
 									{
 										id: 		':nth-child',
 										name:		':nth-child',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1973,6 +1874,7 @@ var tests = [
 									{
 										id: 		':nth-last-child',
 										name:		':nth-last-child',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1983,6 +1885,7 @@ var tests = [
 									{
 										id: 		':nth-of-type',
 										name:		':nth-of-type',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -1993,6 +1896,7 @@ var tests = [
 									{
 										id: 		':nth-last-of-type',
 										name:		':nth-last-of-type',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2003,6 +1907,7 @@ var tests = [
 									{
 										id: 		':last-child',
 										name:		':last-child',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2013,6 +1918,7 @@ var tests = [
 									{
 										id: 		':only-child',
 										name:		':only-child',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2023,6 +1929,7 @@ var tests = [
 									{
 										id: 		':first-of-type',
 										name:		':first-of-type',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2033,6 +1940,7 @@ var tests = [
 									{
 										id: 		':last-of-type',
 										name:		':last-of-type',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2043,6 +1951,7 @@ var tests = [
 									{
 										id: 		':only-of-type',
 										name:		':only-of-type',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2053,6 +1962,7 @@ var tests = [
 									{
 										id: 		':empty',
 										name:		':empty',
+										li:			68,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2070,6 +1980,7 @@ var tests = [
 									{
 										id: 		'box-sizing',
 										name:		'Box Sizing',
+										li:			131,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2080,113 +1991,14 @@ var tests = [
 									{
 										id: 		'text-overflow',
 										name:		'Text Overflow',
+										li:			117,
 										required: 	true,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow']
 													]
 
-									},
-									{
-										id: 		':indeterminate',
-										name:		':indeterminate',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate']
-													]
-
-									},
-									{
-										id: 		':default',
-										name:		':default',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:default']
-													]
-
-									},
-									{
-										id: 		':valid',
-										name:		':valid',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:valid']
-													]
-
-									},
-									{
-										id: 		':invalid',
-										name:		':invalid',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid']
-													]
-
-									},
-									{
-										id: 		':in-range',
-										name:		':in-range',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range']
-													]
-
-									},
-									{
-										id: 		':out-of-range',
-										name:		':out-of-range',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range']
-													]
-
-									},
-									{
-										id: 		':required',
-										name:		':required',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:required']
-													]
-
-									},
-									{
-										id: 		':optional',
-										name:		':optional',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:optional']
-													]
-
-									},
-									{
-										id: 		':read-only',
-										name:		':read-only',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only']
-													]
-
-									},
-									{
-										id: 		':read-write',
-										name:		':read-write',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:read-write']
-													]
-
-									},
+									}
 								]
 					},
 					{
@@ -2197,6 +2009,7 @@ var tests = [
 									{
 										id: 		'transition-property',
 										name:		'Property',
+										li:			167,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2207,6 +2020,7 @@ var tests = [
 									{
 										id: 		'transition-duration',
 										name:		'Duration',
+										li:			167,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2217,6 +2031,7 @@ var tests = [
 									{
 										id: 		'transition-timing-function',
 										name:		'Timing Function',
+										li:			167,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2227,6 +2042,7 @@ var tests = [
 									{
 										id: 		'transition-delay',
 										name:		'Delay',
+										li:			167,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2237,6 +2053,7 @@ var tests = [
 									{
 										id: 		'transition',
 										name:		'Transition',
+										li:			167,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2254,6 +2071,7 @@ var tests = [
 									{
 										id: 		'animation-name',
 										name:		'Name',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2264,6 +2082,7 @@ var tests = [
 									{
 										id: 		'animation-duration',
 										name:		'Duration',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2274,6 +2093,7 @@ var tests = [
 									{
 										id: 		'animation-timing-function',
 										name:		'Timing Function',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2284,6 +2104,7 @@ var tests = [
 									{
 										id: 		'animation-iteration-count',
 										name:		'Iteration Count',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2294,6 +2115,7 @@ var tests = [
 									{
 										id: 		'animation-direction',
 										name:		'Direction',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2304,6 +2126,7 @@ var tests = [
 									{
 										id: 		'animation-play-state',
 										name:		'Play State',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2314,6 +2137,7 @@ var tests = [
 									{
 										id: 		'animation-delay',
 										name:		'Delay',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2324,6 +2148,7 @@ var tests = [
 									{
 										id: 		'animation-fill-mode',
 										name:		'Fill Mode',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2334,6 +2159,7 @@ var tests = [
 									{
 										id: 		'animation',
 										name:		'Play State',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2344,6 +2170,7 @@ var tests = [
 									{
 										id: 		'@keyframes',
 										name:		'@keyframes',
+										li:			168,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2361,6 +2188,7 @@ var tests = [
 									{
 										id: 		'transform',
 										name:		'Transform',
+										li:			165,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2371,6 +2199,7 @@ var tests = [
 									{
 										id: 		'transform-origin',
 										name:		'Origin',
+										li:			165,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2381,6 +2210,7 @@ var tests = [
 									{
 										id: 		'transform-style',
 										name:		'Style',
+										li:			165,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2391,6 +2221,7 @@ var tests = [
 									{
 										id: 		'perspective',
 										name:		'Perspective',
+										li:			166,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2401,6 +2232,7 @@ var tests = [
 									{
 										id: 		'perspective-origin',
 										name:		'Perspective Origin',
+										li:			166,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2411,6 +2243,7 @@ var tests = [
 									{
 										id: 		'backface-visibility',
 										name:		'Backface Visibility',
+										li:			166,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2428,6 +2261,7 @@ var tests = [
 									{
 										id: 		'tab-size',
 										name:		'Tab Size',
+										li:			155,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size']
@@ -2437,6 +2271,7 @@ var tests = [
 									{
 										id: 		'word-break',
 										name:		'Word Break',
+										li:			159,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/word-break']
@@ -2446,6 +2281,7 @@ var tests = [
 									{
 										id: 		'word-wrap',
 										name:		'Word Wrap',
+										li:			161,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2463,6 +2299,7 @@ var tests = [
 									{
 										id: 		'text-shadow',
 										name:		'Text Shadow',
+										li:			129,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2473,6 +2310,7 @@ var tests = [
 									{
 										id: 		'letter-spacing',
 										name:		'Letter Spacing',
+										li:			85,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2490,6 +2328,7 @@ var tests = [
 									{
 										id: 		'font-kerning',
 										name:		'Font Kerning',
+										li:			96,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2500,6 +2339,7 @@ var tests = [
 									{
 										id: 		'font-feature-settings',
 										name:		'Font Feature Settings',
+										li:			119,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings']
@@ -2516,6 +2356,7 @@ var tests = [
 									{
 										id: 		'rgba',
 										name:		'RGBA',
+										li:			67,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2526,6 +2367,7 @@ var tests = [
 									{
 										id: 		'hsl',
 										name:		'HSL',
+										li:			67,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2536,6 +2378,7 @@ var tests = [
 									{
 										id: 		'hsla',
 										name:		'HSLA',
+										li:			67,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2546,6 +2389,7 @@ var tests = [
 									{
 										id: 		'transparent',
 										name:		'Transparent',
+										li:			67,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2556,6 +2400,7 @@ var tests = [
 									{
 										id: 		'currentColor',
 										name:		'Current Color',
+										li:			82,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2566,6 +2411,7 @@ var tests = [
 									{
 										id: 		'opacity',
 										name:		'Opacity',
+										li:			67,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2583,6 +2429,7 @@ var tests = [
 									{
 										id: 		'column-width',
 										name:		'Width',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2593,6 +2440,7 @@ var tests = [
 									{
 										id: 		'column-count',
 										name:		'Count',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2603,6 +2451,7 @@ var tests = [
 									{
 										id: 		'columns',
 										name:		'Columns',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2613,6 +2462,7 @@ var tests = [
 									{
 										id: 		'column-gap',
 										name:		'Gap',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2623,6 +2473,7 @@ var tests = [
 									{
 										id: 		'column-rule-color',
 										name:		'Rule Color',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2633,6 +2484,7 @@ var tests = [
 									{
 										id: 		'column-rule-style',
 										name:		'Rule Style',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2643,6 +2495,7 @@ var tests = [
 									{
 										id: 		'column-rule-width',
 										name:		'Rule Width',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2653,6 +2506,7 @@ var tests = [
 									{
 										id: 		'column-rule',
 										name:		'Rule',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2663,6 +2517,7 @@ var tests = [
 									{
 										id: 		'column-span',
 										name:		'Span',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2673,6 +2528,7 @@ var tests = [
 									{
 										id: 		'column-fill',
 										name:		'Fill',
+										li:			132,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2690,6 +2546,7 @@ var tests = [
 									{
 										id: 		'rem',
 										name:		'rem',
+										li:			115,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2700,6 +2557,7 @@ var tests = [
 									{
 										id: 		'attr()',
 										name:		'attr()',
+										li:			89,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/attr']
@@ -2709,19 +2567,10 @@ var tests = [
 									{
 										id: 		'calc()',
 										name:		'calc()',
+										li: 		122,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/calc']
-													]
-
-									},
-									{
-										id: 		'counter-reset',
-										name:		'Counter Reset',
-										required: 	true,
-										value: 1,
-										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset']
 													]
 
 									}
@@ -2735,6 +2584,7 @@ var tests = [
 									{
 										id: 		'align-content',
 										name:		'Align Content',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2745,6 +2595,7 @@ var tests = [
 									{
 										id: 		'align-items',
 										name:		'Align Items',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2755,6 +2606,7 @@ var tests = [
 									{
 										id: 		'align-self',
 										name:		'Align Self',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2765,6 +2617,7 @@ var tests = [
 									{
 										id: 		'display',
 										name:		'Diaplay',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2775,6 +2628,7 @@ var tests = [
 									{
 										id: 		'flex',
 										name:		'Flex',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2785,6 +2639,7 @@ var tests = [
 									{
 										id: 		'flex-basis',
 										name:		'Flex Basis',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2795,6 +2650,7 @@ var tests = [
 									{
 										id: 		'flex-direction',
 										name:		'Flex Direction',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2805,6 +2661,7 @@ var tests = [
 									{
 										id: 		'flex-flow',
 										name:		'Flex Flow',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2815,6 +2672,7 @@ var tests = [
 									{
 										id: 		'flex-grow',
 										name:		'Flex Grow',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2825,6 +2683,7 @@ var tests = [
 									{
 										id: 		'flex-shrink',
 										name:		'Flex Shrink',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2835,6 +2694,7 @@ var tests = [
 									{
 										id: 		'flex-wrap',
 										name:		'Flex Wrap',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2845,6 +2705,7 @@ var tests = [
 									{
 										id: 		'justify-content',
 										name:		'Justify Content',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2855,6 +2716,7 @@ var tests = [
 									{
 										id: 		'min-height',
 										name:		'min-height',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2865,6 +2727,7 @@ var tests = [
 									{
 										id: 		'min-width',
 										name:		'min-width',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2875,6 +2738,7 @@ var tests = [
 									{
 										id: 		'order',
 										name:		'Order',
+										li:			123,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -2892,6 +2756,7 @@ var tests = [
 									{
 										id: 		'clip-path',
 										name:		'clip-path',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
@@ -2901,6 +2766,7 @@ var tests = [
 									{
 										id: 		'clip-rule',
 										name:		'clip-rule',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
@@ -2910,6 +2776,7 @@ var tests = [
 									{
 										id: 		'mask-image',
 										name:		'Mask Image',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image']
@@ -2919,6 +2786,7 @@ var tests = [
 									{
 										id: 		'mask-mode',
 										name:		'Mask Mode',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode']
@@ -2928,6 +2796,7 @@ var tests = [
 									{
 										id: 		'mask-repeat',
 										name:		'Mask Repeat',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
@@ -2937,6 +2806,7 @@ var tests = [
 									{
 										id: 		'mask-position',
 										name:		'Mask Position',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position']
@@ -2946,6 +2816,7 @@ var tests = [
 									{
 										id: 		'mask-clip',
 										name:		'Mask Clip',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-clip']
@@ -2955,6 +2826,7 @@ var tests = [
 									{
 										id: 		'mask-origin',
 										name:		'Mask Origin',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin']
@@ -2964,6 +2836,7 @@ var tests = [
 									{
 										id: 		'mask-size',
 										name:		'Mask Size',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-size']
@@ -2973,6 +2846,7 @@ var tests = [
 									{
 										id: 		'mask-composite',
 										name:		'Mask Composite',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite']
@@ -2982,6 +2856,7 @@ var tests = [
 									{
 										id: 		'mask',
 										name:		'Mask',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -2991,6 +2866,7 @@ var tests = [
 									{
 										id: 		'mask-border-source',
 										name:		'Mask Border Source',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3000,6 +2876,7 @@ var tests = [
 									{
 										id: 		'mask-border-slice',
 										name:		'Mask Border Slice',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3009,6 +2886,7 @@ var tests = [
 									{
 										id: 		'mask-border-width',
 										name:		'Mask Border Width',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3018,6 +2896,7 @@ var tests = [
 									{
 										id: 		'mask-border-outset',
 										name:		'Mask Outset',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3027,6 +2906,7 @@ var tests = [
 									{
 										id: 		'mask-border-repeat',
 										name:		'Mask Repeat',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
@@ -3036,6 +2916,7 @@ var tests = [
 									{
 										id: 		'mask-border',
 										name:		'Mask Border',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
@@ -3045,6 +2926,7 @@ var tests = [
 									{
 										id: 		'mask-type',
 										name:		'Mask Type',
+										li:			125,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-type']
@@ -3061,6 +2943,7 @@ var tests = [
 									{
 										id: 		'touch-action',
 										name:		'Touch Action',
+										li:			80,
 										required: 	true,
 										value: 1,
 										urls: 		[
@@ -3078,6 +2961,7 @@ var tests = [
 									{
 										id: 		'will-change',
 										name:		'Will Change',
+										li:			151,
 										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/will-change']

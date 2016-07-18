@@ -803,8 +803,9 @@
 
 						if (results[0] == results[1])
 							cell.innerHTML = '<div>Yes <span class="check">✔</span></div>';
-						else if (results[1] == 0)
+						else if (results[1] == 0) {
 							cell.innerHTML = '<div>No <span class="ballot">✘</span></div>';
+						}
 						else
 							cell.innerHTML = '<div><span class="partially">Partial</span> <span class="partial">○</span></div>';
 					}
@@ -826,7 +827,11 @@
 									case !! (result & UNKNOWN):		cell.innerHTML = '<div>Unknown <span class="partial">?</span></div>'; break;
 									case !! (result & BLOCKED):		cell.innerHTML = '<div>Not functional <span class="buggy">!</span></div>'; break;
 									case !! (result & DISABLED):	cell.innerHTML = '<div>Disabled <span class="ballot">✘</span></div>'; break;
-									default:						cell.innerHTML = '<div>No <span class="ballot">✘</span></div>'; break;
+									default:						{
+																		console.log(cell.parentElement);
+																		cell.parentElement.className += ' test-failed ';
+																		cell.innerHTML = '<div>No <span class="ballot">✘</span></div>'; break;
+																	}
 								}
 							}
 						} else {
@@ -933,7 +938,11 @@
 					}
 
 					var th = document.createElement('th');
-					th.innerHTML = "<div><span>" + tests[i].name + "</span></div>";
+					if (tests[i].li) {
+						th.innerHTML = "<div><span class='line-item'>LI: " + tests[i].li + "</span><span>" + tests[i].name + "</span></div>";
+					} else {
+						th.innerHTML = "</span><span>" + tests[i].name + "</span></div>";
+					}
 					tr.appendChild(th);
 
 					for (var c = 0; c < this.options.columns; c++) {

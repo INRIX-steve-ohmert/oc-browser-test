@@ -497,6 +497,16 @@ body.indexVisible > div#index button#indexbutton {
 	background-color: rgb(166, 191, 226)
 }
 
+.test-failed {
+	box-sizing: border-box;
+	border: 4px solid rgb(237, 56, 6);
+}
+
+.line-item {
+	padding-right: 6px;
+	font-size: 12px;
+}
+
 .details {
 	background-color: rgb(196, 193, 196)
 }
@@ -1655,22 +1665,9 @@ body.indexVisible > div#index button#indexbutton {
 .resultsTable .category.graphicseffects h2::before { content: ''; }
 .resultsTable .category.performanceintegration h2::before { content: ''; }
 
-.resultsTable table {
-	border-spacing: 0;
-
-	position: relative;
-	margin: 0 0 24px;
-
-	color: #000;
-
-	border-collapse: separate;
-}
 .resultsTable table thead tr {
 	color: #fff;
 	background: #0092bf;
-}
-.resultsTable table thead tr > * {
-	border-bottom: 8px solid #d9d9d9;
 }
 .resultsTable table thead th {
 	position: relative;
