@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>HTML5test - How well does your browser support HTML5?</title>
+		<title>OpenCar Browser Test</title>
 
 		<meta charset="UTF-8">
 
@@ -18,7 +18,6 @@
 		<script src='/scripts/testScript/data.js' type='text/javascript'></script>
 
 		<script src='/scripts/supports.js' type="text/javascript"></script>
-		<!-- <script src='/scripts/csstest.js' type="text/javascript"></script> -->
 		<script src='/scripts/tests.js' type="text/javascript"></script>
 
 		<script>
@@ -48,13 +47,9 @@
 		<meta name="msapplication-TileColor" content="#0092bf" />
 		<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png" />
 
-		<meta property="og:title" content="The HTML5 test - How well does your browser support HTML5?" />
-		<meta property="og:description" content="The HTML5 test score is an indication of how well your browser supports the upcoming HTML5 standard and related specifications. How well does your browser support HTML5?" />
+		<meta property="og:title" content="OpenCar Browser Validation Test" />
+		<meta property="og:description" content="OpenCar Browser Validation Test, testing the presence of features required and preferred to run the OpenCar framework." />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://html5test.com" />
-		<meta property="og:image" content="https://html5test.com/images/thumbnail.jpg" />
-		<meta property="og:site_name" content="HTML5test.com" />
-		<meta property="fb:admins" content="1087142132" />
 	</head>
 
 
@@ -105,7 +100,7 @@
 
 					<div class="test-description">
 						<p>
-							Please note that "LI" here corresponds to the line items in the OpenCar browser requirements spreadsheet, for example, "Embedding custom non-visible data" corresponds to the "dataset & data-* attributes" line item. As in the spreadsheet, the items in green here are required, and those in blue are preferred. This series of tests checks if a browser recognizes a particular feature, it does not ascertain whether or not the browser has implemented that feature correctly.
+							Please note that "LI" here corresponds to the line items in the OpenCar browser requirements spreadsheet, for example, "Embedding custom non-visible data" corresponds to the "dataset & data-* attributes" line item. As in the spreadsheet, the items in green here are required, and those in blue are preferred. This series of tests checks if a browser recognizes a particular feature, it does not ascertain if the browser has implemented that feature correctly.
 						</p>
 					</div>
 
@@ -235,12 +230,6 @@
 					});
 
 					table.updateColumn(0, { points: c.points, maximum: c.maximum, score: c.score, results: r.results });
-
-					// new Index({
-					// 	tests:			tests,
-					// 	index:			document.getElementById('index'),
-					// 	wrapper:		document.getElementById('contentwrapper')
-					// });
 
 					window.setTimeout(function() {
 						var contents = document.getElementById('contents');
