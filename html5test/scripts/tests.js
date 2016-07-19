@@ -19,7 +19,6 @@ window.Specs = {
 			"background-attachment": "local",
 			"background-position": ["bottom 10px right 20px", "bottom 10px right", "top right 10px"],
 			"background-clip": ["border-box", "padding-box", "content-box"],
-			"background-origin": ["border-box", "padding-box", "content-box"],
 			"background-size": ["auto", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
 			"background": [
 				"url(foo.png), url(bar.svg)",
@@ -110,7 +109,6 @@ window.Specs = {
 			":enabled": ":enabled",
 			":disabled": ":disabled",
 			":checked": ":checked",
-			":indeterminate": ":indeterminate",
 			":root": ":root",
 			":nth-child": [
 				":nth-child(even)", ":nth-child(odd)",
@@ -156,16 +154,9 @@ window.Specs = {
 			"text-overflow": ["ellipsis"],
 		},
 		"selectors": {
-			":indeterminate": ":indeterminate",
 			":default": ":default",
-			":valid": ":valid",
-			":invalid": ":invalid",
-			":in-range": ":in-range",
-			":out-of-range": ":out-of-range",
 			":required": ":required",
 			":optional": ":optional",
-			":read-only": ":read-only",
-			":read-write": ":read-write"
 		}
 	},
 

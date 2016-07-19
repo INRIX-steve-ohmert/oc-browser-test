@@ -533,17 +533,6 @@ Test8 = (function () {
             });
         },
 
-
-        /* hidden attribute */
-
-        function (results) {
-            results.addItem({
-                key: 'elements.hidden',
-                passed: 'hidden' in document.createElement('div')
-            });
-        },
-
-
         /* outerHTML property */
 
         function (results) {
@@ -579,7 +568,6 @@ Test8 = (function () {
                 passed: 'selectionDirection' in element
             });
         },
-
 
         /* input type=number, range */
 
@@ -704,75 +692,6 @@ Test8 = (function () {
                     key: 'form.other.' + prop,
                     passed: !!(props[p] in element)
                 });
-            }
-        },
-
-
-        /* oninput, onchange and oninvalid events */
-
-        function (results) {
-            var inputItem = results.addItem({
-                key: 'form.events.oninput',
-                passed: isEventSupported('input')
-            });
-
-            var changeItem = results.addItem({
-                key: 'form.events.onchange',
-                passed: isEventSupported('change')
-            });
-
-            var invalidItem = results.addItem({
-                key: 'form.events.oninvalid',
-                passed: isEventSupported('invalid')
-            });
-
-            try {
-                inputItem.startBackground();
-                changeItem.startBackground();
-
-                var event = document.createEvent("KeyboardEvent");
-                if (event.initKeyEvent) {
-                    event.initKeyEvent("keypress", false, true, null, false, false, false, false, null, 65);
-
-                    var input = document.createElement('input');
-                    input.style.position = 'fixed';
-                    input.style.left = '-500px';
-                    input.style.top = '0px';
-
-                    document.body.appendChild(input);
-                    input.addEventListener('input', function () {
-                        inputItem.update({
-                            'passed': true
-                        });
-
-                        inputItem.stopBackground();
-                    }, true);
-
-                    input.addEventListener('change', function () {
-                        changeItem.update({
-                            'passed': true
-                        });
-
-                        changeItem.stopBackground();
-                    }, true);
-
-                    input.focus();
-                    input.dispatchEvent(event);
-                    input.blur();
-
-                    window.setTimeout(function () {
-                        document.body.removeChild(input);
-
-                        inputItem.stopBackground();
-                        changeItem.stopBackground();
-                    }, 1000);
-                } else {
-                    inputItem.stopBackground();
-                    changeItem.stopBackground();
-                }
-            } catch (e) {
-                inputItem.stopBackground();
-                changeItem.stopBackground();
             }
         },
 
@@ -960,7 +879,7 @@ Test8 = (function () {
 
             try {
                 item.startBackground();
-                xhr.open("GET", "/assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
                 xhr.responseType = "text";
                 xhr.send();
             } catch (e) {
@@ -1004,7 +923,7 @@ Test8 = (function () {
 
             try {
                 item.startBackground();
-                xhr.open("GET", "/assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
                 xhr.responseType = "document";
                 xhr.send();
             } catch (e) {
@@ -1048,7 +967,7 @@ Test8 = (function () {
 
             try {
                 item.startBackground();
-                xhr.open("GET", "/assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
                 xhr.responseType = "arraybuffer";
                 xhr.send();
             } catch (e) {
@@ -1092,7 +1011,7 @@ Test8 = (function () {
 
             try {
                 item.startBackground();
-                xhr.open("GET", "/assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
                 xhr.responseType = "blob";
                 xhr.send();
             } catch (e) {
@@ -1147,87 +1066,6 @@ Test8 = (function () {
                 key: 'rtc.webrtc',
                 passed: !!window.RTCPeerConnection ? YES : !!window.webkitRTCPeerConnection || !!window.mozRTCPeerConnection || !!window.msRTCPeerConnection || !!window.oRTCPeerConnection ? YES | PREFIX : NO
             });
-        },
-
-
-        /* contentEditable */
-
-        function (results) {
-            results.addItem({
-                key: 'interaction.editing.elements.contentEditable',
-                passed: 'contentEditable' in document.createElement('div')
-            });
-        },
-
-
-        /* isContentEditable */
-
-        function (results) {
-            results.addItem({
-                key: 'interaction.editing.elements.isContentEditable',
-                passed: 'isContentEditable' in document.createElement('div')
-            });
-        },
-
-
-        /* designMode */
-
-        function (results) {
-            results.addItem({
-                key: 'interaction.editing.documents.designMode',
-                passed: 'designMode' in document
-            });
-        },
-
-
-        /* read-write and read-only selectors */
-
-        function (results) {
-            var selectors = "read-write read-only".split(" ");
-            var passed = [NO | UNKNOWN, NO | UNKNOWN];
-
-            if ('querySelector' in document) {
-                var element = document.createElement('div');
-                element.id = 'testDivElement';
-                element.contentEditable = true;
-                document.body.appendChild(element);
-
-                var nested = document.createElement('div');
-                nested.id = 'testDivNested';
-                nested.contentEditable = false;
-                element.appendChild(nested);
-
-                try {
-                    passed[0] = document.querySelector("#testDivElement:read-write") == element;
-                } catch (e) {
-                    passed[0] = NO;
-
-                    try {
-                        passed[0] = document.querySelector("#testDivElement:-moz-read-write") == element ? YES | PREFIX : NO;
-                    } catch (e) {
-                    }
-                }
-
-                try {
-                    passed[1] = document.querySelector("#testDivNested:read-only") == nested;
-                } catch (e) {
-                    passed[1] = NO;
-
-                    try {
-                        passed[1] = document.querySelector("#testDivNested:-moz-read-only") == nested ? YES | PREFIX : NO;
-                    } catch (e) {
-                    }
-                }
-
-                document.body.removeChild(element);
-            }
-
-            for (var i = 0; i < selectors.length; i++) {
-                results.addItem({
-                    key: 'interaction.editing.selectors.' + selectors[i],
-                    passed: passed[i]
-                });
-            }
         },
 
 
@@ -1321,7 +1159,7 @@ Test8 = (function () {
             item.startBackground();
 
             var iframe = document.createElement('iframe');
-            iframe.src = '/assets/csp.html';
+            iframe.src = '../../assets/csp.html';
             iframe.style.visibility = 'hidden';
             document.body.appendChild(iframe);
 
@@ -1375,7 +1213,7 @@ Test8 = (function () {
 
         function(results) {
             var css = `@font-face { font-family: 'League';
-                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.ttf')}`
+                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.ttf')}`
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1402,7 +1240,7 @@ Test8 = (function () {
 
         function(results) {
             var css = `@font-face { font-family: 'League';
-                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.otf')}`
+                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.otf')}`
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1429,7 +1267,7 @@ Test8 = (function () {
 
         function(results) {
             var css = `@font-face { font-family: 'League';
-                                    src: url('/fonts/leaguegothic-condensed-italic-webfont.woff')}`
+                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.woff')}`
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1452,14 +1290,6 @@ Test8 = (function () {
             });
         },
 
-        /* history */
-
-        function (results) {
-            results.addItem({
-                key: 'other.history',
-                passed: !!(window.history && history.pushState)
-            });
-        },
 
         /* hashchange */
 
@@ -1699,25 +1529,6 @@ Test8 = (function () {
         },
 
 
-        /* serviceWorker */
-
-        function (results) {
-            results.addItem({
-                key: 'offline.serviceWorkers',
-                passed: !!window.navigator.serviceWorker
-            });
-        },
-
-
-        /* serviceWorker */
-
-        function (results) {
-            results.addItem({
-                key: 'offline.pushMessages',
-                passed: 'PushManager' in window && 'PushSubscription' in window
-            });
-        },
-
         /* BroadcastChannel */
 
         function(results) {
@@ -1800,13 +1611,6 @@ Test8 = (function () {
                 passed: 'FileReader' in window && 'readAsDataURL' in (new FileReader())
             });
 
-            /* file reader as array buffer */
-
-            results.addItem({
-                key: 'files.fileReader.arraybuffer',
-                passed: 'FileReader' in window && 'readAsArrayBuffer' in (new FileReader())
-            });
-
             /* file reader as object url */
 
             results.addItem({
@@ -1871,17 +1675,6 @@ Test8 = (function () {
                 passed: 'defer' in document.createElement('script')
             });
         },
-
-
-        /* script error reporting */
-
-        function (results) {
-            results.addItem({
-                key: 'scripting.onerror',
-                passed: isEventSupported('error')
-            });
-        },
-
 
         /* base64 encoding and decoding */
 
@@ -2153,24 +1946,6 @@ Test8 = (function () {
         },
 
 
-        /* classes */
-
-        function (results) {
-            var passed = YES;
-
-            try {
-                eval('class Something {}');
-            } catch (e) {
-                passed = NO;
-            }
-
-            results.addItem({
-                key: 'scripting.es6.class',
-                passed: passed
-            });
-        },
-
-
         /* generators */
 
         function (results) {
@@ -2385,83 +2160,6 @@ Test8 = (function () {
             });
         },
 
-
-        /* datatypes */
-
-        function (results) {
-            results.addItem({
-                key: 'scripting.es6.datatypes.ArrayBuffer',
-                passed: typeof ArrayBuffer != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Int8Array',
-                passed: typeof Int8Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Uint8Array',
-                passed: typeof Uint8Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Uint8ClampedArray',
-                passed: typeof Uint8ClampedArray != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Int16Array',
-                passed: typeof Int16Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Uint16Array',
-                passed: typeof Uint16Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Int32Array',
-                passed: typeof Int32Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Uint32Array',
-                passed: typeof Uint32Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Float32Array',
-                passed: typeof Float32Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.Float64Array',
-                passed: typeof Float64Array != 'undefined'
-            });
-
-            results.addItem({
-                key: 'scripting.es6.datatypes.DataView',
-                passed: typeof DataView != 'undefined'
-            });
-
-
-            var passed = typeof ArrayBuffer != 'undefined' &&
-                typeof Int8Array != 'undefined' &&
-                typeof Uint8Array != 'undefined' &&
-                typeof Uint8ClampedArray != 'undefined' &&
-                typeof Int16Array != 'undefined' &&
-                typeof Uint16Array != 'undefined' &&
-                typeof Int32Array != 'undefined' &&
-                typeof Uint32Array != 'undefined' &&
-                typeof Float32Array != 'undefined' &&
-                typeof Float64Array != 'undefined' &&
-                typeof DataView != 'undefined';
-
-            results.addItem({
-                key: 'scripting.es6.datatypes',
-                passed: passed ? YES : NO
-            });
-        },
 
         /* High res time */
 
