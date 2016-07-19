@@ -121,62 +121,7 @@
 		<!-- <div id='index'></div> -->
 
 		<script>
-		<!--
-
-
-			function waitForWhichBrowser(cb) {
-				var callback = cb;
-
-				function wait() {
-					if (typeof WhichBrowser == 'undefined')
-						window.setTimeout(wait, 100)
-					else
-						callback();
-				}
-
-				wait();
-			}
-
-
-			waitForWhichBrowser(function() {
-
-				Browsers = new WhichBrowser({
-					useFeatures:		true,
-					detectCamouflage:	true
-				});
-
-				Blacklist = { 'OneBrowser' : { blocked: true, identifier: Browsers.browser.toString() } };
-
-				if (typeof Blacklist[Browsers.browser.name] != 'undefined')
-				{
-					if (Blacklist[Browsers.browser.name].blocked)
-					{
-						var contents = document.getElementById('contents');
-						contents.style.visibility = 'visible';
-
-						var warning = document.getElementById('warning');
-						warning.innerHTML =
-							"<div class='blocked'>" +
-								"<h2>" + Blacklist[Browsers.browser.name].identifier + " has been blocked!</h2>" +
-								"<p>It appears that your browser is too buggy to test or is deliberately attempting to get higher scores " +
-								"by claiming it supports features that it does not. In any case consider switching to a different browser, " +
-								"because this will also cause problems for websites that attempt to use these features.</p>" +
-								"<button onclick='this.style.display=\"none\"; start();'>Show results anyway</button>" +
- 							"</div>"
-
-						var loading = document.getElementById('loading');
-						loading.style.display = 'none';
-
-						this.load();
-						return;
-					}
-				}
-
-				start();
-			});
-
-
-			function start() {
+			(function start() {
 
 				var params = {};
 
@@ -251,7 +196,7 @@
 					var loading = document.getElementById('loading');
 					loading.style.display = 'none';
 				});
-			}
+			})();
 
 
 		//-->

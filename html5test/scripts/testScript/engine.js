@@ -2627,7 +2627,6 @@ Test8 = (function () {
     /* Classes */
 
     var TestCss = function (tests, spec, title, testList) {
-        // console.log(testList);
     	this.tests = tests;
     	this.id = spec;
     	this.title = title;
@@ -2650,7 +2649,6 @@ Test8 = (function () {
     			}
 
     			var passed = 0, tests = theseTests[feature];
-
 
     			tests = tests instanceof Array? tests : [tests];
 
@@ -2826,13 +2824,6 @@ Test8 = (function () {
             this.data = data;
 
             if (typeof this.data.passed == 'undefined') this.data.passed = false;
-
-            if (this.data.passed) {
-                var blacklist = this.isOnBlacklist();
-                if (blacklist) {
-                    this.data.passed = blacklist;
-                }
-            }
         },
 
         update: function (data) {
@@ -2841,33 +2832,6 @@ Test8 = (function () {
             }
 
             if (typeof this.data.passed == 'undefined') this.data.passed = false;
-
-            if (this.data.passed) {
-                var blacklist = this.isOnBlacklist();
-                if (blacklist) {
-                    this.data.passed = blacklist;
-                }
-            }
-        },
-
-        isOnBlacklist: function () {
-            var part = '';
-            var parts = this.data.key.replace(/\-/g, '.').split('.');
-
-            for (var i = 0; i < parts.length; i++) {
-                part += (i == 0 ? '' : '.') + parts[i];
-
-                for (var k = 0; k < blacklists.length; k++) {
-                    if (typeof blacklists[k][1][part] != 'undefined') {
-                        if (blacklists[k][1][part]) {
-                            log('BLOCKED: ' + part + ' is on the blacklist for this browser!');
-                            return blacklists[k][0];
-                        }
-                    }
-                }
-            }
-
-            return false;
         },
 
         startBackground: function () {
@@ -2893,82 +2857,6 @@ Test8 = (function () {
     function Runner(callback, error) { this.initialize(callback, error); }
     Runner.prototype = {
         initialize: function (callback, error) {
-            blacklists = [
-                [
-                    BLOCKED,
-                    {
-                        'form.file': Browsers.isDevice('Xbox 360') || Browsers.isDevice('Xbox One') || Browsers.isDevice('Playstation 4') || Browsers.isOs('Windows Phone', '<', '8.1') || Browsers.isOs('iOS', '<', '6') || Browsers.isOs('Android', '<', '2.2'),
-                        'form.date.ui': Browsers.isBrowser('Sogou Explorer') || Browsers.isBrowser('Maxthon', '<', '4.0.5') || (Browsers.isBrowser('UC Browser', '<', '8.6') && Browsers.isType('mobile', 'tablet')),
-                        'form.month.ui': Browsers.isBrowser('Sogou Explorer') || Browsers.isBrowser('Maxthon', '<', '4.0.5') || (Browsers.isBrowser('UC Browser', '<', '8.6') && Browsers.isType('mobile', 'tablet')),
-                        'form.week.ui': Browsers.isBrowser('Sogou Explorer') || Browsers.isBrowser('Maxthon', '<', '4.0.5') || (Browsers.isBrowser('UC Browser', '<', '8.6') && Browsers.isType('mobile', 'tablet')),
-                        'form.time.ui': Browsers.isBrowser('Sogou Explorer') || Browsers.isBrowser('Maxthon', '<', '4.0.5') || (Browsers.isBrowser('UC Browser', '<', '8.6') && Browsers.isType('mobile', 'tablet')),
-                        'form.datetime-local.ui': Browsers.isBrowser('Sogou Explorer') || Browsers.isBrowser('Maxthon', '<', '4.0.5') || (Browsers.isBrowser('UC Browser', '<', '8.6') && Browsers.isType('mobile', 'tablet')),
-                        'form.color.ui': Browsers.isBrowser('Sogou Explorer') || (Browsers.isBrowser('UC Browser', '<', '9.8') && Browsers.isType('mobile', 'tablet')),
-                        'form.range.ui': (Browsers.isBrowser('UC Browser', '<', '9.8') && Browsers.isType('mobile', 'tablet')),
-                        'form.progress.element': Browsers.isBrowser('Baidu Browser'),
-                        'files.fileSystem': Browsers.isOs('BlackBerry Tablet OS'),
-                        'input.getUserMedia': Browsers.isDevice('webOS TV') || Browsers.isBrowser('Baidu Browser') || Browsers.isBrowser('Sogou Explorer') || (Browsers.isBrowser('UC Browser', '<', '9.8') && Browsers.isType('mobile', 'tablet')) || Browsers.isBrowser('Dolphin') || Browsers.isBrowser('Safari', '=', '9'),
-                        'input.getGamepads': Browsers.isDevice('webOS TV') || Browsers.isDevice('Playstation 4') || Browsers.isDevice('Wii U'),
-                        'location.geolocation': Browsers.isDevice('webOS TV') || Browsers.isDevice('Xbox One') || Browsers.isBrowser('Baidu Browser') || Browsers.isOs('Google TV'),
-                        'location.orientation': Browsers.isBrowser('Baidu Browser'),
-                        'output.notifications': Browsers.isBrowser('Opera', '=', '18') || Browsers.isBrowser('Baidu Browser') || Browsers.isBrowser('Sogou Explorer'),
-                        'output.requestFullScreen': Browsers.isBrowser('Sogou Explorer') || Browsers.isOs('BlackBerry Tablet OS') || Browsers.isOs('BlackBerry OS'),
-                        'video.subtitle': Browsers.isBrowser('Baidu Browser') || Browsers.isBrowser('Sogou Explorer'),
-                        '3d.webgl': Browsers.isBrowser('Baidu Browser')
-                    }
-                ],
-
-                [
-                    DISABLED,
-                    {
-                        'elements.semantic.ping': Browsers.isBrowser('Firefox') || Browsers.isBrowser('Firefox Mobile')
-                    }
-                ],
-
-                [
-                    UNCONFIRMED,
-                    {
-                        'interaction.dragdrop': !(Browsers.isType('desktop') ||
-                            Browsers.isType('mobile', 'tablet', 'media') && (
-                                Browsers.isBrowser('Opera') && Browsers.isEngine('Presto')
-                            ) ||
-                            Browsers.isType('television') && (
-                                Browsers.isDevice('webOS TV')
-                            )
-                        ),
-
-                        'interaction.editing': !(Browsers.isType('desktop') ||
-                            Browsers.isType('mobile', 'tablet', 'media') && (
-                                Browsers.isOs('iOS', '>=', '5') ||
-                                Browsers.isOs('Android', '>=', '4') ||
-                                Browsers.isOs('Windows Phone', '>=', '7.5') ||
-                                Browsers.isOs('BlackBerry') ||
-                                Browsers.isOs('BlackBerry OS') ||
-                                Browsers.isOs('BlackBerry Tablet OS') ||
-                                Browsers.isOs('Meego') ||
-                                Browsers.isOs('Tizen') ||
-                                Browsers.isEngine('Gecko') ||
-                                Browsers.isEngine('Presto') ||
-                                Browsers.isBrowser('Chrome') ||
-                                Browsers.isBrowser('Polaris', '>=', '8')
-                            ) ||
-                            Browsers.isType('television') && (
-                                Browsers.isOs('Tizen') ||
-                                Browsers.isDevice('webOS TV') ||
-                                Browsers.isBrowser('Espial') ||
-                                Browsers.isBrowser('MachBlue XT') ||
-                                Browsers.isEngine('Presto', '>=', '2.9')
-                            ) ||
-                            Browsers.isType('gaming') && (
-                                Browsers.isDevice('Xbox 360') ||
-                                Browsers.isDevice('Xbox One') ||
-                                Browsers.isDevice('Playstation 4')
-                            )
-                        )
-                    }
-                ]
-            ];
-
             try {
                 this.backgroundTasks = [];
                 this.backgroundIds = {};
