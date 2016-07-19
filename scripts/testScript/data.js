@@ -10,7 +10,6 @@ var tests = [
 						id:		'parsing',
 						name:	'Parsing rules',
 						required: true,
-						status:	'stable',
 						items:	[
 									{
 										id:		'doctype',
@@ -60,7 +59,6 @@ var tests = [
 					}, {
 						id:		'elements',
 						name:	'Elements',
-						status:	'stable',
 						items:	[
 									{
 										id:		'dataset',
@@ -245,7 +243,6 @@ var tests = [
 														id:		'dialog',
 														name: 	'<code>dialog</code> element',
 														li: 	336,
-														status:	'proposal',
 														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-dialog-element' ],
@@ -365,7 +362,6 @@ var tests = [
 					}, {
 						id:		'form',
 						name:	'Forms',
-						status:	'stable',
 						items:	[
 									'<strong>Field types</strong>',
 
@@ -475,7 +471,6 @@ var tests = [
 								]
 					}, {
 						id:		'components',
-						status:	'stable',
 						name: 	'Web Components',
 						items:	[
 									{
@@ -519,7 +514,6 @@ var tests = [
 					{
 						id:		'input',
 						name:	'Input',
-						status:	'proposal',
 						items:	[
 									{
 										id:			'pointerevents',
@@ -621,7 +615,6 @@ var tests = [
 					{
 						id:		'audio',
 						name:	'Resource Hints',
-						status:	'stable',
 						items:	[
 									{
 										id:		'preload',
@@ -641,7 +634,6 @@ var tests = [
 		items:	[
 					{
 						id:		'responsive',
-						status:	'stable',
 						name: 	'Responsive images',
 						items:	[
 									{
@@ -659,7 +651,6 @@ var tests = [
 					}, {
 						id:		'canvas',
 						name:	'2D Graphics',
-						status:	'stable',
 						items:	[
 									{
 										id:		'context',
@@ -717,7 +708,6 @@ var tests = [
 										id:		'blending',
 										name: 	'Blending modes',
 										li:	 	11,
-										status:	'proposal',
 										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/compositing-1/#canvascompositingandblending' ]
@@ -726,7 +716,6 @@ var tests = [
 								]
 					}, {
 						id:		'3d',
-						status:	'stable',
 						name:	'3D and VR',
 						items:	[
 									'<strong>3D Graphics</strong>',
@@ -747,14 +736,12 @@ var tests = [
 								]
 					}, {
 						id:		'animation',
-						status:	'stable',
 						name: 	'Animation',
 						items:	[
 									{
 										id:			'webanimation',
 										name: 		'Web Animations API',
 										li:			326,
-										status:		'experimental',
 										value:		1,
 										urls:		[
 														[ 'w3c', 'https://w3c.github.io/web-animations/' ]
@@ -781,14 +768,12 @@ var tests = [
 		items:	[
 					{
 						id:		'communication',
-						status:	'stable',
 						name: 	'Communication',
 						items:	[
 									{
 										id:			'fetch',
 										name: 		'Fetch',
 										li:			231,
-										status:		'proposal',
 										value:		1,
 										urls:		[
 														[ 'whatwg', 'https://fetch.spec.whatwg.org/' ],
@@ -867,7 +852,6 @@ var tests = [
 					}, {
 						id:		'rtc',
 						name:	'Peer To Peer',
-						status:	'stable',
 						items:	[
 									'<strong>Connectivity</strong>',
 
@@ -893,7 +877,6 @@ var tests = [
 		items:	[
 					{
 						id:		'performance',
-						status:	'stable',
 						name:	'Performance',
 						items:	[
 									'<strong>Workers</strong>',
@@ -930,14 +913,12 @@ var tests = [
 								]
 					}, {
 						id:		'security',
-						status:	'stable',
 						name:	'Security',
 						items:	[
 									{
 										id:			'crypto',
 										name: 		'Web Cryptography API',
 										li:			201,
-										status:		'proposal',
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/' ]
@@ -947,7 +928,6 @@ var tests = [
 										id:			'crypto.rand',
 										name: 		'Web Cryptography getRandomValues',
 										li:			202,
-										status:		'proposal',
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues' ]
@@ -966,7 +946,6 @@ var tests = [
 										id:			'csp11',
 										name: 		'Content Security Policy 2',
 										li:			319,
-										status:		'proposal',
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/CSP2/' ],
@@ -1019,7 +998,6 @@ var tests = [
 					{
 						id:		'storage',
 						name: 	'Storage',
-						status:	'stable',
 						items:	[
 									'<strong>Key-value storage</strong>',
 
@@ -1053,7 +1031,6 @@ var tests = [
 										id:			'sqlDatabase',
 										name: 		'Web SQL Database',
 										li: 		263,
-										status:		'rejected',
 										value:		1,
 
 										url:		'http://www.w3.org/TR/webdatabase/'
@@ -1062,7 +1039,6 @@ var tests = [
 					}, {
 						id:		'files',
 						name:	'Files',
-						status:	'stable',
 						items:	[
 									'<strong>Reading files</strong>',
 
@@ -1117,7 +1093,6 @@ var tests = [
 					{
 						id:		'scripting',
 						name: 	'Scripting',
-						status:	'stable',
 						items:	[
 									'<strong>Script execution</strong>',
 
@@ -1350,7 +1325,6 @@ var tests = [
 					{
 						id:		'other',
 						name: 	'Other',
-						status:	'stable',
 						items:	[
 									{
 										id: 		'hashchange',

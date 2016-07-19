@@ -1,22 +1,5 @@
-
 Test =
-Test8 = (function () {
-
-    var release = 8;
-
-    var NO = 0,
-        YES = 1,
-        OLD = 2,
-        BUGGY = 4,
-        PREFIX = 8,
-        BLOCKED = 16,
-        DISABLED = 32,
-        UNCONFIRMED = 64,
-        UNKNOWN = 128,
-        EXPERIMENTAL = 256;
-
-    var blacklists = [];
-
+(function () {
 
     var testsuite = [
 
@@ -2324,18 +2307,18 @@ Test8 = (function () {
 
     /* Classes */
 
-    var TestCss = function (tests, spec, title, testList) {
+    var TestRuntime = function (tests, spec, title, testList) {
     	this.tests = tests;
     	this.id = spec;
     	this.title = title;
 
     	// Perform tests
-    	for(var id in TestCss.groups) {
-    		this.group(id, TestCss.groups[id], spec, testList);
+    	for(var id in TestRuntime.groups) {
+    		this.group(id, TestRuntime.groups[id], spec, testList);
     	}
     }
 
-    TestCss.prototype = {
+    TestRuntime.prototype = {
     	group: function(what, testCallback, specId, testList) {
     		var thisSection, theseTests = this.tests[what];
             var key, passed = true;
@@ -2373,7 +2356,7 @@ Test8 = (function () {
     	}
     }
 
-    TestCss.groups = {
+    TestRuntime.groups = {
     	'values': function(test, label, tests) {
     		var properties = tests.properties,
     			failed = [];
@@ -2580,7 +2563,7 @@ Test8 = (function () {
             			var spec = specs.shift();
 
             			// Run tests
-            			var test = new TestCss(Specs[spec], spec, Specs[spec].title, this.list);
+            			var test = new TestRuntime(Specs[spec], spec, Specs[spec].title, this.list);
 
             			// Schedule next test
             			setTimeout(arguments.callee.bind(this), 50)
@@ -2629,7 +2612,6 @@ Test8 = (function () {
             var uniqueid = (((1 + Math.random()) * 0x1000000) | 0).toString(16).substring(1) + ("0000000000" + (new Date().getTime() - new Date(2010, 0, 1).getTime()).toString(16)).slice(-10);
 
             this.callback({
-                release: release,
                 uniqueid: uniqueid,
                 results: this.list.toString()
             });
