@@ -15,7 +15,7 @@ var tests = [
 									{
 										id:		'doctype',
 										name: 	'<code>&lt;!DOCTYPE html&gt;</code> triggers standards mode',
-										li: 	3,
+										li: 	4,
 										required: true,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#the-doctype' ],
@@ -24,7 +24,7 @@ var tests = [
 									}, {
 										id:		'tokenizer',
 										name: 	'HTML5 tokenizer',
-										li: 	3,
+										li: 	4,
 										required: true,
 										value:	3,
 										urls:	[
@@ -35,7 +35,7 @@ var tests = [
 									}, {
 										id:		'tree',
 										name: 	'HTML5 tree building',
-										li:		3,
+										li:		4,
 										required: true,
 										value:	2,
 										urls:	[
@@ -47,7 +47,7 @@ var tests = [
 									{
 										id:		'svg',
 										name: 	'Parsing inline SVG',
-										li: 	48,
+										li: 	49,
 										required: true,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/embedded-content-0.html#svg' ],
@@ -65,7 +65,7 @@ var tests = [
 									{
 										id:		'dataset',
 										name: 	'Embedding custom non-visible data',
-										li: 	41,
+										li: 	42,
 										required: true,
 										value:	2,
 										urls:	[
@@ -87,7 +87,7 @@ var tests = [
 													{
 														id:		'section',
 														name: 	'<code>section</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-section-element' ],
@@ -96,7 +96,7 @@ var tests = [
 													}, {
 														id:		'nav',
 														name: 	'<code>nav</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-nav-element' ],
@@ -105,7 +105,7 @@ var tests = [
 													}, {
 														id:		'article',
 														name: 	'<code>article</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-article-element' ],
@@ -114,7 +114,7 @@ var tests = [
 													}, {
 														id:		'aside',
 														name: 	'<code>aside</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-aside-element' ],
@@ -123,7 +123,7 @@ var tests = [
 													}, {
 														id:		'header',
 														name: 	'<code>header</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-header-element' ],
@@ -132,7 +132,7 @@ var tests = [
 													}, {
 														id:		'footer',
 														name: 	'<code>footer</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-footer-element' ],
@@ -151,7 +151,7 @@ var tests = [
 													{
 														id:		'main',
 														name: 	'<code>main</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-main-element' ],
@@ -160,7 +160,7 @@ var tests = [
 													}, {
 														id:		'figure',
 														name: 	'<code>figure</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figure-element' ],
@@ -169,7 +169,7 @@ var tests = [
 													}, {
 														id:		'figcaption',
 														name: 	'<code>figcaption</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element' ],
@@ -178,7 +178,7 @@ var tests = [
 													}, {
 														id:		'ol',
 														name: 	'<code>reversed</code> attribute on the <code>ol</code> element',
-														li:		16,
+														li:		17,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element' ],
@@ -193,7 +193,7 @@ var tests = [
 													{
 														id:		'download',
 														name: 	'<code>download</code> attribute on the <code>a</code> element',
-														li: 	33,
+														li: 	34,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-a-element' ],
@@ -202,7 +202,7 @@ var tests = [
 													}, {
 														id:		'mark',
 														name: 	'<code>mark</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-mark-element' ],
@@ -211,7 +211,7 @@ var tests = [
 													}, {
 														id:		'time',
 														name: 	'<code>time</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element' ],
@@ -220,7 +220,7 @@ var tests = [
 													}, {
 														id:		'data',
 														name: 	'<code>data</code> element',
-														li:		56,
+														li:		57,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-data-element' ],
@@ -229,7 +229,7 @@ var tests = [
 													}, {
 														id:		'wbr',
 														name: 	'<code>wbr</code> element',
-														li: 	15,
+														li: 	16,
 														value:	1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-wbr-element' ],
@@ -244,7 +244,7 @@ var tests = [
 													{
 														id:		'dialog',
 														name: 	'<code>dialog</code> element',
-														li: 	338,
+														li: 	336,
 														status:	'proposal',
 														value:	1,
 														urls:	[
@@ -259,7 +259,7 @@ var tests = [
 									{
 										id: 	'customEv',
 										name: 	'Custom Event',
-										li: 289,
+										li: 	287,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -269,7 +269,7 @@ var tests = [
 									{
 										id: 	'text',
 										name: 	'Node.textContent',
-										li: 	290,
+										li: 	288,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -279,7 +279,7 @@ var tests = [
 									{
 										id: 	'eventListener',
 										name: 	'addEventListener method',
-										li: 	294,
+										li: 	292,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -289,7 +289,7 @@ var tests = [
 									{
 										id: 	'matches',
 										name: 	'matches method',
-										li: 	346,
+										li: 	343,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -299,7 +299,7 @@ var tests = [
 									{
 										id: 	'classList',
 										name: 	'classList method',
-										li: 	348,
+										li: 	345,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -309,7 +309,7 @@ var tests = [
 									{
 										id: 	'className',
 										name: 	'getElementsByClassName method',
-										li: 	350,
+										li: 	347,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -319,7 +319,7 @@ var tests = [
 									{
 										id: 	'relList',
 										name: 	'relList method',
-										li: 	339,
+										li: 	336,
 										value: 	1,
 										urls: 	[
 													['whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#dom-a-rellist']
@@ -328,7 +328,7 @@ var tests = [
 									{
 										id: 	'rect',
 										name: 	'getBoundingClientRect method',
-										li: 	224,
+										li: 	223,
 										required: true,
 										value: 	2,
 										urls: 	[
@@ -343,7 +343,7 @@ var tests = [
 													{
 														id:		'outerHTML',
 														name: 	'<code>outerHTML</code> property',
-														li: 	324,
+														li: 	321,
 														required: true,
 														value:	1,
 														urls:	[
@@ -352,7 +352,7 @@ var tests = [
 													}, {
 														id:		'insertAdjacentHTML',
 														name: 	'<code>insertAdjacentHTML</code> function',
-														li:		324,
+														li:		321,
 														required: true,
 														value:	1,
 														urls:	[
@@ -377,12 +377,12 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
-														li:			3,
+														li:			4,
 														required: true,
 													}, {
 														id:			'selection',
 														name: 		'Selection Direction',
-														li: 		3,
+														li: 		4,
 														required: true,
 														value:		2
 													}
@@ -395,62 +395,62 @@ var tests = [
 													{
 														id:			'element',
 														name: 		'Minimal element support',
-														li:			34,
+														li:			35,
 														required: true,
 														value:		1,
 														url:		'http://www.w3.org/TR/html5/forms.html#number-state-(type=number)'
 													}, {
 														id:			'ui',
 														name: 		'Custom user-interface',
-														li:			34,
+														li:			35,
 														required: true,
 														value:		2
 													}, {
 														id:			'sanitization',
 														name: 		'Value sanitization',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#value-sanitization-algorithm'
 													}, {
 														id:			'validation',
 														name: 		'Field validation',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#the-constraint-validation-api'
 													}, {
 														id:			'min',
 														name: 		'<code>min</code> attribute',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-min'
 													}, {
 														id:			'max',
 														name: 		'<code>max</code> attribute',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-max'
 													}, {
 														id:			'step',
 														name: 		'<code>step</code> attribute',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-input-step'
 													}, {
 														id:			'stepDown',
 														name: 		'<code>stepDown()</code> method',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepdown'
 													}, {
 														id:			'stepUp',
 														name: 		'<code>stepUp()</code> method',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-stepup'
 													}, {
 														id:			'valueAsNumber',
 														name: 		'<code>valueAsNumber()</code> method',
-														li:			34,
+														li:			35,
 														required: true,
 														url:		'http://www.w3.org/TR/html5/forms.html#dom-input-valueasnumber'
 													}
@@ -467,7 +467,7 @@ var tests = [
 													{
 														id:			'autofocus',
 														name: 		'<code>autofocus</code> attribute',
-														li:			27,
+														li:			28,
 														url:		'http://www.w3.org/TR/html5/forms.html#attr-fe-autofocus'
 													}
 												]
@@ -481,7 +481,7 @@ var tests = [
 									{
 										id:			'shadowdom',
 										name: 		'Shadow DOM',
-										li: 		331,
+										li: 		328,
 										status: 	'experimental',
 										value:		{ maximum: 4, award: { OLD: 2 } },
 										urls:		[
@@ -490,7 +490,7 @@ var tests = [
 									}, {
 										id:			'template',
 										name: 		'HTML templates',
-										li:			343,
+										li:			340,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html-templates/' ],
@@ -500,7 +500,7 @@ var tests = [
 									}, {
 										id:			'imports',
 										name: 		'HTML imports',
-										li:			328,
+										li:			325,
 										status: 	'rejected',
 										urls:		[
 														[ 'w3c', 'http://w3c.github.io/webcomponents/spec/imports/' ]
@@ -524,7 +524,7 @@ var tests = [
 									{
 										id:			'pointerevents',
 										name: 		'Pointer Events',
-										li:			312,
+										li:			309,
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/pointerevents/' ],
@@ -534,7 +534,7 @@ var tests = [
 									{
 										id: 		'dispatch',
 										name: 		'DispatchEvent',
-										li:			282,
+										li:			280,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -544,7 +544,7 @@ var tests = [
 									{
 										id: 		'touch',
 										name: 		'Touch event',
-										li:			314,
+										li:			311,
 										required: true,
 										value: 		1,
 										urls: 		[
@@ -556,7 +556,7 @@ var tests = [
 									{
 										id: 		'which',
 										name: 		'KeyboardEvent which',
-										li:			276,
+										li:			274,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -566,7 +566,7 @@ var tests = [
 									{
 										id: 		'charCode',
 										name: 		'KeyboardEvent charCode',
-										li:			277,
+										li:			275,
 										required: true,
 										value:		1,
 										urls: 		[
@@ -576,7 +576,7 @@ var tests = [
 									{
 										id: 		'code',
 										name: 		'KeyboardEvent code',
-										li:			278,
+										li:			276,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-code']
@@ -585,7 +585,7 @@ var tests = [
 									{
 										id: 		'location',
 										name: 		'KeyboardEvent location',
-										li:			279,
+										li:			277,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-location']
@@ -594,7 +594,7 @@ var tests = [
 									{
 										id: 		'modifier',
 										name: 		'KeyboardEvent getModifierState',
-										li:			280,
+										li:			278,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-getModifierState']
@@ -603,7 +603,7 @@ var tests = [
 									{
 										id: 		'key',
 										name: 		'KeyboardEvent key',
-										li:			281,
+										li:			279,
 										value:		1,
 										urls: 		[
 														['w3c', 'http://www.w3.org/TR/uievents/#widl-KeyboardEvent-key']
@@ -626,7 +626,7 @@ var tests = [
 									{
 										id:		'preload',
 										name: 	'Preload in the background',
-										li:		268,
+										li:		266,
 										value:	1,
 										url:	'http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload'
 									}
@@ -647,7 +647,7 @@ var tests = [
 									{
 										id:			'srcset',
 										name: 		'<code>srcset</code> attribute',
-										li:			32,
+										li:			33,
 										value:		5,
 										urls:		[
 														[ 'ricg', 'http://responsiveimages.org/' ],
@@ -664,7 +664,7 @@ var tests = [
 									{
 										id:		'context',
 										name: 	'Canvas 2D graphics',
-										li:		57,
+										li:		58,
 										required: true,
 										value:	10,
 										urls:   [
@@ -676,7 +676,7 @@ var tests = [
 									{
 										id:		'smil',
 										name: 	'SVG Animation Support',
-										li:		300,
+										li:		297,
 										required: true,
 										value:	3,
 										urls:   [
@@ -686,7 +686,7 @@ var tests = [
 									{
 										id:		'filter',
 										name: 	'SVG Filter Support',
-										li:		301,
+										li:		298,
 										required: true,
 										value:	3,
 										urls:   [
@@ -696,7 +696,7 @@ var tests = [
 									{
 										id:		'fragment',
 										name: 	'SVG Fragment Identifier Support',
-										li:		301,
+										li:		299,
 										value:	3,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/SVG/linking.html#SVGFragmentIdentifiers' ],
@@ -707,7 +707,7 @@ var tests = [
 									{
 										id:		'text',
 										name: 	'Text support',
-										li:		58,
+										li:		59,
 										value:	2,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/2dcontext/#drawing-text-to-the-canvas' ],
@@ -716,7 +716,7 @@ var tests = [
 									}, {
 										id:		'blending',
 										name: 	'Blending modes',
-										li:	 	10,
+										li:	 	11,
 										status:	'proposal',
 										value:	5,
 										urls:	[
@@ -734,7 +734,7 @@ var tests = [
 									{
 										id:			'webgl',
 										name: 		'WebGL',
-										li:			61,
+										li:			62,
 										required: true,
 										value:		{ maximum: 15, award: { PREFIX: 10 } },
 										urls:		[
@@ -753,7 +753,7 @@ var tests = [
 									{
 										id:			'webanimation',
 										name: 		'Web Animations API',
-										li:			329,
+										li:			326,
 										status:		'experimental',
 										value:		3,
 										urls:		[
@@ -762,7 +762,7 @@ var tests = [
 									}, {
 										id:			'requestAnimationFrame',
 										name: 		'<code>window.requestAnimationFrame</code>',
-										li:			237,
+										li:			236,
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/animation-timing/#requestAnimationFrame' ],
@@ -787,7 +787,7 @@ var tests = [
 									{
 										id:			'fetch',
 										name: 		'Fetch',
-										li:			232,
+										li:			231,
 										status:		'proposal',
 										value:		6,
 										urls:		[
@@ -802,7 +802,7 @@ var tests = [
 									{
 										id:			'xmlhttprequest2.upload',
 										name: 		'Upload files',
-										li:			347,
+										li:			344,
 										value:		5,
 										url:    	'http://www.w3.org/TR/XMLHttpRequest2/#the-upload-attribute'
 									}, {
@@ -815,25 +815,25 @@ var tests = [
 														{
 															id:			'text',
 															name: 		'Text response type',
-															li:			347,
+															li:			344,
 															value:		1,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'document',
 															name: 		'Document response type',
-															li:			347,
+															li:			344,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'array',
 															name: 		'<code>ArrayBuffer</code> response type',
-															li:			347,
+															li:			344,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'blob',
 															name: 		'<code>Blob</code> response type',
-															li:			347,
+															li:			344,
 															value:		2,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}
@@ -845,7 +845,7 @@ var tests = [
 									{
 										id:			'websocket.basic',
 										name: 		'Basic socket communication',
-										li:			241,
+										li:			240,
 										required: true,
 										value:		{ maximum: 10, award: { PREFIX: 7, OLD: 5 } },
 										urls:		[
@@ -855,7 +855,7 @@ var tests = [
 									}, {
 										id:			'websocket.binary',
 										name: 		'<code>ArrayBuffer</code> and <code>Blob</code> support',
-										li:			241,
+										li:			240,
 										required: true,
 										value:		5,
 										urls:		[
@@ -874,7 +874,7 @@ var tests = [
 									{
 										id:		'webrtc',
 										name: 	'WebRTC 1.0',
-										li:		216,
+										li:		215,
 										value:	{ maximum: 15, award: { PREFIX: 10 } },
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/webrtc/' ],
@@ -901,7 +901,7 @@ var tests = [
 									{
 										id:			'worker',
 										name: 		'Web Workers',
-										li: 		245,
+										li: 		244,
 										required: true,
 										value:		10,
 										urls:		[
@@ -911,7 +911,7 @@ var tests = [
 									}, {
 										id:			'sharedWorker',
 										name: 		'Shared Workers',
-										li:			246,
+										li:			245,
 										required: true,
 										value:		1,
 										urls:    	[
@@ -921,7 +921,7 @@ var tests = [
 									}, {
 										id:			'broadcast',
 										name: 		'Broadcast Channel',
-										li:			233,
+										li:			232,
 										value:		1,
 										urls:    	[
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/comms.html#broadcasting-to-other-browsing-contexts' ]
@@ -936,7 +936,7 @@ var tests = [
 									{
 										id:			'crypto',
 										name: 		'Web Cryptography API',
-										li:			202,
+										li:			201,
 										status:		'proposal',
 										value:		{ maximum: 5, award: { PREFIX: 3 } },
 										urls:		[
@@ -946,7 +946,7 @@ var tests = [
 									{
 										id:			'crypto.rand',
 										name: 		'Web Cryptography getRandomValues',
-										li:			203,
+										li:			202,
 										status:		'proposal',
 										value:		2,
 										urls:		[
@@ -955,7 +955,7 @@ var tests = [
 									}, {
 										id:			'csp10',
 										name: 		'Content Security Policy 1',
-										li:			321,
+										li:			318,
 										required: true,
 										value:		3,
 										urls:		[
@@ -965,7 +965,7 @@ var tests = [
 									}, {
 										id:			'csp11',
 										name: 		'Content Security Policy 2',
-										li:			322,
+										li:			319,
 										status:		'proposal',
 										value:		2,
 										urls:		[
@@ -975,7 +975,7 @@ var tests = [
 									}, {
 										id:			'cors',
 										name: 		'Cross-Origin Resource Sharing',
-										li:			240,
+										li:			239,
 										required: true,
 										value:		4,
 										urls:		[
@@ -984,7 +984,7 @@ var tests = [
 									}, {
 										id:			'postMessage',
 										name: 		'Cross-document messaging',
-										li:			242,
+										li:			241,
 										required: true,
 										value:		2,
 										urls:    	[
@@ -999,7 +999,7 @@ var tests = [
 									{
 										id:			'sandbox',
 										name: 		'Sandboxed <code>iframe</code>',
-										li:			35,
+										li:			36,
 										required: true,
 										value:		4,
 										urls:		[
@@ -1026,7 +1026,7 @@ var tests = [
 									{
 										id:			'sessionStorage',
 										name: 		'Session Storage',
-										li:			244,
+										li:			243,
 										required: true,
 										value:		5,
 										urls:		[
@@ -1037,7 +1037,7 @@ var tests = [
 									}, {
 										id:			'localStorage',
 										name: 		'Local Storage',
-										li:			244,
+										li:			243,
 										required: true,
 										value:		5,
 										urls:		[
@@ -1052,7 +1052,7 @@ var tests = [
 									{
 										id:			'sqlDatabase',
 										name: 		'Web SQL Database',
-										li: 		265,
+										li: 		263,
 										status:		'rejected',
 										value:		{ maximum: 5, conditional: '!storage.indexedDB.basic' },
 
@@ -1069,7 +1069,7 @@ var tests = [
 									{
 										id:			'fileReader',
 										name: 		'Basic support for reading files',
-										li:			210,
+										li:			209,
 										required: true,
 										value:		7,
 										urls:		[
@@ -1080,7 +1080,7 @@ var tests = [
 									}, {
 										id:			'fileReader.blob',
 										name: 		'Create a <code>Blob</code> from a file',
-										li:			211,
+										li:			210,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1089,7 +1089,7 @@ var tests = [
 									}, {
 										id:			'fileReader.dataURL',
 										name: 		'Create a Data URL from a <code>Blob</code>',
-										li: 		212,
+										li: 		211,
 										required: true,
 										value:		2,
 										urls:    	[
@@ -1098,7 +1098,7 @@ var tests = [
 									}, {
 										id:			'fileReader.objectURL',
 										name: 		'Create a Blob URL from a <code>Blob</code>',
-										li: 		212,
+										li: 		211,
 										required: true,
 										value:		2,
 										urls:    	[
@@ -1124,7 +1124,7 @@ var tests = [
 									{
 										id:			'async',
 										name: 		'Asynchronous script execution',
-										li: 		344,
+										li: 		341,
 										required: true,
 										value:		3,
 										urls:		[
@@ -1136,7 +1136,7 @@ var tests = [
 									}, {
 										id:			'defer',
 										name: 		'Defered script execution',
-										li:			345,
+										li:			342,
 										required: true,
 										value:		1,
 										urls:		[
@@ -1152,7 +1152,7 @@ var tests = [
 									{
 										id:			'es5.json',
 										name: 		'JSON encoding and decoding',
-										li: 		252,
+										li: 		251,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1227,7 +1227,7 @@ var tests = [
 									}, {
 										id: 		'es6.i18n',
 										name:   	'Internationalization',
-										li:			250,
+										li:			249,
 										value:		2,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-402/1.0/' ],
@@ -1240,7 +1240,7 @@ var tests = [
 									{
 										id:			'base64',
 										name: 		'Base64 encoding and decoding',
-										li: 		235,
+										li: 		234,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/webappapis.html#atob' ],
@@ -1250,7 +1250,7 @@ var tests = [
 									}, {
 										id: 		'mutationObserver',
 										name:   	'Mutation Observer',
-										li:			342,
+										li:			339,
 										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
@@ -1260,7 +1260,7 @@ var tests = [
 									}, {
 										id: 		'setImmeadiate',
 										name:   	'setImmeadiate',
-										li:			259,
+										li:			257,
 										value:		1,
 										urls:		[
 														[ 'w3c', 'http://w3c.github.io/setImmediate/' ]
@@ -1268,7 +1268,7 @@ var tests = [
 									}, {
 										id: 		'url',
 										name:   	'URL API',
-										li:			212,
+										li:			211,
 										required: true,
 										value:		{ maximum: 2, award: { PREFIX: 1 } },
 										urls:		[
@@ -1277,7 +1277,7 @@ var tests = [
 									}, {
 										id: 		'encoding',
 										name:   	'Encoding API',
-										li:			235,
+										li:			234,
 										required: true,
 										value:		2,
 										urls:		[
@@ -1287,7 +1287,7 @@ var tests = [
 									},  {
 										id: 		'perfTime',
 										name:   	'High Resolution Time',
-										li:			194,
+										li:			193,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/hr-time/' ]
@@ -1295,7 +1295,7 @@ var tests = [
 									}, {
 										id: 		'userTime',
 										name:   	'User Timing',
-										li:			195,
+										li:			194,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/user-timing/' ]
@@ -1303,7 +1303,7 @@ var tests = [
 									}, {
 										id: 		'navTime',
 										name:   	'Navigation Timing',
-										li:			313,
+										li:			310,
 										value:		2,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/navigation-timing/' ]
@@ -1339,7 +1339,7 @@ var tests = [
 								{
 									id: 		'woff',
 									name: 		'WOFF Fonts',
-									li:			315,
+									li:			312,
 									value: 3,
 									urls: 		[
 										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
@@ -1355,7 +1355,7 @@ var tests = [
 									{
 										id: 		'hashchange',
 										name:		'Hashchange event',
-										li:			247,
+										li:			246,
 										required: true,
 										value: 		4,
 										urls: 		[
@@ -1365,7 +1365,7 @@ var tests = [
 									{
 										id: 		'console',
 										name:		'Console logging',
-										li:			231,
+										li:			230,
 										required: true,
 										value: 		4,
 										urls: 		[
@@ -1385,7 +1385,7 @@ var tests = [
 									{
 										id: 		'focus',
 										name:		'Focus Events',
-										li:			270,
+										li:			268,
 										value: 		1,
 										urls: 		[
 														['w3c', 'https://www.w3.org/TR/DOM-Level-3-Events/#event-type-focusin']
