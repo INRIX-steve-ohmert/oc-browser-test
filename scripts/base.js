@@ -558,11 +558,8 @@
 					var tbody = document.createElement('tbody');
 					table.appendChild(tbody);
 
-					var status = typeof tests[i].status != 'undefined' ? tests[i].status : '';
-
 					this.createItems(tbody, 0, tests[i].items, {
 						id:		tests[i].id,
-						status:	status,
 						urls:	[]
 					});
 				}
@@ -634,7 +631,6 @@
 
 						var children = this.createItems(parent, level + 1, tests[i].items, {
 							id: 	key,
-							status:	typeof tests[i].status != 'undefined' ? tests[i].status : data.status,
 							urls:	urls
 						});
 
@@ -673,8 +669,6 @@
 						})(this, th, {
 							id:		key,
 							name:	tests[i].name,
-							value:	value,
-							status:	typeof tests[i].status != 'undefined' ? tests[i].status : data.status,
 							urls:	(urls || []).concat(data.urls || [])
 						});
 					}
@@ -730,11 +724,6 @@
 			}
 
 			var content = "";
-			content += "<div class='info'>";
-			content += "<div class='column left status " + data.status + "'><span>" + data.status + "</span></div>";
-			content += "<div class='column middle" + (maximum ? '' : ' none') + "'><em>" + ( maximum || '✘' ) + "</em> <span>" + (maximum != 1 ? 'Points' : 'Point') + "</span></div>";
-			content += "<div class='column right'><a href='/compare/feature/" + data.id +".html' class='compare'><span>Compare</span></a></div>";
-			content += "</div>";
 			content += "<div class='links'>";
 
 			for (var i = 0; i < data.urls.length; i++) {

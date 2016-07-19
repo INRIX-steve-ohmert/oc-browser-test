@@ -26,7 +26,7 @@ var tests = [
 										name: 	'HTML5 tokenizer',
 										li: 	4,
 										required: true,
-										value:	3,
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#parsing' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/syntax.html#parsing' ],
@@ -37,7 +37,7 @@ var tests = [
 										name: 	'HTML5 tree building',
 										li:		4,
 										required: true,
-										value:	2,
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/syntax.html#parsing' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/syntax.html#parsing' ],
@@ -67,7 +67,7 @@ var tests = [
 										name: 	'Embedding custom non-visible data',
 										li: 	42,
 										required: true,
-										value:	2,
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes' ],
 													[ 'whatwg', 'https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes' ],
@@ -88,7 +88,7 @@ var tests = [
 														id:		'section',
 														name: 	'<code>section</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-section-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-section-element' ]
@@ -97,7 +97,7 @@ var tests = [
 														id:		'nav',
 														name: 	'<code>nav</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-nav-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-nav-element' ]
@@ -106,7 +106,7 @@ var tests = [
 														id:		'article',
 														name: 	'<code>article</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-article-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-article-element' ]
@@ -115,7 +115,7 @@ var tests = [
 														id:		'aside',
 														name: 	'<code>aside</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-aside-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-aside-element' ]
@@ -124,7 +124,7 @@ var tests = [
 														id:		'header',
 														name: 	'<code>header</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-header-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-header-element' ]
@@ -133,7 +133,7 @@ var tests = [
 														id:		'footer',
 														name: 	'<code>footer</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/sections.html#the-footer-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-footer-element' ]
@@ -152,7 +152,7 @@ var tests = [
 														id:		'main',
 														name: 	'<code>main</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-main-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-main-element' ]
@@ -161,7 +161,7 @@ var tests = [
 														id:		'figure',
 														name: 	'<code>figure</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figure-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-figure-element' ]
@@ -170,7 +170,7 @@ var tests = [
 														id:		'figcaption',
 														name: 	'<code>figcaption</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-figcaption-element' ]
@@ -179,7 +179,7 @@ var tests = [
 														id:		'ol',
 														name: 	'<code>reversed</code> attribute on the <code>ol</code> element',
 														li:		17,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-ol-element' ]
@@ -194,7 +194,7 @@ var tests = [
 														id:		'download',
 														name: 	'<code>download</code> attribute on the <code>a</code> element',
 														li: 	34,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-a-element' ],
 																	[ 'whatwg', 'http://developers.whatwg.org/links.html#attr-hyperlink-download' ]
@@ -203,7 +203,7 @@ var tests = [
 														id:		'mark',
 														name: 	'<code>mark</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-mark-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-mark-element' ]
@@ -212,7 +212,7 @@ var tests = [
 														id:		'time',
 														name: 	'<code>time</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-time-element' ]
@@ -221,7 +221,7 @@ var tests = [
 														id:		'data',
 														name: 	'<code>data</code> element',
 														li:		57,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-data-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-data-element' ]
@@ -230,7 +230,7 @@ var tests = [
 														id:		'wbr',
 														name: 	'<code>wbr</code> element',
 														li: 	16,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/TR/html5/text-level-semantics.html#the-wbr-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/semantics.html#the-wbr-element' ]
@@ -246,7 +246,7 @@ var tests = [
 														name: 	'<code>dialog</code> element',
 														li: 	336,
 														status:	'proposal',
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-dialog-element' ],
 																	[ 'whatwg', 'https://html.spec.whatwg.org/multipage/forms.html#the-dialog-element' ]
@@ -261,7 +261,7 @@ var tests = [
 										name: 	'Custom Event',
 										li: 	287,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['whatwg', 'https://dom.spec.whatwg.org/#interface-customevent']
 												]
@@ -271,7 +271,7 @@ var tests = [
 										name: 	'Node.textContent',
 										li: 	288,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['whatwg', 'https://dom.spec.whatwg.org/#dom-node-textcontent']
 												]
@@ -281,7 +281,7 @@ var tests = [
 										name: 	'addEventListener method',
 										li: 	292,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener']
 												]
@@ -291,7 +291,7 @@ var tests = [
 										name: 	'matches method',
 										li: 	343,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-element-matches']
 												]
@@ -301,7 +301,7 @@ var tests = [
 										name: 	'classList method',
 										li: 	345,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-element-classlist']
 												]
@@ -311,7 +311,7 @@ var tests = [
 										name: 	'getElementsByClassName method',
 										li: 	347,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['https://dom.spec.whatwg.org/#dom-document-getelementsbyclassname']
 												]
@@ -330,7 +330,7 @@ var tests = [
 										name: 	'getBoundingClientRect method',
 										li: 	223,
 										required: true,
-										value: 	2,
+										value: 	1,
 										urls: 	[
 													['w3c', 'https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect']
 												]
@@ -345,7 +345,7 @@ var tests = [
 														name: 	'<code>outerHTML</code> property',
 														li: 	321,
 														required: true,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html#widl-Element-outerHTML' ]
 																]
@@ -354,7 +354,7 @@ var tests = [
 														name: 	'<code>insertAdjacentHTML</code> function',
 														li:		321,
 														required: true,
-														value:	1,
+														value:		1,
 														urls:	[
 																	[ 'w3c', 'https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html#widl-Element-insertAdjacentHTML-void-DOMString-position-DOMString-text' ]
 																]
@@ -384,7 +384,7 @@ var tests = [
 														name: 		'Selection Direction',
 														li: 		4,
 														required: true,
-														value:		2
+														value:		1,
 													}
 												]
 									}, {
@@ -404,7 +404,7 @@ var tests = [
 														name: 		'Custom user-interface',
 														li:			35,
 														required: true,
-														value:		2
+														value:		1,
 													}, {
 														id:			'sanitization',
 														name: 		'Value sanitization',
@@ -462,7 +462,7 @@ var tests = [
 									{
 										id:		'other',
 										name:	'Focus attributes',
-										value:	2,
+										value:		1,
 										items:	[
 													{
 														id:			'autofocus',
@@ -483,7 +483,7 @@ var tests = [
 										name: 		'Shadow DOM',
 										li: 		328,
 										status: 	'experimental',
-										value:		{ maximum: 4, award: { OLD: 2 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://w3c.github.io/webcomponents/spec/shadow/' ]
 													]
@@ -491,7 +491,7 @@ var tests = [
 										id:			'template',
 										name: 		'HTML templates',
 										li:			340,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html-templates/' ],
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/scripting.html#the-template-element' ],
@@ -525,7 +525,7 @@ var tests = [
 										id:			'pointerevents',
 										name: 		'Pointer Events',
 										li:			309,
-										value:		{ maximum: 5, award: { PREFIX: 3 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/pointerevents/' ],
 														[ 'wp',  '/concepts/Pointer_Events' ]
@@ -627,7 +627,7 @@ var tests = [
 										id:		'preload',
 										name: 	'Preload in the background',
 										li:		266,
-										value:	1,
+										value:		1,
 										url:	'http://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload'
 									}
 								]
@@ -648,7 +648,7 @@ var tests = [
 										id:			'srcset',
 										name: 		'<code>srcset</code> attribute',
 										li:			33,
-										value:		5,
+										value:		1,
 										urls:		[
 														[ 'ricg', 'http://responsiveimages.org/' ],
 														[ 'w3c', 'http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/' ],
@@ -666,7 +666,7 @@ var tests = [
 										name: 	'Canvas 2D graphics',
 										li:		58,
 										required: true,
-										value:	10,
+										value:		1,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/2dcontext/' ],
 													[ 'wp',  '/apis/canvas' ],
@@ -678,7 +678,7 @@ var tests = [
 										name: 	'SVG Animation Support',
 										li:		297,
 										required: true,
-										value:	3,
+										value:		1,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/SVG/animate.html' ],
 												]
@@ -688,7 +688,7 @@ var tests = [
 										name: 	'SVG Filter Support',
 										li:		298,
 										required: true,
-										value:	3,
+										value:		1,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/SVG/filters.html' ],
 												]
@@ -697,7 +697,7 @@ var tests = [
 										id:		'fragment',
 										name: 	'SVG Fragment Identifier Support',
 										li:		299,
-										value:	3,
+										value:		1,
 										urls:   [
 													[ 'w3c', 'http://www.w3.org/TR/SVG/linking.html#SVGFragmentIdentifiers' ],
 												]
@@ -708,7 +708,7 @@ var tests = [
 										id:		'text',
 										name: 	'Text support',
 										li:		59,
-										value:	2,
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/2dcontext/#drawing-text-to-the-canvas' ],
 													[ 'wp',  '/apis/canvas/CanvasRenderingContext2D/fillText' ]
@@ -718,7 +718,7 @@ var tests = [
 										name: 	'Blending modes',
 										li:	 	11,
 										status:	'proposal',
-										value:	5,
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/compositing-1/#canvascompositingandblending' ]
 												]
@@ -736,7 +736,7 @@ var tests = [
 										name: 		'WebGL',
 										li:			62,
 										required: true,
-										value:		{ maximum: 15, award: { PREFIX: 10 } },
+										value:		1,
 										urls:		[
 														[ 'khronos', 'https://www.khronos.org/registry/webgl/specs/latest/1.0/' ],
 														[ 'wp',  '/webgl' ],
@@ -755,7 +755,7 @@ var tests = [
 										name: 		'Web Animations API',
 										li:			326,
 										status:		'experimental',
-										value:		3,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'https://w3c.github.io/web-animations/' ]
 													]
@@ -763,7 +763,7 @@ var tests = [
 										id:			'requestAnimationFrame',
 										name: 		'<code>window.requestAnimationFrame</code>',
 										li:			236,
-										value:		{ maximum: 5, award: { PREFIX: 3 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/animation-timing/#requestAnimationFrame' ],
 														[ 'wp',  '/dom/Window/requestAnimationFrame' ],
@@ -789,7 +789,7 @@ var tests = [
 										name: 		'Fetch',
 										li:			231,
 										status:		'proposal',
-										value:		6,
+										value:		1,
 										urls:		[
 														[ 'whatwg', 'https://fetch.spec.whatwg.org/' ],
 														[ 'mdn', '/Web/API/Fetch_API' ]
@@ -803,7 +803,7 @@ var tests = [
 										id:			'xmlhttprequest2.upload',
 										name: 		'Upload files',
 										li:			344,
-										value:		5,
+										value:		1,
 										url:    	'http://www.w3.org/TR/XMLHttpRequest2/#the-upload-attribute'
 									}, {
 										id:			'xmlhttprequest2.response',
@@ -822,19 +822,19 @@ var tests = [
 															id:			'document',
 															name: 		'Document response type',
 															li:			344,
-															value:		2,
+															value:		1,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'array',
 															name: 		'<code>ArrayBuffer</code> response type',
 															li:			344,
-															value:		2,
+															value:		1,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}, {
 															id:			'blob',
 															name: 		'<code>Blob</code> response type',
 															li:			344,
-															value:		2,
+															value:		1,
 															url:    	'http://www.w3.org/TR/XMLHttpRequest2/#dom-xmlhttprequest-responsetype'
 														}
 													]
@@ -847,7 +847,7 @@ var tests = [
 										name: 		'Basic socket communication',
 										li:			240,
 										required: true,
-										value:		{ maximum: 10, award: { PREFIX: 7, OLD: 5 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/websockets/' ],
 														[ 'mdn', '/Web/API/WebSockets_API' ]
@@ -857,7 +857,7 @@ var tests = [
 										name: 		'<code>ArrayBuffer</code> and <code>Blob</code> support',
 										li:			240,
 										required: true,
-										value:		5,
+										value:		1,
 										urls:		[
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/comms.html#dom-websocket-binarytype' ],
 														[ 'mdn', '/Web/API/WebSockets_API' ]
@@ -875,7 +875,7 @@ var tests = [
 										id:		'webrtc',
 										name: 	'WebRTC 1.0',
 										li:		215,
-										value:	{ maximum: 15, award: { PREFIX: 10 } },
+										value:		1,
 										urls:	[
 													[ 'w3c', 'http://www.w3.org/TR/webrtc/' ],
 													[ 'wp',  '/apis/webrtc/RTCPeerConnection' ],
@@ -903,7 +903,7 @@ var tests = [
 										name: 		'Web Workers',
 										li: 		244,
 										required: true,
-										value:		10,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/workers/#dedicated-workers-and-the-worker-interface' ],
 														[ 'mdn', '/Web/API/Web_Workers_API/Using_web_workers' ]
@@ -938,7 +938,7 @@ var tests = [
 										name: 		'Web Cryptography API',
 										li:			201,
 										status:		'proposal',
-										value:		{ maximum: 5, award: { PREFIX: 3 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/' ]
 													]
@@ -948,7 +948,7 @@ var tests = [
 										name: 		'Web Cryptography getRandomValues',
 										li:			202,
 										status:		'proposal',
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues' ]
 													]
@@ -957,7 +957,7 @@ var tests = [
 										name: 		'Content Security Policy 1',
 										li:			318,
 										required: true,
-										value:		3,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/CSP1/' ],
 														[ 'mdn', '/Web/Security/CSP' ]
@@ -967,7 +967,7 @@ var tests = [
 										name: 		'Content Security Policy 2',
 										li:			319,
 										status:		'proposal',
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/CSP2/' ],
 														[ 'mdn', '/Web/Security/CSP' ]
@@ -977,7 +977,7 @@ var tests = [
 										name: 		'Cross-Origin Resource Sharing',
 										li:			239,
 										required: true,
-										value:		4,
+										value:		1,
 										urls:		[
 														[ 'mdn', '/Web/HTTP/Access_control_CORS' ]
 													]
@@ -986,7 +986,7 @@ var tests = [
 										name: 		'Cross-document messaging',
 										li:			241,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/html5/postmsg/' ],
 														[ 'wp',  '/apis/web-messaging' ],
@@ -1001,7 +1001,7 @@ var tests = [
 										name: 		'Sandboxed <code>iframe</code>',
 										li:			36,
 										required: true,
-										value:		4,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/embedded-content-0.html#attr-iframe-sandbox' ],
 														[ 'mdn', '/Web/HTML/Element/iframe' ]
@@ -1028,7 +1028,7 @@ var tests = [
 										name: 		'Session Storage',
 										li:			243,
 										required: true,
-										value:		5,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/webstorage/#the-sessionstorage-attribute' ],
 														[ 'wp',  '/apis/web-storage' ],
@@ -1039,7 +1039,7 @@ var tests = [
 										name: 		'Local Storage',
 										li:			243,
 										required: true,
-										value:		5,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/webstorage/#the-localstorage-attribute' ],
 														[ 'wp',  '/apis/web-storage' ],
@@ -1054,7 +1054,7 @@ var tests = [
 										name: 		'Web SQL Database',
 										li: 		263,
 										status:		'rejected',
-										value:		{ maximum: 5, conditional: '!storage.indexedDB.basic' },
+										value:		1,
 
 										url:		'http://www.w3.org/TR/webdatabase/'
 									}
@@ -1071,7 +1071,7 @@ var tests = [
 										name: 		'Basic support for reading files',
 										li:			209,
 										required: true,
-										value:		7,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#filereader-interface' ],
 														[ 'wp',  '/apis/file' ],
@@ -1082,7 +1082,7 @@ var tests = [
 										name: 		'Create a <code>Blob</code> from a file',
 										li:			210,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob' ],
 													]
@@ -1091,7 +1091,7 @@ var tests = [
 										name: 		'Create a Data URL from a <code>Blob</code>',
 										li: 		211,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-readAsDataURL' ],
 													]
@@ -1100,7 +1100,7 @@ var tests = [
 										name: 		'Create a Blob URL from a <code>Blob</code>',
 										li: 		211,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:    	[
 														[ 'w3c', 'http://dev.w3.org/2006/webapi/FileAPI/#dfn-createObjectURL' ],
 													]
@@ -1126,7 +1126,7 @@ var tests = [
 										name: 		'Asynchronous script execution',
 										li: 		341,
 										required: true,
-										value:		3,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/html5/scripting-1.html#attr-script-async' ],
 														[ 'whatwg', 'https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async' ],
@@ -1154,7 +1154,7 @@ var tests = [
 										name: 		'JSON encoding and decoding',
 										li: 		251,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-json-object' ],
 														[ 'mdn', '/JSON' ],
@@ -1219,7 +1219,7 @@ var tests = [
 										id: 		'es6.promises',
 										name:   	'Promises',
 										li:			184,
-										value:		3,
+										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects' ],
 														[ 'mdn', '/Web/JavaScript/Reference/Global_Objects/Promise' ]
@@ -1228,7 +1228,7 @@ var tests = [
 										id: 		'es6.i18n',
 										name:   	'Internationalization',
 										li:			249,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'ecma', 'http://www.ecma-international.org/ecma-402/1.0/' ],
 														[ 'mdn', '/Web/JavaScript/Reference/Global_Objects/Intl' ]
@@ -1252,7 +1252,7 @@ var tests = [
 										name:   	'Mutation Observer',
 										li:			339,
 										required: true,
-										value:		{ maximum: 2, award: { PREFIX: 1 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/dom/#mutation-observers' ],
 														[ 'mdn', '/Web/API/MutationObserver' ]
@@ -1270,7 +1270,7 @@ var tests = [
 										name:   	'URL API',
 										li:			211,
 										required: true,
-										value:		{ maximum: 2, award: { PREFIX: 1 } },
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/url/' ]
 													]
@@ -1279,7 +1279,7 @@ var tests = [
 										name:   	'Encoding API',
 										li:			234,
 										required: true,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'whatwg', 'https://encoding.spec.whatwg.org' ],
 														[ 'mdn', '/Web/API/TextDecoder' ]
@@ -1288,7 +1288,7 @@ var tests = [
 										id: 		'perfTime',
 										name:   	'High Resolution Time',
 										li:			193,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/hr-time/' ]
 													]
@@ -1296,7 +1296,7 @@ var tests = [
 										id: 		'userTime',
 										name:   	'User Timing',
 										li:			194,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/user-timing/' ]
 													]
@@ -1304,7 +1304,7 @@ var tests = [
 										id: 		'navTime',
 										name:   	'Navigation Timing',
 										li:			310,
-										value:		2,
+										value:		1,
 										urls:		[
 														[ 'w3c', 'http://www.w3.org/TR/navigation-timing/' ]
 													]
@@ -1321,7 +1321,7 @@ var tests = [
 									name: 		'TTF Fonts',
 									li:			172,
 									required: true,
-									value: 3,
+									value: 1,
 									urls: 		[
 										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
 									]
@@ -1331,7 +1331,7 @@ var tests = [
 									name: 		'OTF Fonts',
 									li:			172,
 									required: true,
-									value: 3,
+									value: 1,
 									urls: 		[
 										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
 									]
@@ -1340,7 +1340,7 @@ var tests = [
 									id: 		'woff',
 									name: 		'WOFF Fonts',
 									li:			312,
-									value: 3,
+									value: 1,
 									urls: 		[
 										['apple', 'http://developer.apple.com/fonts/TTRefMan/index.html']
 									]
@@ -1410,7 +1410,7 @@ var tests = [
 										name:		'Display Properties',
 										li:			75,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
 														['w3c', 'https://www.w3.org/TR/css-display-3/']
 													]
@@ -1421,7 +1421,7 @@ var tests = [
 										name:		'Position',
 										li:			74,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
 														['w3c', 'https://www.w3.org/TR/css-position-3/']
 													]
@@ -1432,9 +1432,9 @@ var tests = [
 										name:		'Min Width',
 										li:			76,
 										required: 	true,
-										value: 3,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-width']
+														['mdn', '/Web/CSS/min-width']
 													]
 
 									},
@@ -1443,9 +1443,9 @@ var tests = [
 										name:		'Min Height',
 										li:			76,
 										required: 	true,
-										value: 3,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-height']
+														['mdn', '/Web/CSS/min-height']
 													]
 
 									},
@@ -1454,9 +1454,9 @@ var tests = [
 										name:		'Max Width',
 										li:			76,
 										required: 	true,
-										value: 3,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport/max-width']
+														['mdn', '/Web/CSS/@viewport/max-width']
 													]
 
 									},
@@ -1465,9 +1465,9 @@ var tests = [
 										name:		'Max Height',
 										li:			76,
 										required: 	true,
-										value: 3,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/max-height']
+														['mdn', '/Web/CSS/max-height']
 													]
 
 									}
@@ -1483,9 +1483,9 @@ var tests = [
 										name:		'Background Repeat',
 										li:			127,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat']
+														['mdn', '/Web/CSS/background-repeat']
 													]
 
 									},
@@ -1494,9 +1494,9 @@ var tests = [
 										name:		'Background Attachment',
 										li:			97,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment']
+														['mdn', '/Web/CSS/background-attachment']
 													]
 
 									},
@@ -1505,9 +1505,9 @@ var tests = [
 										name:		'Background Position',
 										li:			105,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position']
+														['mdn', '/Web/CSS/background-position']
 													]
 
 									},
@@ -1516,9 +1516,9 @@ var tests = [
 										name:		'Background Clip',
 										li:			118,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip']
+														['mdn', '/Web/CSS/background-clip']
 													]
 
 									},
@@ -1527,9 +1527,9 @@ var tests = [
 										name:		'Background Size',
 										li:			118,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-size']
+														['mdn', '/Web/CSS/background-size']
 													]
 
 									},
@@ -1538,9 +1538,9 @@ var tests = [
 										name:		'Background',
 										li:			118,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background']
+														['mdn', '/Web/CSS/background']
 													]
 
 									},
@@ -1549,9 +1549,9 @@ var tests = [
 										name:		'Border Radius',
 										li:			124,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius']
+														['mdn', '/Web/CSS/border-radius']
 													]
 
 									},
@@ -1560,7 +1560,7 @@ var tests = [
 										name:		'Border Image Source',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
 														['w3c', 'https://www.w3.org/TR/css-display-3/']
 													]
@@ -1571,9 +1571,9 @@ var tests = [
 										name:		'Border Image Slice',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source']
+														['mdn', '/Web/CSS/border-image-source']
 													]
 
 									},
@@ -1582,9 +1582,9 @@ var tests = [
 										name:		'Border Image Width',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-width']
+														['mdn', '/Web/CSS/border-image-width']
 													]
 
 									},
@@ -1593,9 +1593,9 @@ var tests = [
 										name:		'Border Image Outset',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset']
+														['mdn', '/Web/CSS/border-image-outset']
 													]
 
 									},
@@ -1604,9 +1604,9 @@ var tests = [
 										name:		'Border Image Repeat',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat']
+														['mdn', '/Web/CSS/border-image-repeat']
 													]
 
 									},
@@ -1615,7 +1615,7 @@ var tests = [
 										name:		'Border Image',
 										li:			128,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
 														['mdn', 'https://developer.mozilla.org/en-US/search?q=border-image']
 													]
@@ -1626,9 +1626,9 @@ var tests = [
 										name:		'Box Shadow',
 										li:			130,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow']
+														['mdn', '/Web/CSS/box-shadow']
 													]
 
 									},
@@ -1637,9 +1637,9 @@ var tests = [
 										name:		'Outline',
 										li:			79,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/outline']
+														['mdn', '/Web/CSS/outline']
 													]
 
 									},
@@ -1655,9 +1655,9 @@ var tests = [
 										name:		'Background Position X',
 										li:			105,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x']
+														['mdn', '/Web/CSS/background-position-x']
 													]
 
 									},
@@ -1666,9 +1666,9 @@ var tests = [
 										name:		'Background Position Y',
 										li:			105,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y']
+														['mdn', '/Web/CSS/background-position-y']
 													]
 
 									}
@@ -1684,9 +1684,9 @@ var tests = [
 										name:		'Linear Gradient',
 										li:			120,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient']
+														['mdn', '/Web/CSS/linear-gradient']
 													]
 
 									},
@@ -1695,9 +1695,9 @@ var tests = [
 										name:		'Radial Gradient',
 										li:			120,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient']
+														['mdn', '/Web/CSS/radial-gradient']
 													]
 
 									},
@@ -1706,9 +1706,9 @@ var tests = [
 										name:		'Repeating Linear Gradient',
 										li:			113,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient']
+														['mdn', '/Web/CSS/repeating-linear-gradient']
 													]
 
 									},
@@ -1717,9 +1717,9 @@ var tests = [
 										name:		'Repeating Radial Gradient',
 										li:			113,
 										required: 	true,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient']
+														['mdn', '/Web/CSS/repeating-radial-gradient']
 													]
 
 									},
@@ -1727,9 +1727,9 @@ var tests = [
 										id: 		'object-fit',
 										name:		'Object Fit',
 										li:			116,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit']
+														['mdn', '/Web/CSS/object-fit']
 													]
 
 									},
@@ -1737,9 +1737,9 @@ var tests = [
 										id: 		'object-position',
 										name:		'Object Position',
 										li:			116,
-										value: 5,
+										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/object-position']
+														['mdn', '/Web/CSS/object-position']
 													]
 
 									},
@@ -1757,7 +1757,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::before']
+														['mdn', '/Web/CSS/::before']
 													]
 
 									},
@@ -1768,7 +1768,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::after']
+														['mdn', '/Web/CSS/::after']
 													]
 
 									},
@@ -1779,7 +1779,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter']
+														['mdn', '/Web/CSS/::first-letter']
 													]
 
 									},
@@ -1790,7 +1790,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line']
+														['mdn', '/Web/CSS/::first-line']
 													]
 
 									},
@@ -1801,7 +1801,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Namespaces']
+														['mdn', '/Web/CSS/CSS_Namespaces']
 													]
 
 									},
@@ -1812,7 +1812,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:target']
+														['mdn', '/Web/CSS/:target']
 													]
 
 									},
@@ -1823,7 +1823,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled']
+														['mdn', '/Web/CSS/:enabled']
 													]
 
 									},
@@ -1834,7 +1834,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled']
+														['mdn', '/Web/CSS/:disabled']
 													]
 
 									},
@@ -1845,7 +1845,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:checked']
+														['mdn', '/Web/CSS/:checked']
 													]
 
 									},
@@ -1856,7 +1856,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:root']
+														['mdn', '/Web/CSS/:root']
 													]
 
 									},
@@ -1867,7 +1867,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child']
+														['mdn', '/Web/CSS/:nth-child']
 													]
 
 									},
@@ -1878,7 +1878,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child']
+														['mdn', '/Web/CSS/:nth-last-child']
 													]
 
 									},
@@ -1889,7 +1889,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type']
+														['mdn', '/Web/CSS/:nth-of-type']
 													]
 
 									},
@@ -1900,7 +1900,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-of-type']
+														['mdn', '/Web/CSS/:nth-last-of-type']
 													]
 
 									},
@@ -1911,7 +1911,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child']
+														['mdn', '/Web/CSS/:last-child']
 													]
 
 									},
@@ -1922,7 +1922,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child']
+														['mdn', '/Web/CSS/:only-child']
 													]
 
 									},
@@ -1933,7 +1933,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type']
+														['mdn', '/Web/CSS/:first-of-type']
 													]
 
 									},
@@ -1944,7 +1944,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type']
+														['mdn', '/Web/CSS/:last-of-type']
 													]
 
 									},
@@ -1955,7 +1955,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type']
+														['mdn', '/Web/CSS/:only-of-type']
 													]
 
 									},
@@ -1966,7 +1966,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/:empty']
+														['mdn', '/Web/CSS/:empty']
 													]
 
 									},
@@ -1984,7 +1984,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing']
+														['mdn', '/Web/CSS/box-sizing']
 													]
 
 									},
@@ -1995,7 +1995,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow']
+														['mdn', '/Web/CSS/text-overflow']
 													]
 
 									}
@@ -2013,7 +2013,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property']
+														['mdn', '/Web/CSS/transition-property']
 													]
 
 									},
@@ -2024,7 +2024,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration']
+														['mdn', '/Web/CSS/transition-duration']
 													]
 
 									},
@@ -2035,7 +2035,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function']
+														['mdn', '/Web/CSS/transition-timing-function']
 													]
 
 									},
@@ -2046,7 +2046,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay']
+														['mdn', '/Web/CSS/transition-delay']
 													]
 
 									},
@@ -2057,7 +2057,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transition']
+														['mdn', '/Web/CSS/transition']
 													]
 
 									},
@@ -2075,7 +2075,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name']
+														['mdn', '/Web/CSS/animation-name']
 													]
 
 									},
@@ -2086,7 +2086,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration']
+														['mdn', '/Web/CSS/animation-duration']
 													]
 
 									},
@@ -2097,7 +2097,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function']
+														['mdn', '/Web/CSS/animation-timing-function']
 													]
 
 									},
@@ -2108,7 +2108,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count']
+														['mdn', '/Web/CSS/animation-iteration-count']
 													]
 
 									},
@@ -2119,7 +2119,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction']
+														['mdn', '/Web/CSS/animation-direction']
 													]
 
 									},
@@ -2130,7 +2130,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state']
+														['mdn', '/Web/CSS/animation-play-state']
 													]
 
 									},
@@ -2141,7 +2141,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay']
+														['mdn', '/Web/CSS/animation-delay']
 													]
 
 									},
@@ -2152,7 +2152,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode']
+														['mdn', '/Web/CSS/animation-fill-mode']
 													]
 
 									},
@@ -2163,7 +2163,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/animation']
+														['mdn', '/Web/CSS/animation']
 													]
 
 									},
@@ -2174,7 +2174,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes']
+														['mdn', '/Web/CSS/@keyframes']
 													]
 
 									},
@@ -2192,7 +2192,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform']
+														['mdn', '/Web/CSS/transform']
 													]
 
 									},
@@ -2203,7 +2203,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin']
+														['mdn', '/Web/CSS/transform-origin']
 													]
 
 									},
@@ -2214,7 +2214,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style']
+														['mdn', '/Web/CSS/transform-style']
 													]
 
 									},
@@ -2225,7 +2225,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/perspective']
+														['mdn', '/Web/CSS/perspective']
 													]
 
 									},
@@ -2236,7 +2236,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin']
+														['mdn', '/Web/CSS/perspective-origin']
 													]
 
 									},
@@ -2247,7 +2247,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility']
+														['mdn', '/Web/CSS/backface-visibility']
 													]
 
 									},
@@ -2264,7 +2264,7 @@ var tests = [
 										li:			155,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size']
+														['mdn', '/Web/CSS/tab-size']
 													]
 
 									},
@@ -2274,7 +2274,7 @@ var tests = [
 										li:			159,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/word-break']
+														['mdn', '/Web/CSS/word-break']
 													]
 
 									},
@@ -2285,7 +2285,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap']
+														['mdn', '/Web/CSS/overflow-wrap']
 													]
 
 									},
@@ -2303,7 +2303,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow']
+														['mdn', '/Web/CSS/text-shadow']
 													]
 
 									},
@@ -2314,7 +2314,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing']
+														['mdn', '/Web/CSS/letter-spacing']
 													]
 
 									}
@@ -2332,7 +2332,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning']
+														['mdn', '/Web/CSS/font-kerning']
 													]
 
 									},
@@ -2342,7 +2342,7 @@ var tests = [
 										li:			119,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings']
+														['mdn', '/Web/CSS/font-feature-settings']
 													]
 
 									}
@@ -2360,7 +2360,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2371,7 +2371,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2382,7 +2382,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2393,7 +2393,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2404,7 +2404,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2415,7 +2415,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/color']
+														['mdn', '/Web/CSS/color']
 													]
 
 									},
@@ -2433,7 +2433,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-width']
+														['mdn', '/Web/CSS/column-width']
 													]
 
 									},
@@ -2444,7 +2444,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-count']
+														['mdn', '/Web/CSS/column-count']
 													]
 
 									},
@@ -2455,7 +2455,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/columns']
+														['mdn', '/Web/CSS/columns']
 													]
 
 									},
@@ -2466,7 +2466,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap']
+														['mdn', '/Web/CSS/column-gap']
 													]
 
 									},
@@ -2477,7 +2477,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-color']
+														['mdn', '/Web/CSS/column-rule-color']
 													]
 
 									},
@@ -2488,7 +2488,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-style']
+														['mdn', '/Web/CSS/column-rule-style']
 													]
 
 									},
@@ -2499,7 +2499,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-width']
+														['mdn', '/Web/CSS/column-rule-width']
 													]
 
 									},
@@ -2510,7 +2510,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule']
+														['mdn', '/Web/CSS/column-rule']
 													]
 
 									},
@@ -2521,7 +2521,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-span']
+														['mdn', '/Web/CSS/column-span']
 													]
 
 									},
@@ -2532,7 +2532,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill']
+														['mdn', '/Web/CSS/column-fill']
 													]
 
 									},
@@ -2560,7 +2560,7 @@ var tests = [
 										li:			89,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/attr']
+														['mdn', '/Web/CSS/attr']
 													]
 
 									},
@@ -2570,7 +2570,7 @@ var tests = [
 										li: 		122,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/calc']
+														['mdn', '/Web/CSS/calc']
 													]
 
 									}
@@ -2588,7 +2588,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-content']
+														['mdn', '/Web/CSS/align-content']
 													]
 
 									},
@@ -2599,7 +2599,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-items']
+														['mdn', '/Web/CSS/align-items']
 													]
 
 									},
@@ -2610,7 +2610,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/align-self']
+														['mdn', '/Web/CSS/align-self']
 													]
 
 									},
@@ -2632,7 +2632,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex']
+														['mdn', '/Web/CSS/flex']
 													]
 
 									},
@@ -2643,7 +2643,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis']
+														['mdn', '/Web/CSS/flex-basis']
 													]
 
 									},
@@ -2654,7 +2654,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction']
+														['mdn', '/Web/CSS/flex-direction']
 													]
 
 									},
@@ -2665,7 +2665,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow']
+														['mdn', '/Web/CSS/flex-flow']
 													]
 
 									},
@@ -2676,7 +2676,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow']
+														['mdn', '/Web/CSS/flex-grow']
 													]
 
 									},
@@ -2687,7 +2687,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink']
+														['mdn', '/Web/CSS/flex-shrink']
 													]
 
 									},
@@ -2698,7 +2698,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap']
+														['mdn', '/Web/CSS/flex-wrap']
 													]
 
 									},
@@ -2709,7 +2709,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content']
+														['mdn', '/Web/CSS/justify-content']
 													]
 
 									},
@@ -2720,7 +2720,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-height']
+														['mdn', '/Web/CSS/min-height']
 													]
 
 									},
@@ -2731,7 +2731,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/min-width']
+														['mdn', '/Web/CSS/min-width']
 													]
 
 									},
@@ -2742,7 +2742,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/order']
+														['mdn', '/Web/CSS/order']
 													]
 
 									},
@@ -2759,7 +2759,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
+														['mdn', '/Web/CSS/clip-path']
 													]
 
 									},
@@ -2769,7 +2769,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path']
+														['mdn', '/Web/CSS/clip-path']
 													]
 
 									},
@@ -2779,7 +2779,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image']
+														['mdn', '/Web/CSS/mask-image']
 													]
 
 									},
@@ -2789,7 +2789,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode']
+														['mdn', '/Web/CSS/mask-mode']
 													]
 
 									},
@@ -2799,7 +2799,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
+														['mdn', '/Web/CSS/mask-repeat']
 													]
 
 									},
@@ -2809,7 +2809,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position']
+														['mdn', '/Web/CSS/mask-position']
 													]
 
 									},
@@ -2819,7 +2819,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-clip']
+														['mdn', '/Web/CSS/mask-clip']
 													]
 
 									},
@@ -2829,7 +2829,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin']
+														['mdn', '/Web/CSS/mask-origin']
 													]
 
 									},
@@ -2839,7 +2839,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-size']
+														['mdn', '/Web/CSS/mask-size']
 													]
 
 									},
@@ -2849,7 +2849,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite']
+														['mdn', '/Web/CSS/mask-composite']
 													]
 
 									},
@@ -2859,7 +2859,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2869,7 +2869,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2879,7 +2879,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2889,7 +2889,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2899,7 +2899,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2909,7 +2909,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat']
+														['mdn', '/Web/CSS/mask-repeat']
 													]
 
 									},
@@ -2919,7 +2919,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask']
+														['mdn', '/Web/CSS/mask']
 													]
 
 									},
@@ -2929,7 +2929,7 @@ var tests = [
 										li:			125,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-type']
+														['mdn', '/Web/CSS/mask-type']
 													]
 
 									},
@@ -2947,7 +2947,7 @@ var tests = [
 										required: 	true,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action']
+														['mdn', '/Web/CSS/touch-action']
 													]
 
 									},
@@ -2964,7 +2964,7 @@ var tests = [
 										li:			151,
 										value: 1,
 										urls: 		[
-														['mdn', 'https://developer.mozilla.org/en-US/docs/Web/CSS/will-change']
+														['mdn', '/Web/CSS/will-change']
 													]
 
 									},
