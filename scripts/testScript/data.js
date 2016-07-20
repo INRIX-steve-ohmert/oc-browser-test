@@ -1376,7 +1376,7 @@ var tests = [
 		items: 	[
 					{
 						id: 	'css-display',
-						name:	 "CSS Display",
+						name:	 "Display",
 						status: 'stable',
 						items: 	[
 									{
@@ -1449,7 +1449,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-background',
-						name:	 "CSS Background and Borders",
+						name:	 "Background and Borders",
 						status: 'stable',
 						items: 	[
 									{
@@ -1621,7 +1621,7 @@ var tests = [
 					},
 					{
 						id: 	'css-backgrounds-4',
-						name:	 "Background and Borders Level 4",
+						name:	 "Background Position",
 						status: 'stable',
 						items: 	[
 									{
@@ -1977,7 +1977,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-transitions',
-						name:	 "CSS Transitions",
+						name:	 "Transitions",
 						status: 'stable',
 						items: 	[
 									{
@@ -2039,7 +2039,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-animations',
-						name:	 "CSS Animations",
+						name:	 "Animations",
 						status: 'stable',
 						items: 	[
 									{
@@ -2156,7 +2156,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-transforms',
-						name:	 "CSS Transforms",
+						name:	 "Transforms",
 						status: 'stable',
 						items: 	[
 									{
@@ -2229,7 +2229,7 @@ var tests = [
 					},
 					{
 						id: 	'css-text-3',
-						name:	 "CSS Text",
+						name:	 "Text",
 						status: 'stable',
 						items: 	[
 									{
@@ -2267,7 +2267,7 @@ var tests = [
 					},
 					{
 						id: 	'css-text-decor-3',
-						name:	 "CSS Text Decoration",
+						name:	 "Text Decoration",
 						status: 'stable',
 						items: 	[
 									{
@@ -2296,7 +2296,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-fonts',
-						name:	 "CSS Text Decoration",
+						name:	 "Fonts",
 						status: 'stable',
 						items: 	[
 									{
@@ -2324,7 +2324,7 @@ var tests = [
 					},
 					{
 						id: 	'css-color-3',
-						name:	 "CSS Text Decoration",
+						name:	 "Color",
 						status: 'stable',
 						items: 	[
 									{
@@ -2397,7 +2397,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-multicol',
-						name:	 "CSS Multicolumn",
+						name:	 "Multicolumn",
 						status: 'stable',
 						items: 	[
 									{
@@ -2514,7 +2514,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-values',
-						name:	 "CSS Values",
+						name:	 "Values",
 						status: 'stable',
 						items: 	[
 									{
@@ -2552,7 +2552,7 @@ var tests = [
 					},
 					{
 						id: 	'css3-flexbox',
-						name:	 "CSS Flexbox",
+						name:	 "Flexbox",
 						status: 'stable',
 						items: 	[
 									{
@@ -2724,7 +2724,7 @@ var tests = [
 					},
 					{
 						id: 	'css-masking',
-						name:	 "CSS Masking",
+						name:	 "Masking",
 						status: 'stable',
 						items: 	[
 									{
