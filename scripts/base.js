@@ -593,7 +593,7 @@
 
 					var th = document.createElement('th');
 					if (tests[i].li) {
-						th.innerHTML = "<div><span class='line-item'>LI: " + tests[i].li + "</span><span>" + tests[i].name + "</span></div>";
+						th.innerHTML = "<div><span class='line-item'># " + tests[i].li + "</span><span>" + tests[i].name + "</span></div>";
 					} else {
 						th.innerHTML = "</span><span>" + tests[i].name + "</span></div>";
 					}
