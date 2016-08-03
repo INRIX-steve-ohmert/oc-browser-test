@@ -817,190 +817,190 @@ Test =
         },
 
 
-        // /* xmlhttprequest upload */
-        //
-        // function (results) {
-        //     results.addItem({
-        //         key: 'communication.xmlhttprequest2.upload',
-        //         passed: window.XMLHttpRequest && 'upload' in new XMLHttpRequest()
-        //     });
-        // },
-        //
-        //
-        // /* xmlhttprequest response text */
-        //
-        // function (results) {
-        //     var item = results.addItem({
-        //         key: 'communication.xmlhttprequest2.response.text',
-        //         passed: false
-        //     });
-        //
-        //     if (!window.XMLHttpRequest) return;
-        //
-        //     var xhr = new window.XMLHttpRequest();
-        //
-        //     if (typeof xhr.responseType == 'undefined') return;
-        //
-        //     var done = false;
-        //
-        //     xhr.onreadystatechange = function () {
-        //         if (this.readyState == 4 && !done) {
-        //             done = true;
-        //             passed = false;
-        //
-        //             try {
-        //                 passed = !!(this.responseText); // && this.responseText == '<title>&amp;&<</title>');
-        //             } catch (e) {
-        //             }
-        //
-        //             item.stopBackground();
-        //             item.update({
-        //                 'passed': passed
-        //             });
-        //         }
-        //     }
-        //
-        //     try {
-        //         item.startBackground();
-        //         xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
-        //         xhr.responseType = "text";
-        //         xhr.send();
-        //     } catch (e) {
-        //         item.stopBackground();
-        //     }
-        // },
-        //
-        //
-        // /* xmlhttprequest response document */
-        //
-        // function (results) {
-        //     var item = results.addItem({
-        //         key: 'communication.xmlhttprequest2.response.document',
-        //         passed: false
-        //     });
-        //
-        //     if (!window.XMLHttpRequest) return;
-        //
-        //     var xhr = new window.XMLHttpRequest();
-        //
-        //     if (typeof xhr.responseType == 'undefined') return;
-        //
-        //     var done = false;
-        //
-        //     xhr.onreadystatechange = function () {
-        //         if (this.readyState == 4 && !done) {
-        //             done = true;
-        //             passed = false;
-        //
-        //             try {
-        //                 passed = !!(this.responseXML && this.responseXML.title && this.responseXML.title == "&&<");
-        //             } catch (e) {
-        //             }
-        //
-        //             item.stopBackground();
-        //             item.update({
-        //                 'passed': passed
-        //             });
-        //         }
-        //     }
-        //
-        //     try {
-        //         item.startBackground();
-        //         xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
-        //         xhr.responseType = "document";
-        //         xhr.send();
-        //     } catch (e) {
-        //         item.stopBackground();
-        //     }
-        // },
-        //
-        //
-        // /* xmlhttprequest response array */
-        //
-        // function (results) {
-        //     var item = results.addItem({
-        //         key: 'communication.xmlhttprequest2.response.array',
-        //         passed: false
-        //     });
-        //
-        //     if (!window.XMLHttpRequest || !window.ArrayBuffer) return;
-        //
-        //     var xhr = new window.XMLHttpRequest();
-        //
-        //     if (typeof xhr.responseType == 'undefined') return;
-        //
-        //     var done = false;
-        //
-        //     xhr.onreadystatechange = function () {
-        //         if (this.readyState == 4 && !done) {
-        //             done = true;
-        //             passed = false;
-        //
-        //             try {
-        //                 passed = !!(this.response && this.response instanceof ArrayBuffer);
-        //             } catch (e) {
-        //             }
-        //
-        //             item.stopBackground();
-        //             item.update({
-        //                 'passed': passed
-        //             });
-        //         }
-        //     }
-        //
-        //     try {
-        //         item.startBackground();
-        //         xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
-        //         xhr.responseType = "arraybuffer";
-        //         xhr.send();
-        //     } catch (e) {
-        //         item.stopBackground();
-        //     }
-        // },
-        //
-        //
-        // /* xmlhttprequest response blob */
-        //
-        // function (results) {
-        //     var item = results.addItem({
-        //         key: 'communication.xmlhttprequest2.response.blob',
-        //         passed: false
-        //     });
-        //
-        //     if (!window.XMLHttpRequest || !window.Blob) return;
-        //
-        //     var xhr = new window.XMLHttpRequest();
-        //
-        //     if (typeof xhr.responseType == 'undefined') return;
-        //
-        //     var done = false;
-        //
-        //     xhr.onreadystatechange = function () {
-        //         if (this.readyState == 4 && !done) {
-        //             done = true;
-        //             passed = false;
-        //
-        //             try {
-        //                 passed = !!(this.response && this.response instanceof Blob);
-        //             } catch (e) {
-        //             }
-        //
-        //             item.stopBackground();
-        //             item.update({
-        //                 'passed': passed
-        //             });
-        //         }
-        //     }
-        //
-        //     try {
-        //         item.startBackground();
-        //         xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
-        //         xhr.responseType = "blob";
-        //         xhr.send();
-        //     } catch (e) {
-        //         item.stopBackground();
-        //     }
-        // },
+        /* xmlhttprequest upload */
+
+        function (results) {
+            results.addItem({
+                key: 'communication.xmlhttprequest2.upload',
+                passed: window.XMLHttpRequest && 'upload' in new XMLHttpRequest()
+            });
+        },
+
+
+        /* xmlhttprequest response text */
+
+        function (results) {
+            var item = results.addItem({
+                key: 'communication.xmlhttprequest2.response.text',
+                passed: false
+            });
+
+            if (!window.XMLHttpRequest) return;
+
+            var xhr = new window.XMLHttpRequest();
+
+            if (typeof xhr.responseType == 'undefined') return;
+
+            var done = false;
+
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && !done) {
+                    done = true;
+                    passed = false;
+
+                    try {
+                        passed = !!(this.responseText); // && this.responseText == '<title>&amp;&<</title>');
+                    } catch (e) {
+                    }
+
+                    item.stopBackground();
+                    item.update({
+                        'passed': passed
+                    });
+                }
+            }
+
+            try {
+                item.startBackground();
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.responseType = "text";
+                xhr.send();
+            } catch (e) {
+                item.stopBackground();
+            }
+        },
+
+
+        /* xmlhttprequest response document */
+
+        function (results) {
+            var item = results.addItem({
+                key: 'communication.xmlhttprequest2.response.document',
+                passed: false
+            });
+
+            if (!window.XMLHttpRequest) return;
+
+            var xhr = new window.XMLHttpRequest();
+
+            if (typeof xhr.responseType == 'undefined') return;
+
+            var done = false;
+
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && !done) {
+                    done = true;
+                    passed = false;
+
+                    try {
+                        passed = !!(this.responseXML && this.responseXML.title && this.responseXML.title == "&&<");
+                    } catch (e) {
+                    }
+
+                    item.stopBackground();
+                    item.update({
+                        'passed': passed
+                    });
+                }
+            }
+
+            try {
+                item.startBackground();
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.responseType = "document";
+                xhr.send();
+            } catch (e) {
+                item.stopBackground();
+            }
+        },
+
+
+        /* xmlhttprequest response array */
+
+        function (results) {
+            var item = results.addItem({
+                key: 'communication.xmlhttprequest2.response.array',
+                passed: false
+            });
+
+            if (!window.XMLHttpRequest || !window.ArrayBuffer) return;
+
+            var xhr = new window.XMLHttpRequest();
+
+            if (typeof xhr.responseType == 'undefined') return;
+
+            var done = false;
+
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && !done) {
+                    done = true;
+                    passed = false;
+
+                    try {
+                        passed = !!(this.response && this.response instanceof ArrayBuffer);
+                    } catch (e) {
+                    }
+
+                    item.stopBackground();
+                    item.update({
+                        'passed': passed
+                    });
+                }
+            }
+
+            try {
+                item.startBackground();
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.responseType = "arraybuffer";
+                xhr.send();
+            } catch (e) {
+                item.stopBackground();
+            }
+        },
+
+
+        /* xmlhttprequest response blob */
+
+        function (results) {
+            var item = results.addItem({
+                key: 'communication.xmlhttprequest2.response.blob',
+                passed: false
+            });
+
+            if (!window.XMLHttpRequest || !window.Blob) return;
+
+            var xhr = new window.XMLHttpRequest();
+
+            if (typeof xhr.responseType == 'undefined') return;
+
+            var done = false;
+
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && !done) {
+                    done = true;
+                    passed = false;
+
+                    try {
+                        passed = !!(this.response && this.response instanceof Blob);
+                    } catch (e) {
+                    }
+
+                    item.stopBackground();
+                    item.update({
+                        'passed': passed
+                    });
+                }
+            }
+
+            try {
+                item.startBackground();
+                xhr.open("GET", "../../assets/detect.html?" + Math.random().toString(36).substr(2, 5));
+                xhr.responseType = "blob";
+                xhr.send();
+            } catch (e) {
+                item.stopBackground();
+            }
+        },
 
 
         /* websockets */
@@ -1111,46 +1111,46 @@ Test =
         },
 
 
-        // /* csp 1.0 */
-        //
-        // function (results) {
-        //     var passed = false;
-        //
-        //     if (navigator.webdriver && Browsers.isBrowser('Firefox', '>', 22)) {
-        //         passed = YES | DISABLED;
-        //     }
-        //
-        //     var item = results.addItem({
-        //         key: 'security.csp10',
-        //         passed: passed
-        //     });
-        //
-        //     window.addEventListener('message', function(e) {
-        //         if (e.data === 'csp10:passed') {
-        //             item.update({
-        //                 passed: true
-        //             });
-        //
-        //             item.stopBackground();
-        //         }
-        //
-        //         if (e.data === 'csp10:failed') {
-        //             item.stopBackground();
-        //         }
-        //     }, false);
-        //
-        //     item.startBackground();
-        //
-        //     var iframe = document.createElement('iframe');
-        //     iframe.src = '../../assets/csp.html';
-        //     iframe.style.visibility = 'hidden';
-        //     document.body.appendChild(iframe);
-        //
-        //     window.setTimeout(function () {
-        //         item.stopBackground();
-        //         document.body.removeChild(iframe);
-        //     }, 1000);
-        // },
+        /* csp 1.0 */
+
+        function (results) {
+            var passed = false;
+
+            if (navigator.webdriver && Browsers.isBrowser('Firefox', '>', 22)) {
+                passed = YES | DISABLED;
+            }
+
+            var item = results.addItem({
+                key: 'security.csp10',
+                passed: passed
+            });
+
+            window.addEventListener('message', function(e) {
+                if (e.data === 'csp10:passed') {
+                    item.update({
+                        passed: true
+                    });
+
+                    item.stopBackground();
+                }
+
+                if (e.data === 'csp10:failed') {
+                    item.stopBackground();
+                }
+            }, false);
+
+            item.startBackground();
+
+            var iframe = document.createElement('iframe');
+            iframe.src = '../../assets/csp.html';
+            iframe.style.visibility = 'hidden';
+            document.body.appendChild(iframe);
+
+            window.setTimeout(function () {
+                item.stopBackground();
+                document.body.removeChild(iframe);
+            }, 1000);
+        },
 
 
         /* csp 1.1 */
@@ -1518,8 +1518,12 @@ Test =
             var passed, bc;
 
             try {
-                bc = new BroadcastChannel('testing');
-                passed = true;
+                if (typeof BroadcastChannel == 'function') {
+                    bc = new BroadcastChannel('testing');
+                    passed = true;
+                } else {
+                    passed = false;
+                }
             } catch(e) {
                 passed = false;
             }
