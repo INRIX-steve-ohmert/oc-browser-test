@@ -1518,7 +1518,7 @@ Test =
             var passed, bc;
 
             try {
-                if (typeof BroadcastChannel == 'function') {
+                if (window.BroadcastChannel) {
                     bc = new BroadcastChannel('testing');
                     passed = true;
                 } else {
