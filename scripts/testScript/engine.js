@@ -723,7 +723,11 @@ Test =
         /* KeyboardEvents which */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.which',
@@ -734,7 +738,11 @@ Test =
         /* KeyboardEvent charCode */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.charCode',
@@ -745,7 +753,11 @@ Test =
         /* KeyboardEvent code */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.code',
@@ -756,7 +768,11 @@ Test =
         /* KeyboardEvent location */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.location',
@@ -767,7 +783,12 @@ Test =
         /* KeyboardEvent getModifierState */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.modifier',
@@ -778,7 +799,11 @@ Test =
         /* KeyboardEvent key */
 
         function(results) {
-            var ev = new KeyboardEvent('keyup');
+            try {
+                var ev = new KeyboardEvent('keyup');
+            } catch (e) {
+                var ev = {}; 
+            };
 
             results.addItem({
                 key: 'input.key',
@@ -1195,8 +1220,7 @@ Test =
         /* TTF Fonts */
 
         function(results) {
-            var css = `@font-face { font-family: 'League';
-                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.ttf')}`
+            var css = "@font-face { font-family: 'League'; src: url('../../fonts/leaguegothic-condensed-italic-webfont.ttf')}",
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1222,8 +1246,7 @@ Test =
         /* OTF Fonts */
 
         function(results) {
-            var css = `@font-face { font-family: 'League';
-                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.otf')}`
+            var css = "@font-face { font-family: 'League'; src: url('../../fonts/leaguegothic-condensed-italic-webfont.otf')}",
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1249,8 +1272,7 @@ Test =
         /* WOFF Fonts */
 
         function(results) {
-            var css = `@font-face { font-family: 'League';
-                                    src: url('../../fonts/leaguegothic-condensed-italic-webfont.woff')}`
+            var css = "@font-face { font-family: 'League'; src: url('../../fonts/leaguegothic-condensed-italic-webfont.woff')}",
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
@@ -1295,8 +1317,7 @@ Test =
         /* CSS Counters */
 
         function(results) {
-            var css = `body { counter-reset: section;
-                              content: "Section " counter(section) ": ";}`
+            var css = "body { counter-reset: section; content: 'Section ' counter(section) ': ';}",
                 head = document.head,
                 style = document.createElement('style'),
                 passed = true;
